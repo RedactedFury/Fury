@@ -13,7 +13,7 @@ import (
 
 	"github.com/RedactedFury/FuryHubChain/app"
 	v2_0_0 "github.com/RedactedFury/FuryHubChain/app/upgrades/mainnet/v2.0.0"
-	"github.com/RedactedFury/FuryHubChain/cmd/crescentd/cmd"
+	"github.com/RedactedFury/FuryHubChain/cmd/furyd/cmd"
 	utils "github.com/RedactedFury/FuryHubChain/types"
 )
 

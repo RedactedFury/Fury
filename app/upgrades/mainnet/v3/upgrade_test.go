@@ -12,7 +12,7 @@ import (
 
 	chain "github.com/RedactedFury/FuryHubChain/app"
 	v3 "github.com/RedactedFury/FuryHubChain/app/upgrades/mainnet/v3"
-	"github.com/RedactedFury/FuryHubChain/cmd/crescentd/cmd"
+	"github.com/RedactedFury/FuryHubChain/cmd/furyd/cmd"
 	utils "github.com/RedactedFury/FuryHubChain/types"
 	"github.com/RedactedFury/FuryHubChain/x/farming"
 	farmingkeeper "github.com/RedactedFury/FuryHubChain/x/farming/keeper"
