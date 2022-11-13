@@ -32,7 +32,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	chain "github.com/crescent-network/RedactedFury/FuryHubChain/app"
+	chain "github.com/RedactedFury/FuryHubChain/app"
 	farmingparams "github.com/RedactedFury/FuryHubChain/app/params"
 )
 

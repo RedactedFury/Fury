@@ -3,8 +3,8 @@ init:
   home: "$HOME/.furyhubchain"
 build:
   ldflags:
-    - -X github.com/crescent-network/RedactedFury/FuryHubChain/x/farming/keeper.enableAdvanceEpoch=true
-    - -X github.com/crescent-network/RedactedFury/FuryHubChain/x/liquidfarming/keeper.enableAdvanceAuction=true
+    - -X github.com/RedactedFury/FuryHubChain/x/farming/keeper.enableAdvanceEpoch=true
+    - -X github.com/RedactedFury/FuryHubChain/x/liquidfarming/keeper.enableAdvanceAuction=true
   proto:
     path: proto
     third_party_paths:
