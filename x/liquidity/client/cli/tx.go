@@ -13,7 +13,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/crescent-network/crescent/v3/x/liquidity/types"
+	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
 )
 
 // GetTxCmd returns the transaction commands for the module

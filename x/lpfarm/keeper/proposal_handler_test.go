@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	utils "github.com/crescent-network/crescent/v3/types"
-	"github.com/crescent-network/crescent/v3/x/lpfarm/types"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
 )
 
 func (s *KeeperTestSuite) TestFarmingPlanProposalHandler() {

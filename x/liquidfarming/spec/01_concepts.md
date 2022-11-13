@@ -1,14 +1,14 @@
 <!-- order: 1 -->
 # Concepts
 
-This is the concept for `Liquidfarming` module in Crescent Network.
+This is the concept for `Liquidfarming` module in fury Network.
 
 ## LiquidFarming Module
 
-The `liquidfarming` module provides a functionality for farmers to have another option to use with their liquidity pool coins in Crescent Network. 
+The `liquidfarming` module provides a functionality for farmers to have another option to use with their liquidity pool coins in fury Network. 
 
 The module allows farmers to farm their pool coin and mint a synthetic version of the pool coin called LFCoin. 
-Farmers can use the LFCoin to take a full advantage of Crescent functionality, such as Boost. 
+Farmers can use the LFCoin to take a full advantage of fury functionality, such as Boost. 
 On behalf of farmers, the module stakes their pool coin to the `farming` module and receives farming rewards for every epoch. 
 The module provides auto-compounding of the rewards by going through an auction process, which results in the exchange of the farming rewards coin(s) into the pool coin.
 

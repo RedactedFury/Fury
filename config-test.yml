@@ -1,10 +1,10 @@
 version: 1
 init:
-  home: "$HOME/.crescent"
+  home: "$HOME/.furyhubchain"
 build:
   ldflags:
-    - -X github.com/crescent-network/crescent/v3/x/farming/keeper.enableAdvanceEpoch=true
-    - -X github.com/crescent-network/crescent/v3/x/liquidfarming/keeper.enableAdvanceAuction=true
+    - -X github.com/crescent-network/RedactedFury/FuryHubChain/x/farming/keeper.enableAdvanceEpoch=true
+    - -X github.com/crescent-network/RedactedFury/FuryHubChain/x/liquidfarming/keeper.enableAdvanceAuction=true
   proto:
     path: proto
     third_party_paths:
@@ -13,7 +13,7 @@ build:
 accounts:
   - name: alice # cre1zaavvzxez0elundtn32qnk9lkm8kmcszxclz6p
     coins:
-      - 1500000000000stake
+      - 1500000000000ufury
       - 1000000000000000uatom
       - 1000000000000000uusd
     mnemonic:
@@ -21,7 +21,7 @@ accounts:
       hotel maid produce squeeze return argue turtle know drive eight casino maze host
   - name: bob # cre1mzgucqnfr2l8cj5apvdpllhzt4zeuh2c5l33n3
     coins:
-      - 1000000000000stake
+      - 1000000000000ufury
       - 1000000000000000uatom
       - 1000000000000000uusd
     mnemonic:
@@ -29,7 +29,7 @@ accounts:
       monkey play snow number walnut pull lock shoot hurry dream divide concert discover
   - name: steve # cre185fflsvwrz0cx46w6qada7mdy92m6kx4vg42xf
     coins:
-      - 1000000000000stake
+      - 1000000000000ufury
       - 1000000000000000uatom
       - 1000000000000000uusd
     mnemonic:
@@ -43,11 +43,11 @@ accounts:
       skull way crater tobacco pair glare window soon lift pistol fitness annual
 validator:
   name: alice
-  staked: 100000000stake
+  staked: 100000000ufury
 faucet:
   name: bob
   coins:
-    - 10000000stake
+    - 10000000ufury
     - 10000000uatom
   host: 0.0.0.0:4500
 genesis:
@@ -55,18 +55,18 @@ genesis:
   app_state:
     crisis:
       constant_fee:
-        denom: "stake"
+        denom: "ufury"
     mint:
       params:
-        mint_denom: "stake"
+        mint_denom: "ufury"
     staking:
       params:
-        bond_denom: "stake"
+        bond_denom: "ufury"
     gov:
       deposit_params:
         min_deposit:
           - amount: "1"
-            denom: "stake"
+            denom: "ufury"
       voting_params:
         voting_period: "20s"
     budget:
@@ -82,15 +82,15 @@ genesis:
       params:
         private_plan_creation_fee:
           - amount: "100000"
-            denom: "stake"
+            denom: "ufury"
     liquidity:
       params:
         pair_creation_fee:
           - amount: "100000"
-            denom: "stake"
+            denom: "ufury"
         pool_creation_fee:
           - amount: "100000"
-            denom: "stake"
+            denom: "ufury"
     marketmaker:
       params:
         incentive_pairs:
@@ -108,7 +108,7 @@ genesis:
             min_depth: "0"
     liquidstaking:
       params:
-        liquid_bond_denom: "bstake"
+        liquid_bond_denom: "bfury"
         whitelisted_validators:
           - validator_address: "crevaloper1zaavvzxez0elundtn32qnk9lkm8kmcszyvldht"
             target_weight: "100000000"

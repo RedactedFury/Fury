@@ -1,4 +1,4 @@
-module github.com/crescent-network/crescent/v3
+module github.com/RedactedFury/FuryHubChain
 
 go 1.18
 

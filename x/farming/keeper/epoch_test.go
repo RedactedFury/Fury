@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/crescent-network/crescent/v3/x/farming"
-	"github.com/crescent-network/crescent/v3/x/farming/types"
+	"github.com/RedactedFury/FuryHubChain/x/farming"
+	"github.com/RedactedFury/FuryHubChain/x/farming/types"
 
 	_ "github.com/stretchr/testify/suite"
 )

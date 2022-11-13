@@ -7,11 +7,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	chain "github.com/crescent-network/crescent/v3/app"
-	utils "github.com/crescent-network/crescent/v3/types"
-	v2liquidity "github.com/crescent-network/crescent/v3/x/liquidity/legacy/v2"
-	v3liquidity "github.com/crescent-network/crescent/v3/x/liquidity/legacy/v3"
-	"github.com/crescent-network/crescent/v3/x/liquidity/types"
+	chain "github.com/RedactedFury/FuryHubChain/app"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	v2liquidity "github.com/RedactedFury/FuryHubChain/x/liquidity/legacy/v2"
+	v3liquidity "github.com/RedactedFury/FuryHubChain/x/liquidity/legacy/v3"
+	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
 )
 
 func TestMigrateOrders(t *testing.T) {

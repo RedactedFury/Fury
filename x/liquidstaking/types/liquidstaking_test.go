@@ -14,11 +14,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	chain "github.com/crescent-network/crescent/v3/app"
-	utils "github.com/crescent-network/crescent/v3/types"
-	"github.com/crescent-network/crescent/v3/x/liquidstaking/keeper"
-	"github.com/crescent-network/crescent/v3/x/liquidstaking/types"
-	"github.com/crescent-network/crescent/v3/x/mint"
+	chain "github.com/RedactedFury/FuryHubChain/app"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/keeper"
+	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	"github.com/RedactedFury/FuryHubChain/x/mint"
 )
 
 var (

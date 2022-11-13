@@ -9,10 +9,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	chain "github.com/crescent-network/crescent/v3/app"
-	utils "github.com/crescent-network/crescent/v3/types"
-	"github.com/crescent-network/crescent/v3/x/lpfarm/simulation"
-	"github.com/crescent-network/crescent/v3/x/lpfarm/types"
+	chain "github.com/RedactedFury/FuryHubChain/app"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	"github.com/RedactedFury/FuryHubChain/x/lpfarm/simulation"
+	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
 )
 
 func TestDecodeStore(t *testing.T) {

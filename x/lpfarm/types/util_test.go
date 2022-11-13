@@ -8,9 +8,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	utils "github.com/crescent-network/crescent/v3/types"
-	"github.com/crescent-network/crescent/v3/x/liquidity/amm"
-	"github.com/crescent-network/crescent/v3/x/lpfarm/types"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	"github.com/RedactedFury/FuryHubChain/x/liquidity/amm"
+	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
 )
 
 func TestAddressDerivations(t *testing.T) {

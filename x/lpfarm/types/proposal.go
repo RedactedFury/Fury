@@ -19,7 +19,7 @@ var (
 
 func init() {
 	gov.RegisterProposalType(ProposalTypeFarmingPlan)
-	gov.RegisterProposalTypeCodec(&FarmingPlanProposal{}, "crescent/FarmingPlanProposal")
+	gov.RegisterProposalTypeCodec(&FarmingPlanProposal{}, "fury/FarmingPlanProposal")
 }
 
 func NewFarmingPlanProposal(

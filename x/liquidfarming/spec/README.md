@@ -4,7 +4,7 @@
 
 ## Abstract
 
-This document specifies the `liquidfarming` module that provides a functionality for farmers to have another option to use with their liquidity pool coins in Crescent Network.
+This document specifies the `liquidfarming` module that provides a functionality for farmers to have another option to use with their liquidity pool coins in fury Network.
 
 ## Contents
 

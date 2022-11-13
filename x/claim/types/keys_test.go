@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/crescent-network/crescent/v3/x/claim/types"
+	"github.com/RedactedFury/FuryHubChain/x/claim/types"
 )
 
 type keysTestSuite struct {

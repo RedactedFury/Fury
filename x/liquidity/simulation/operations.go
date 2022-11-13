@@ -12,11 +12,11 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/crescent-network/crescent/v3/app/params"
-	utils "github.com/crescent-network/crescent/v3/types"
-	"github.com/crescent-network/crescent/v3/x/liquidity/amm"
-	"github.com/crescent-network/crescent/v3/x/liquidity/keeper"
-	"github.com/crescent-network/crescent/v3/x/liquidity/types"
+	appparams "github.com/RedactedFury/FuryHubChain/app/params"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	"github.com/RedactedFury/FuryHubChain/x/liquidity/amm"
+	"github.com/RedactedFury/FuryHubChain/x/liquidity/keeper"
+	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
 )
 
 // Simulation operation weights constants.

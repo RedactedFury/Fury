@@ -12,8 +12,8 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/stretchr/testify/require"
 
-	"github.com/crescent-network/crescent/v3/x/marketmaker/simulation"
-	"github.com/crescent-network/crescent/v3/x/marketmaker/types"
+	"github.com/RedactedFury/FuryHubChain/x/marketmaker/simulation"
+	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

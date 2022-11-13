@@ -12,11 +12,11 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/crescent-network/crescent/v3/app/params"
-	utils "github.com/crescent-network/crescent/v3/types"
-	farmingkeeper "github.com/crescent-network/crescent/v3/x/farming/keeper"
-	farmingtypes "github.com/crescent-network/crescent/v3/x/farming/types"
-	minttypes "github.com/crescent-network/crescent/v3/x/mint/types"
+	appparams "github.com/RedactedFury/FuryHubChain/app/params"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	farmingkeeper "github.com/RedactedFury/FuryHubChain/x/farming/keeper"
+	farmingtypes "github.com/RedactedFury/FuryHubChain/x/farming/types"
+	minttypes "github.com/RedactedFury/FuryHubChain/x/mint/types"
 )
 
 // Simulation operation weights constants.

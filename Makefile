@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 
-NAME=crescent
-APPNAME=crescentd
-REPO=github.com/crescent-network/crescent/v3
+NAME=furyhubchain
+APPNAME=furyd
+REPO=github.com/RedactedFury/FuryHubChain
 
 VERSION := $(shell echo $(shell git describe --tags) | sed 's/^v//')
 COMMIT := $(shell git log -1 --format='%H')

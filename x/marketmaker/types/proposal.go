@@ -16,7 +16,7 @@ var _ gov.Content = &MarketMakerProposal{}
 
 func init() {
 	gov.RegisterProposalType(ProposalTypeMarketMaker)
-	gov.RegisterProposalTypeCodec(&MarketMakerProposal{}, "crescent/MarketMakerProposal")
+	gov.RegisterProposalTypeCodec(&MarketMakerProposal{}, "fury/MarketMakerProposal")
 }
 
 // NewMarketMakerProposal creates a new MarketMakerProposal object.

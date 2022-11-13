@@ -7,10 +7,10 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	utils "github.com/crescent-network/crescent/v3/types"
-	liquiditytypes "github.com/crescent-network/crescent/v3/x/liquidity/types"
-	"github.com/crescent-network/crescent/v3/x/liquidstaking/types"
-	lpfarmtypes "github.com/crescent-network/crescent/v3/x/lpfarm/types"
+	utils "github.com/RedactedFury/FuryHubChain/types"
+	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	lpfarmtypes "github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
 )
 
 // GetVoterBalanceByDenom return map of balance amount of voter by denom

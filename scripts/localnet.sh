@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set localnet settings
-BINARY=crescentd
+BINARY=furyd
 CHAIN_ID=localnet
 CHAIN_DIR=./data
 RPC_PORT=26657
@@ -9,12 +9,12 @@ GRPC_PORT=9090
 MNEMONIC_1="guard cream sadness conduct invite crumble clock pudding hole grit liar hotel maid produce squeeze return argue turtle know drive eight casino maze host"
 MNEMONIC_2="friend excite rough reopen cover wheel spoon convince island path clean monkey play snow number walnut pull lock shoot hurry dream divide concert discover"
 MNEMONIC_3="fuel obscure melt april direct second usual hair leave hobby beef bacon solid drum used law mercy worry fat super must ritual bring faculty"
-GENESIS_COINS=10000000000000stake,10000000000000airdrop,10000000000000uatom
+GENESIS_COINS=10000000000000ufury,10000000000000airdrop,10000000000000uatom
 
 # Stop process if it is already running 
 if pgrep -x "$BINARY" >/dev/null; then
     echo "Terminating $BINARY..."
-    killall crescentd
+    killall furyd
 fi
 
 # Remove previous data
@@ -37,7 +37,7 @@ $BINARY add-genesis-account $($BINARY --home $CHAIN_DIR/$CHAIN_ID keys show user
 $BINARY add-genesis-account $($BINARY --home $CHAIN_DIR/$CHAIN_ID keys show user2 --keyring-backend test -a) $GENESIS_COINS --home $CHAIN_DIR/$CHAIN_ID 
 
 echo "Creating and collecting gentx..."
-$BINARY gentx validator 1000000000stake --home $CHAIN_DIR/$CHAIN_ID --chain-id $CHAIN_ID --keyring-backend test
+$BINARY gentx validator 1000000000ufury --home $CHAIN_DIR/$CHAIN_ID --chain-id $CHAIN_ID --keyring-backend test
 $BINARY collect-gentxs --home $CHAIN_DIR/$CHAIN_ID
 
 echo "Change settings in config.toml file..."

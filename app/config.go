@@ -1,9 +1,9 @@
 package app
 
 const (
-	AppName        = "CrescentApp"
-	AppUserHomeDir = ".crescent"
-	AppBinary      = "crescentd"
+	AppName        = "FuryHubChain"
+	AppUserHomeDir = ".fury"
+	AppBinary      = "furyd"
 
 	// BIP-44 path "44'/118'/0'/0/0"
 	Purpose  = uint32(44)

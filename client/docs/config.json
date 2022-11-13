@@ -1,7 +1,7 @@
 {
   "swagger": "3.0",
   "info": {
-    "title": "Crescent REST and gRPC Gateway docs",
+    "title": "RedactedFury/FuryHubChain REST and gRPC Gateway docs",
     "description": "A REST interface for state queries, transactions",
     "version": "3.0.0"
   },
@@ -13,7 +13,7 @@
       }
     },
     {
-      "url": "./tmp-swagger-gen/crescent/farming/v1beta1/query.swagger.json",
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/farming/v1beta1/query.swagger.json",
       "operationIds": {
         "rename": {
           "Params": "FarmingParams"
@@ -21,7 +21,7 @@
       }
     },
     {
-      "url": "./tmp-swagger-gen/crescent/liquidity/v1beta1/query.swagger.json",
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/liquidity/v1beta1/query.swagger.json",
       "operationIds": {
         "rename": {
           "Params": "LiquidityParams",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "url": "./tmp-swagger-gen/crescent/liquidstaking/v1beta1/query.swagger.json",
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/liquidstaking/v1beta1/query.swagger.json",
       "operationIds": {
         "rename": {
           "Params": "LiquidStakingParams"
@@ -38,7 +38,7 @@
       }
     },
     {
-      "url": "./tmp-swagger-gen/crescent/mint/v1beta1/query.swagger.json",
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/mint/v1beta1/query.swagger.json",
       "operationIds": {
         "rename": {
           "Params": "MintParams"
@@ -46,7 +46,7 @@
       }
     },
     {
-      "url": "./tmp-swagger-gen/crescent/claim/v1beta1/query.swagger.json",
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/claim/v1beta1/query.swagger.json",
       "operationIds": {
         "rename": {
           "Params": "ClaimParams"
@@ -54,7 +54,7 @@
       }
     },
     {
-      "url": "./tmp-swagger-gen/crescent/marketmaker/v1beta1/query.swagger.json",
+      "url": "./tmp-swagger-gen/RedactedFury/FuryHubChain/marketmaker/v1beta1/query.swagger.json",
       "operationIds": {
         "rename": {
           "Params": "MarketMakerParams"

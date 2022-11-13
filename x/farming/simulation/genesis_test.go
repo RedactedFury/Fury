@@ -13,8 +13,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/crescent-network/crescent/v3/x/farming/simulation"
-	"github.com/crescent-network/crescent/v3/x/farming/types"
+	"github.com/RedactedFury/FuryHubChain/x/farming/simulation"
+	"github.com/RedactedFury/FuryHubChain/x/farming/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

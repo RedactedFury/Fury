@@ -13,10 +13,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/crescent-network/crescent/v3/app"
-	"github.com/crescent-network/crescent/v3/x/farming"
-	"github.com/crescent-network/crescent/v3/x/farming/keeper"
-	"github.com/crescent-network/crescent/v3/x/farming/types"
+	chain "github.com/RedactedFury/FuryHubChain/app"
+	"github.com/RedactedFury/FuryHubChain/x/farming"
+	"github.com/RedactedFury/FuryHubChain/x/farming/keeper"
+	"github.com/RedactedFury/FuryHubChain/x/farming/types"
 )
 
 const (

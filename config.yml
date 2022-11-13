@@ -1,5 +1,5 @@
 init:
-  home: "~/.crescent"
+  home: "~/.furyhubchain"
 accounts:
   - name: alice # cre1zaavvzxez0elundtn32qnk9lkm8kmcszxclz6p
     coins:
@@ -11,7 +11,7 @@ accounts:
       hotel maid produce squeeze return argue turtle know drive eight casino maze host
   - name: bob # cre1mzgucqnfr2l8cj5apvdpllhzt4zeuh2c5l33n3
     coins:
-      - 1000000000000stake
+      - 1000000000000ufury
       - 1000000000000000uatom
       - 1000000000000000uusd
     mnemonic:
@@ -19,7 +19,7 @@ accounts:
       monkey play snow number walnut pull lock shoot hurry dream divide concert discover
   - name: steve # cre185fflsvwrz0cx46w6qada7mdy92m6kx4vg42xf
     coins:
-      - 1000000000000stake
+      - 1000000000000ufury
       - 1000000000000000uatom
       - 1000000000000000uusd
     mnemonic:
@@ -33,39 +33,39 @@ accounts:
       skull way crater tobacco pair glare window soon lift pistol fitness annual
 validator:
   name: alice
-  staked: "500000000000stake"
+  staked: "500000000000ufury"
 genesis:
   chain_id: "localnet"
   app_state:
     crisis:
       constant_fee:
-        denom: "stake"
+        denom: "ufury"
     mint:
       params:
-        mint_denom: "stake"
+        mint_denom: "ufury"
     staking:
       params:
-        bond_denom: "stake"
+        bond_denom: "ufury"
     gov:
       deposit_params:
         min_deposit:
           - amount: "1"
-            denom: "stake"
+            denom: "ufury"
       voting_params:
         voting_period: "20s"
     farming:
       params:
         private_plan_creation_fee:
           - amount: "100000"
-            denom: "stake"
+            denom: "ufury"
     liquidity:
       params:
         pair_creation_fee:
           - amount: "100000"
-            denom: "stake"
+            denom: "ufury"
         pool_creation_fee:
           - amount: "100000"
-            denom: "stake"
+            denom: "ufury"
     liquidstaking:
       params:
         liquid_bond_denom: "bstake"
