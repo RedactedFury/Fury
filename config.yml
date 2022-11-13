@@ -3,7 +3,7 @@ init:
 accounts:
   - name: alice # cre1zaavvzxez0elundtn32qnk9lkm8kmcszxclz6p
     coins:
-      - 1500000000000stake
+      - 1500000000000ufury
       - 1000000000000000uatom
       - 1000000000000000uusd
     mnemonic:
