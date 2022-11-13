@@ -9,7 +9,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryChainHub/types"
+	"github.com/RedactedFury/FuryHubChain/types"
 )
 
 func TestGetShareValue(t *testing.T) {

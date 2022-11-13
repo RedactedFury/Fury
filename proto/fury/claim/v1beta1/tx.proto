@@ -4,7 +4,7 @@ package fury.claim.v1beta1;
 import "gogoproto/gogo.proto";
 import "fury/claim/v1beta1/claim.proto";
 
-option go_package                      = "github.com/RedactedFury/FuryChainHub//x/claim/types";
+option go_package                      = "github.com/RedactedFury/FuryHubChain//x/claim/types";
 option (gogoproto.goproto_getters_all) = false;
 
 // Msg defines the Msg service.
