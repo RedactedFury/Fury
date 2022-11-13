@@ -7,9 +7,9 @@
 ### Build from source
 
 ```bash
-# Clone the demo project and build `crescentd` for testing
-git clone https://github.com/crescent-network/crescent.git
-cd crescent
+# Clone the demo project and build `furyd` for testing
+git clone https://github.com/redactedfury/furyhubchain.git
+cd furyhubchain
 make install-testing
 ```
 
@@ -20,19 +20,16 @@ make install-testing
 - Modify governance parameters to lower threshold and decrease time to reduce governance process
 
 ```bash
-export BINARY=crescentd
-export HOME_APP=$HOME/.crescent
+export BINARY=furyd
+export HOME_APP=$HOME/.fury
 export CHAIN_ID=localnet
 export VALIDATOR_1="struggle panic room apology luggage game screen wing want lazy famous eight robot picture wrap act uphold grab away proud music danger naive opinion"
-# cre1zaavvzxez0elundtn32qnk9lkm8kmcszxclz6p
 export USER_1="guard cream sadness conduct invite crumble clock pudding hole grit liar hotel maid produce squeeze return argue turtle know drive eight casino maze host"
-# cre185fflsvwrz0cx46w6qada7mdy92m6kx4vg42xf
 export USER_2="fuel obscure melt april direct second usual hair leave hobby beef bacon solid drum used law mercy worry fat super must ritual bring faculty"
-# cre10n3ncmlsaqfuwsmfll8kq6hvt4x7c8czhnv69a
 export USER_3="smooth bike pool jealous cinnamon seat tiger team canoe almost core bag fluid garbage embrace gorilla wise door toe upon present canal myth corn"
 export VALIDATOR_1_GENESIS_COINS=100000000000000000stake,10000000000uatom,10000000000uusd
-export USER_1_GENESIS_COINS=10000000000stake,10000000000uatom,10000000000uusd
-export USER_2_GENESIS_COINS=10000000000stake,10000000000pool1,10000000000pool2,10000000000pool3,10000000000pool4
+export USER_1_GENESIS_COINS=10000000000ufury,10000000000uatom,10000000000uusd
+export USER_2_GENESIS_COINS=10000000000ufury,10000000000pool1,10000000000pool2,10000000000pool3,10000000000pool4
 
 # Bootstrap
 $BINARY init $CHAIN_ID --chain-id $CHAIN_ID
@@ -43,7 +40,7 @@ echo $USER_3 | $BINARY keys add user3 --keyring-backend test --recover
 $BINARY add-genesis-account $($BINARY keys show val1 --keyring-backend test -a) $VALIDATOR_1_GENESIS_COINS
 $BINARY add-genesis-account $($BINARY keys show user1 --keyring-backend test -a) $USER_1_GENESIS_COINS
 $BINARY add-genesis-account $($BINARY keys show user2 --keyring-backend test -a) $USER_2_GENESIS_COINS
-$BINARY gentx val1 50000000000000000stake --chain-id $CHAIN_ID --keyring-backend test
+$BINARY gentx val1 50000000000000000ufury --chain-id $CHAIN_ID --keyring-backend test
 $BINARY collect-gentxs
 
 # Check platform
@@ -85,8 +82,8 @@ Use the following values for the fields:
 
 ```json
 {
-  "title": "test",
-  "description": "test",
+  "title": "liquidstaking-param-change-proposal",
+  "description": "liquidstaking-param-change-proposal",
   "changes":
   [
     {
@@ -101,7 +98,7 @@ Use the following values for the fields:
       ]
     }
   ],
-  "deposit": "10000000stake"
+  "deposit": "10000000ufury"
 }
 ```
 
