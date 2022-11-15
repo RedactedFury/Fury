@@ -1,0 +1,19 @@
+{
+  "title": "liquidstaking-param-change-proposal",
+  "description": "liquidstaking-param-change-proposal",
+  "changes":
+  [
+    {
+      "subspace": "liquidstaking",
+      "key": "WhitelistedValidators",
+      "value":
+      [
+        {
+          "validator_address": "furyvaloper13w4ueuk80d3kmwk7ntlhp84fk0arlm3mugy5fe",
+          "target_weight": "10"
+        }
+      ]
+    }
+  ],
+  "deposit": "10000000ufury"
+}

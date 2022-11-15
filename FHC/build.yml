@@ -1,0 +1,24 @@
+version: '1.0.1'
+
+services:
+  node_1:
+    build:
+      context: ../
+      args:
+        PROJECT: fury
+        PROJECT_BIN: furyd
+        PROJECT_DIR: .fury
+        VERSION: v1.6.0
+        REPOSITORY: https://github.com/RedactedFury/FuryChainHub
+        NAMESPACE: REDSHIFT
+    ports:
+      - '26656:26656'
+      - '26657:26657'
+      - '1317:1317'
+    environment:
+      - MONIKER=redshift
+      - CHAIN_JSON=https://github.com/RedactedFury/FuryHubChain/blob/main/chain.json
+    env_file:
+      - ../.env
+    volumes:
+      - ./node-data:/root/.fury
