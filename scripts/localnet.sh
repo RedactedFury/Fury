@@ -2,7 +2,7 @@
 
 # Set localnet settings
 BINARY=furyd
-CHAIN_ID=localnet
+CHAIN_ID=redshift
 CHAIN_DIR=./data
 RPC_PORT=26657
 GRPC_PORT=9090
@@ -37,7 +37,7 @@ $BINARY add-genesis-account $($BINARY --home $CHAIN_DIR/$CHAIN_ID keys show user
 $BINARY add-genesis-account $($BINARY --home $CHAIN_DIR/$CHAIN_ID keys show user2 --keyring-backend test -a) $GENESIS_COINS --home $CHAIN_DIR/$CHAIN_ID 
 
 echo "Creating and collecting gentx..."
-$BINARY gentx validator 1000000000ufury --home $CHAIN_DIR/$CHAIN_ID --chain-id $CHAIN_ID --keyring-backend test
+$BINARY gentx validator 420000000000000ufury --home $CHAIN_DIR/$CHAIN_ID --chain-id $CHAIN_ID --keyring-backend test
 $BINARY collect-gentxs --home $CHAIN_DIR/$CHAIN_ID
 
 echo "Change settings in config.toml file..."

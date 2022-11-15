@@ -230,7 +230,7 @@ test-sim-after-import
 localnet: 
 	./scripts/localnet.sh
 
-.PHONY: redshift-1
+.PHONY: redshift
 
 ###############################################################################
 ###                                Linting                                  ###

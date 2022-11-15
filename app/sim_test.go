@@ -140,7 +140,7 @@ func TestAppImportExport(t *testing.T) {
 	require.NoError(t, simErr)
 
 	if config.Commit {
-		simapp.PrintStats(db)
+		simapp.PrintStats(newDB)
 	}
 
 	fmt.Printf("exporting genesis...\n")
