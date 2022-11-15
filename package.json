@@ -21,6 +21,9 @@
     "dfs",
     "cosmos-sdk"
   ],
+  "publishConfig": {
+   "@nimrostafarian:registry": "https://npm.pkg.github.com"
+ }
   "author": "nimrod",
   "license": "ISC",
   "bugs": {
