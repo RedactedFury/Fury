@@ -33,7 +33,7 @@
     ],
     },
     "genesis": {
-      "genesis_url": "https://raw.githubusercontent.com/redactedfury/furyhubchain/chain.json"
+      "genesis_url": ""
     }
   },
   "peers": {
