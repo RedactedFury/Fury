@@ -8,7 +8,7 @@ services:
         PROJECT: fury
         PROJECT_BIN: furyd
         PROJECT_DIR: .fury
-        VERSION: v1.6.0
+        VERSION: v0.1.0
         REPOSITORY: https://github.com/RedactedFury/FuryChainHub
         NAMESPACE: REDSHIFT
     ports:

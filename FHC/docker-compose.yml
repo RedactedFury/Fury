@@ -2,7 +2,7 @@ version: '0.1.0'
 
 services:
   node_1:
-    image: github.com/redactedfury/furychainhub:v0.1.0
+    image: ghcr.io/redactedfury/furyhubchain:main
     ports:
       - '26656:26656'
       - '26657:26657'
@@ -11,4 +11,4 @@ services:
       - MONIKER=redshift
       - CHAIN_JSON=https://github.com/RedactedFury/FuryHubChain/blob/main/chain.json
     volumes:
-      - ./node-data:/root/.furyd
+      - ./node-data:/root/.fury
