@@ -14,11 +14,11 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
-	minttypes "github.com/RedactedFury/FuryHubChain/x/mint/types"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/liquidstaking/simulation"
+	"github.com/RedactedFury/fury/x/liquidstaking/types"
+	minttypes "github.com/RedactedFury/fury/x/mint/types"
 )
 
 // TestWeightedOperations tests the weights of the operations.

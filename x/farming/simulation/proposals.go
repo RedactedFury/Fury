@@ -7,9 +7,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/farming/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/farming/types"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/farming/keeper"
+	"github.com/RedactedFury/fury/x/farming/types"
 )
 
 // Simulation operation weights constants.

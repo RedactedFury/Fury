@@ -5,7 +5,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	_ "github.com/stretchr/testify/suite"
 
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
+	"github.com/RedactedFury/fury/x/marketmaker/types"
 )
 
 func (suite *KeeperTestSuite) TestMarketMakerProposal() {

@@ -3,7 +3,7 @@ package cli
 import (
 	"strings"
 
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
+	"github.com/RedactedFury/fury/x/claim/types"
 )
 
 // NormalizeConditionType normalizes specified condition type.

@@ -6,7 +6,7 @@ import "fury/liquidstaking/v1beta1/liquidstaking.proto";
 import "gogoproto/gogo.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 
-option go_package = "github.com/RedactedFury/FuryHubChain/x/liquidstaking/types";
+option go_package = "github.com/RedactedFury/fury/x/liquidstaking/types";
 
 // Query defines the gRPC query service for the liquidstaking module.
 service Query {
@@ -16,7 +16,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns all parameters of the liquid staking module."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/tree/main/x/liquidstaking/spec"
+        url: "https://github.com/RedactedFury/fury/tree/main/x/liquidstaking/spec"
         description: "Find out more about the params"
       }
     };
@@ -27,7 +27,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns all liquid validators of the liquid staking module."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/tree/main/x/liquidstaking/spec"
+        url: "https://github.com/RedactedFury/fury/tree/main/x/liquidstaking/spec"
         description: "Find out more about the liquid validators"
       }
     };
@@ -38,7 +38,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns voting power of staking and liquid staking module's of the voter that can be exercised."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/tree/main/x/liquidstaking/spec"
+        url: "https://github.com/RedactedFury/fury/tree/main/x/liquidstaking/spec"
         description: "Find out more about the liquid validators"
       }
     };
@@ -50,7 +50,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns states of the liquid staking module."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/tree/main/x/liquidstaking/spec"
+        url: "https://github.com/RedactedFury/fury/tree/main/x/liquidstaking/spec"
         description: "Find out more about the liquid staking"
       }
     };

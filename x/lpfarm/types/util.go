@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/address"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/amm"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/liquidity/amm"
 )
 
 func DeriveFarmingPoolAddress(planId uint64) sdk.AccAddress {

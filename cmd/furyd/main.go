@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/cmd/furyd/cmd"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/cmd/furyd/cmd"
 )
 
 func main() {

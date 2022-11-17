@@ -23,10 +23,10 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	tmdb "github.com/tendermint/tm-db"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/liquidstaking/client/cli"
+	"github.com/RedactedFury/fury/x/liquidstaking/types"
 )
 
 type IntegrationTestSuite struct {

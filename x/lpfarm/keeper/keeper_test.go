@@ -11,13 +11,13 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
-	minttypes "github.com/RedactedFury/FuryHubChain/x/mint/types"
+	chain "github.com/RedactedFury/fury/app"
+	utils "github.com/RedactedFury/fury/types"
+	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/lpfarm"
+	"github.com/RedactedFury/fury/x/lpfarm/keeper"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
+	minttypes "github.com/RedactedFury/fury/x/mint/types"
 )
 
 var (

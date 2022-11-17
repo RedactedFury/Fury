@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/farming/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/farming/types"
+	"github.com/RedactedFury/fury/x/farming/keeper"
+	"github.com/RedactedFury/fury/x/farming/types"
 )
 
 func EndBlocker(ctx sdk.Context, k keeper.Keeper) {

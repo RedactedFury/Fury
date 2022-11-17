@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	"github.com/stretchr/testify/require"
 
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/client/cli"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/lpfarm/client/cli"
 )
 
 func TestParseFarmingPlanProposal(t *testing.T) {

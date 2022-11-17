@@ -18,10 +18,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	"github.com/RedactedFury/fury/x/liquidstaking/client/cli"
+	"github.com/RedactedFury/fury/x/liquidstaking/keeper"
+	"github.com/RedactedFury/fury/x/liquidstaking/simulation"
+	"github.com/RedactedFury/fury/x/liquidstaking/types"
 )
 
 var (

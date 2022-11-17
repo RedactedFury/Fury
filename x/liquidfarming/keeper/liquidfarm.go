@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/types"
-	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/liquidfarming/types"
+	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 // LiquidFarm handles types.MsgLiquidFarm to farm.

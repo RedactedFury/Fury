@@ -18,10 +18,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/liquidity/client/cli"
+	"github.com/RedactedFury/fury/x/liquidity/keeper"
+	"github.com/RedactedFury/fury/x/liquidity/simulation"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 var (

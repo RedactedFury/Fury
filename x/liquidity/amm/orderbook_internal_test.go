@@ -8,7 +8,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
+	utils "github.com/RedactedFury/fury/types"
 )
 
 func newOrder(dir OrderDirection, price sdk.Dec, amt sdk.Int) *BaseOrder {

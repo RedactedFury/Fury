@@ -11,8 +11,8 @@ import (
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/liquidity/client/cli"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 var commonArgs = []string{

@@ -13,9 +13,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	banksimulation "github.com/cosmos/cosmos-sdk/x/bank/simulation"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/claim/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/claim/simulation"
+	"github.com/RedactedFury/fury/x/claim/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

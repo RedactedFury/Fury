@@ -11,9 +11,9 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/x/claim/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/x/claim/simulation"
+	"github.com/RedactedFury/fury/x/claim/types"
 )
 
 func TestSimulateMsgClaim(t *testing.T) {

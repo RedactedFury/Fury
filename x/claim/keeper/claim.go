@@ -7,8 +7,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	v1_1_0 "github.com/RedactedFury/FuryHubChain/app/upgrades/mainnet/v1.1.0"
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
+	v1_1_0 "github.com/RedactedFury/fury/app/upgrades/mainnet/v1.1.0"
+	"github.com/RedactedFury/fury/x/claim/types"
 )
 
 func (k Keeper) Claim(ctx sdk.Context, msg *types.MsgClaim) (types.ClaimRecord, error) {

@@ -6,10 +6,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
+	utils "github.com/RedactedFury/fury/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/mint/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/mint/types"
+	"github.com/RedactedFury/fury/x/mint/keeper"
+	"github.com/RedactedFury/fury/x/mint/types"
 )
 
 // BeginBlocker mints new tokens for the previous block.

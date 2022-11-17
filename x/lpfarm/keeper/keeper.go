@@ -8,7 +8,7 @@ import (
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
 )
 
 // Keeper of the module's store.

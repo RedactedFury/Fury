@@ -3,9 +3,9 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/lpfarm/keeper"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
 )
 
 func (s *KeeperTestSuite) TestRewardsInvariants() {

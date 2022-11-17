@@ -11,7 +11,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	"github.com/RedactedFury/fury/x/liquidstaking/types"
 )
 
 // GetQueryCmd returns a root CLI command handler for all x/liquidstaking query commands.

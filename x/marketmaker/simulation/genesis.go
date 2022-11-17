@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
+	"github.com/RedactedFury/fury/x/marketmaker/types"
 )
 
 // DONTCOVER

@@ -4,8 +4,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v1liquidity "github.com/RedactedFury/FuryHubChain/x/liquidity/legacy/v1"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	v1liquidity "github.com/RedactedFury/fury/x/liquidity/legacy/v1"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 func MigratePool(store sdk.KVStore, cdc codec.BinaryCodec) error {

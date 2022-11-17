@@ -10,7 +10,7 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
+	utils "github.com/RedactedFury/fury/types"
 )
 
 // Parameter store keys

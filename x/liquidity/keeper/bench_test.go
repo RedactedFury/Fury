@@ -8,11 +8,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/amm"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	chain "github.com/RedactedFury/fury/app"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/liquidity"
+	"github.com/RedactedFury/fury/x/liquidity/amm"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 func BenchmarkMatching(b *testing.B) {

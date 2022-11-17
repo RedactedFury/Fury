@@ -11,7 +11,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	"github.com/RedactedFury/fury/x/liquidstaking/types"
 )
 
 type msgServer struct {

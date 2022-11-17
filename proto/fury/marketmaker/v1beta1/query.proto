@@ -12,7 +12,7 @@ import "google/protobuf/timestamp.proto";
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 
-option go_package = "github.com/RedactedFury/FuryHubChain/x/marketmaker/types";
+option go_package = "github.com/RedactedFury/fury/x/marketmaker/types";
 
 // Query defines the gRPC query service for the marketmaker module.
 service Query {
@@ -22,7 +22,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns all parameters of the marketmaker module."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/blob/main/x/marketmaker/spec/07_params.md"
+        url: "https://github.com/RedactedFury/fury/blob/main/x/marketmaker/spec/07_params.md"
         description: "Find out more about the params"
       }
     };
@@ -34,7 +34,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns a list of all market makers with pagination result."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/tree/main/docs"
+        url: "https://github.com/RedactedFury/fury/tree/main/docs"
         description: "Find out more about the query and error codes"
       }
       responses: {
@@ -66,7 +66,7 @@ service Query {
     option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
       description: "Returns the marketmaker's claimable incentive."
       external_docs: {
-        url: "https://github.com/RedactedFury/FuryHubChain/tree/main/docs"
+        url: "https://github.com/RedactedFury/fury/tree/main/docs"
         description: "Find out more about the query and error codes"
       }
       responses: {

@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	farmingtypes "github.com/RedactedFury/FuryHubChain/x/farming/types"
+	farmingtypes "github.com/RedactedFury/fury/x/farming/types"
 )
 
 const (

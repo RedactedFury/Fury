@@ -11,12 +11,12 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	chain "github.com/RedactedFury/fury/app"
+	utils "github.com/RedactedFury/fury/types"
+	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/lpfarm/keeper"
+	"github.com/RedactedFury/fury/x/lpfarm/simulation"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
 )
 
 func TestSimTestSuite(t *testing.T) {

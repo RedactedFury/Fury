@@ -17,7 +17,7 @@ services:
       - '1317:1317'
     environment:
       - MONIKER=redshift
-      - CHAIN_JSON=https://github.com/RedactedFury/FuryHubChain/blob/main/chain.json
+      - CHAIN_JSON=https://github.com/RedactedFury/fury/blob/main/chain.json
     env_file:
       - ../.env
     volumes:

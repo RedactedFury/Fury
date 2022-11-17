@@ -35,14 +35,14 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/RedactedFury/FuryHubChain/x/claim"
-	"github.com/RedactedFury/FuryHubChain/x/farming"
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm"
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker"
-	"github.com/RedactedFury/FuryHubChain/x/mint"
+	"github.com/RedactedFury/fury/x/claim"
+	"github.com/RedactedFury/fury/x/farming"
+	"github.com/RedactedFury/fury/x/liquidfarming"
+	"github.com/RedactedFury/fury/x/liquidity"
+	"github.com/RedactedFury/fury/x/liquidstaking"
+	"github.com/RedactedFury/fury/x/lpfarm"
+	"github.com/RedactedFury/fury/x/marketmaker"
+	"github.com/RedactedFury/fury/x/mint"
 )
 
 func TestSimAppExportAndBlockedAddrs(t *testing.T) {

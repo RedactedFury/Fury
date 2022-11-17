@@ -18,10 +18,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/mint/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/mint/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/mint/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/mint/types"
+	"github.com/RedactedFury/fury/x/mint/client/cli"
+	"github.com/RedactedFury/fury/x/mint/keeper"
+	"github.com/RedactedFury/fury/x/mint/simulation"
+	"github.com/RedactedFury/fury/x/mint/types"
 )
 
 var (

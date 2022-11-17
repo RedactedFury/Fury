@@ -18,10 +18,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	"github.com/RedactedFury/fury/x/lpfarm/client/cli"
+	"github.com/RedactedFury/fury/x/lpfarm/keeper"
+	"github.com/RedactedFury/fury/x/lpfarm/simulation"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
 )
 
 var (

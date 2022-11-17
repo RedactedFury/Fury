@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/RedactedFury/FuryHubChain/x/claim/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
+	"github.com/RedactedFury/fury/x/claim/keeper"
+	"github.com/RedactedFury/fury/x/claim/types"
 )
 
 // NewHandler creates an sdk.Handler for all the claim type messages.

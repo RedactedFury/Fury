@@ -35,13 +35,13 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	claimtypes "github.com/RedactedFury/FuryHubChain/x/claim/types"
-	farmingtypes "github.com/RedactedFury/FuryHubChain/x/farming/types"
-	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
-	liquidstakingtypes "github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
-	lpfarmtypes "github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
-	marketmakertypes "github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
-	minttypes "github.com/RedactedFury/FuryHubChain/x/mint/types"
+	claimtypes "github.com/RedactedFury/fury/x/claim/types"
+	farmingtypes "github.com/RedactedFury/fury/x/farming/types"
+	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	liquidstakingtypes "github.com/RedactedFury/fury/x/liquidstaking/types"
+	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
+	marketmakertypes "github.com/RedactedFury/fury/x/marketmaker/types"
+	minttypes "github.com/RedactedFury/fury/x/mint/types"
 )
 
 // Get flags every time the simulator is run

@@ -8,9 +8,9 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 
-	"github.com/RedactedFury/FuryHubChain/app/params"
+	"github.com/RedactedFury/fury/app/params"
 
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/client/cli"
+	"github.com/RedactedFury/fury/x/marketmaker/client/cli"
 )
 
 func TestParseMarketMakerProposal(t *testing.T) {

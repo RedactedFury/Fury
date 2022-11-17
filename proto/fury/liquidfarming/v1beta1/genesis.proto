@@ -6,7 +6,7 @@ import "google/protobuf/timestamp.proto";
 import "fury/liquidfarming/v1beta1/liquidfarming.proto";
 import "fury/liquidfarming/v1beta1/params.proto";
 
-option go_package = "github.com/RedactedFury/FuryHubChain/x/liquidfarming/types";
+option go_package = "github.com/RedactedFury/fury/x/liquidfarming/types";
 
 // GenesisState defines the liquidfarming module's genesis state.
 message GenesisState {

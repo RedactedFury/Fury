@@ -9,7 +9,7 @@ import (
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/client/cli"
+	"github.com/RedactedFury/fury/x/liquidfarming/client/cli"
 )
 
 var commonArgs = []string{

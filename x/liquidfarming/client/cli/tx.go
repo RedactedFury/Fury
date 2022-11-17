@@ -13,8 +13,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/types"
+	"github.com/RedactedFury/fury/x/liquidfarming/keeper"
+	"github.com/RedactedFury/fury/x/liquidfarming/types"
 )
 
 // GetTxCmd returns the cli transaction commands for the module.

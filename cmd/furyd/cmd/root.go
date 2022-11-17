@@ -32,8 +32,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	farmingparams "github.com/RedactedFury/FuryHubChain/app/params"
+	chain "github.com/RedactedFury/fury/app"
+	farmingparams "github.com/RedactedFury/fury/app/params"
 )
 
 var (
@@ -77,7 +77,7 @@ func NewRootCmd() (*cobra.Command, farmingparams.EncodingConfig) {
 
 	rootCmd := &cobra.Command{
 		Use:   chain.AppBinary,
-		Short: "FuryHubChain App",
+		Short: "fury App",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			// set the default command outputs
 			cmd.SetOut(cmd.OutOrStdout())

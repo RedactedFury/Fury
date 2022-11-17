@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
+	"github.com/RedactedFury/fury/x/claim/types"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

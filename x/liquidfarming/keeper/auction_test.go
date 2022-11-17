@@ -3,9 +3,9 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/types"
-	lpfarmtypes "github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/liquidfarming/types"
+	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
 
 	_ "github.com/stretchr/testify/suite"
 )

@@ -15,11 +15,11 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	tmdb "github.com/tendermint/tm-db"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/farming/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/farming/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/farming/types"
+	chain "github.com/RedactedFury/fury/app"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/farming/client/cli"
+	"github.com/RedactedFury/fury/x/farming/keeper"
+	"github.com/RedactedFury/fury/x/farming/types"
 )
 
 type IntegrationTestSuite struct {

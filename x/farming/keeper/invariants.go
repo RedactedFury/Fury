@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/farming/types"
+	"github.com/RedactedFury/fury/x/farming/types"
 )
 
 // RegisterInvariants registers all farming invariants.

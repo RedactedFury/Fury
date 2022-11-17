@@ -10,9 +10,9 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/types"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/liquidstaking/simulation"
+	"github.com/RedactedFury/fury/x/liquidstaking/types"
 )
 
 func TestProposalContents(t *testing.T) {

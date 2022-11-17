@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/keeper"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/liquidity/keeper"
 )
 
 func (s *KeeperTestSuite) TestDepositCoinsEscrowInvariant() {

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/suite"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
+	"github.com/RedactedFury/fury/x/marketmaker/types"
 )
 
 var (

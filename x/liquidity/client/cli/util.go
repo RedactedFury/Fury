@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 // excConditions returns true when exactly one condition is true.

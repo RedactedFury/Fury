@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/mint/types"
+	"github.com/RedactedFury/fury/x/mint/types"
 )
 
 var _ types.QueryServer = Keeper{}

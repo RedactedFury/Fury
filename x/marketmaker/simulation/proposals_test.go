@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/marketmaker/simulation"
+	"github.com/RedactedFury/fury/x/marketmaker/types"
 )
 
 func TestProposalContents(t *testing.T) {

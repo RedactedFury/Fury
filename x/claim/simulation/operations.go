@@ -9,11 +9,11 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/RedactedFury/FuryHubChain/app/params"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/claim/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/claim/types"
-	minttypes "github.com/RedactedFury/FuryHubChain/x/mint/types"
+	appparams "github.com/RedactedFury/fury/app/params"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/claim/keeper"
+	"github.com/RedactedFury/fury/x/claim/types"
+	minttypes "github.com/RedactedFury/fury/x/mint/types"
 )
 
 const (

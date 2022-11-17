@@ -7,7 +7,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
 )
 
 // CreatePrivatePlan creates a new private farming plan.

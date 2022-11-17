@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 var (

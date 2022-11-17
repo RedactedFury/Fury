@@ -11,10 +11,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/types"
-	liquiditytypes "github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/x/liquidfarming/keeper"
+	"github.com/RedactedFury/fury/x/liquidfarming/types"
+	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
 
 	_ "github.com/stretchr/testify/suite"
 )

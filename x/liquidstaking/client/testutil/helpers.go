@@ -11,7 +11,7 @@ import (
 	govcli "github.com/cosmos/cosmos-sdk/x/gov/client/cli"
 	paramscli "github.com/cosmos/cosmos-sdk/x/params/client/cli"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidstaking/client/cli"
+	"github.com/RedactedFury/fury/x/liquidstaking/client/cli"
 )
 
 var commonArgs = []string{

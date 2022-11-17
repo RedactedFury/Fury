@@ -9,8 +9,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/RedactedFury/FuryHubChain/x/farming/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/farming/types"
+	"github.com/RedactedFury/fury/x/farming/simulation"
+	"github.com/RedactedFury/fury/x/farming/types"
 )
 
 func TestDecodeFarmingStore(t *testing.T) {

@@ -7,10 +7,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
-	minttypes "github.com/RedactedFury/FuryHubChain/x/mint/types"
+	"github.com/RedactedFury/fury/app/params"
+	"github.com/RedactedFury/fury/x/marketmaker/keeper"
+	"github.com/RedactedFury/fury/x/marketmaker/types"
+	minttypes "github.com/RedactedFury/fury/x/mint/types"
 )
 
 // Simulation operation weights constants.

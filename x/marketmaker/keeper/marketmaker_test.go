@@ -3,7 +3,7 @@ package keeper_test
 import (
 	_ "github.com/stretchr/testify/suite"
 
-	"github.com/RedactedFury/FuryHubChain/x/marketmaker/types"
+	"github.com/RedactedFury/fury/x/marketmaker/types"
 )
 
 func (suite *KeeperTestSuite) TestApplyMarketMaker() {

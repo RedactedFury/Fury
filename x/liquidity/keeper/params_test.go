@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 func (s *KeeperTestSuite) TestGetBatchSize() {

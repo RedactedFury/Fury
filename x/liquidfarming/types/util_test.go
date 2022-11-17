@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/address"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/types"
+	"github.com/RedactedFury/fury/x/liquidfarming/types"
 )
 
 func TestPayingReserveAddress(t *testing.T) {

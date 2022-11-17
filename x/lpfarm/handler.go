@@ -5,8 +5,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/keeper"
-	"github.com/RedactedFury/FuryHubChain/x/lpfarm/types"
+	"github.com/RedactedFury/fury/x/lpfarm/keeper"
+	"github.com/RedactedFury/fury/x/lpfarm/types"
 )
 
 // NewHandler returns a new msg handler.

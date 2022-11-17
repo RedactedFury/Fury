@@ -18,11 +18,11 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	dbm "github.com/tendermint/tm-db"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/app/params"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/client/cli"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/app/params"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/liquidity/client/cli"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 type IntegrationTestSuite struct {

@@ -9,9 +9,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/RedactedFury/FuryHubChain/app"
-	v2 "github.com/RedactedFury/FuryHubChain/x/mint/legacy/v2"
-	"github.com/RedactedFury/FuryHubChain/x/mint/types"
+	"github.com/RedactedFury/fury/app"
+	v2 "github.com/RedactedFury/fury/x/mint/legacy/v2"
+	"github.com/RedactedFury/fury/x/mint/types"
 )
 
 func TestStoreMigration(t *testing.T) {

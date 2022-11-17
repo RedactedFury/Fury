@@ -10,9 +10,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/mint/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/mint/types"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/mint/simulation"
+	"github.com/RedactedFury/fury/x/mint/types"
 )
 
 func TestDecodeLastBlockTimeStore(t *testing.T) {

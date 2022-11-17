@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	utils "github.com/RedactedFury/FuryHubChain/types"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/liquidity/types"
+	chain "github.com/RedactedFury/fury/app"
+	utils "github.com/RedactedFury/fury/types"
+	"github.com/RedactedFury/fury/x/liquidity/simulation"
+	"github.com/RedactedFury/fury/x/liquidity/types"
 )
 
 func TestDecodeLiquidityStore(t *testing.T) {

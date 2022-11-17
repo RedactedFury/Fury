@@ -9,8 +9,8 @@ import (
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/FuryHubChain/app"
-	"github.com/RedactedFury/FuryHubChain/x/mint/types"
+	chain "github.com/RedactedFury/fury/app"
+	"github.com/RedactedFury/fury/x/mint/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

@@ -14,8 +14,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/simulation"
-	"github.com/RedactedFury/FuryHubChain/x/liquidfarming/types"
+	"github.com/RedactedFury/fury/x/liquidfarming/simulation"
+	"github.com/RedactedFury/fury/x/liquidfarming/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

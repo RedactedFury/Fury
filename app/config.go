@@ -1,7 +1,7 @@
 package app
 
 const (
-	AppName        = "FuryHubChain"
+	AppName        = "fury"
 	AppUserHomeDir = ".fury"
 	AppBinary      = "furyd"
 
