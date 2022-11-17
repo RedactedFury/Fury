@@ -11,10 +11,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/redactedfury/app"
-	v2_0_0 "github.com/redactedfury/app/upgrades/mainnet/v2.0.0"
-	"github.com/redactedfury/cmd/crescentd/cmd"
-	utils "github.com/redactedfury/types"
+	"github.com/redactedfury/fury/app"
+	v2_0_0 "github.com/redactedfury/fury/app/upgrades/mainnet/v2.0.0"
+	"github.com/redactedfury/cmd/furyd/cmd"
+	utils "github.com/redactedfury/fury/types"
 )
 
 type UpgradeTestSuite struct {

@@ -8,10 +8,10 @@ import (
 	budgetkeeper "github.com/tendermint/budget/x/budget/keeper"
 	budgettypes "github.com/tendermint/budget/x/budget/types"
 
-	utils "github.com/redactedfury/types"
-	liquiditykeeper "github.com/redactedfury/x/liquidity/keeper"
-	mintkeeper "github.com/redactedfury/x/mint/keeper"
-	minttypes "github.com/redactedfury/x/mint/types"
+	utils "github.com/redactedfury/fury/types"
+	liquiditykeeper "github.com/redactedfury/fury/x/liquidity/keeper"
+	mintkeeper "github.com/redactedfury/fury/x/mint/keeper"
+	minttypes "github.com/redactedfury/fury/x/mint/types"
 )
 
 const UpgradeName = "v2.0.0"

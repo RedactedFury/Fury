@@ -10,17 +10,17 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/redactedfury/app"
-	v3 "github.com/redactedfury/app/upgrades/mainnet/v3"
-	"github.com/redactedfury/cmd/crescentd/cmd"
-	utils "github.com/redactedfury/types"
-	"github.com/redactedfury/x/farming"
-	farmingkeeper "github.com/redactedfury/x/farming/keeper"
-	farmingtypes "github.com/redactedfury/x/farming/types"
-	liquiditytypes "github.com/redactedfury/x/liquidity/types"
-	"github.com/redactedfury/x/lpfarm"
-	lpfarmtypes "github.com/redactedfury/x/lpfarm/types"
-	marketmakertypes "github.com/redactedfury/x/marketmaker/types"
+	chain "github.com/redactedfury/fury/app"
+	v3 "github.com/redactedfury/fury/app/upgrades/mainnet/v3"
+	"github.com/redactedfury/cmd/furyd/cmd"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/farming"
+	farmingkeeper "github.com/redactedfury/fury/x/farming/keeper"
+	farmingtypes "github.com/redactedfury/fury/x/farming/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/lpfarm"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
+	marketmakertypes "github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 type UpgradeTestSuite struct {
@@ -61,8 +61,8 @@ func (s *UpgradeTestSuite) TestUpgradeV3() {
 				marketmakerParams := s.app.MarketMakerKeeper.GetParams(s.ctx)
 				s.Require().EqualValues(liquidityParams.MaxNumMarketMakingOrderTicks, liquiditytypes.DefaultMaxNumMarketMakingOrderTicks)
 				s.Require().EqualValues(marketmakerParams.IncentivePairs, []marketmakertypes.IncentivePair(nil))
-				s.Require().EqualValues(marketmakerParams.DepositAmount, sdk.NewCoins(sdk.NewCoin("ucre", sdk.NewInt(1000000000))))
-				s.Require().EqualValues(marketmakerParams.IncentiveBudgetAddress, "cre1ddn66jv0sjpmck0ptegmhmqtn35qsg2vxyk2hn9sqf4qxtzqz3sq3qhhde")
+				s.Require().EqualValues(marketmakerParams.DepositAmount, sdk.NewCoins(sdk.NewCoin("ufury", sdk.NewInt(1000000000))))
+				s.Require().EqualValues(marketmakerParams.IncentiveBudgetAddress, "fury1ddn66jv0sjpmck0ptegmhmqtn35qsg2vxyk2hn9sqf4qxtzqz3sqyexl7e")
 				s.Require().EqualValues(marketmakerParams.Common, marketmakertypes.Common{
 					MinOpenRatio:      sdk.MustNewDecFromStr("0.5"),
 					MinOpenDepthRatio: sdk.MustNewDecFromStr("0.1"),

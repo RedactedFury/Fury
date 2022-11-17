@@ -9,15 +9,15 @@ import (
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	farmingkeeper "github.com/redactedfury/x/farming/keeper"
-	farmingtypes "github.com/redactedfury/x/farming/types"
-	liquidfarmingtypes "github.com/redactedfury/x/liquidfarming/types"
-	liquiditykeeper "github.com/redactedfury/x/liquidity/keeper"
-	liquiditytypes "github.com/redactedfury/x/liquidity/types"
-	lpfarmkeeper "github.com/redactedfury/x/lpfarm/keeper"
-	lpfarmtypes "github.com/redactedfury/x/lpfarm/types"
-	marketmakerkeeper "github.com/redactedfury/x/marketmaker/keeper"
-	marketmakertypes "github.com/redactedfury/x/marketmaker/types"
+	farmingkeeper "github.com/redactedfury/fury/x/farming/keeper"
+	farmingtypes "github.com/redactedfury/fury/x/farming/types"
+	liquidfarmingtypes "github.com/redactedfury/fury/x/liquidfarming/types"
+	liquiditykeeper "github.com/redactedfury/fury/x/liquidity/keeper"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	lpfarmkeeper "github.com/redactedfury/fury/x/lpfarm/keeper"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
+	marketmakerkeeper "github.com/redactedfury/fury/x/marketmaker/keeper"
+	marketmakertypes "github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 const UpgradeName = "v3"
@@ -37,11 +37,11 @@ func UpgradeHandler(
 
 		// Set param for new market maker module
 		marketmakerParams := marketmakertypes.DefaultParams()
-		marketmakerParams.DepositAmount = sdk.NewCoins(sdk.NewCoin("ucre", sdk.NewInt(1000000000)))
+		marketmakerParams.DepositAmount = sdk.NewCoins(sdk.NewCoin("ufury", sdk.NewInt(1000000000)))
 		marketmakerKeeper.SetParams(ctx, marketmakerParams)
 
 		lpfarmKeeper.SetPrivatePlanCreationFee(
-			ctx, sdk.NewCoins(sdk.NewInt64Coin("ucre", 100_000000)))
+			ctx, sdk.NewCoins(sdk.NewInt64Coin("ufury", 100_000000)))
 		// Move fees collected in the farming module's fee collector.
 		farmingFeeCollector, _ := sdk.AccAddressFromBech32(farmingKeeper.GetParams(ctx).FarmingFeeCollector)
 		farmingFees := bankKeeper.SpendableCoins(ctx, farmingFeeCollector)
