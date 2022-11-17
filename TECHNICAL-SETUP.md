@@ -9,7 +9,7 @@ Click the GitHub icon in the sidebar for GitHub integration and follow the promp
 
 Clone the repos you work in
 
-- Fork or clone the https://github.com/crescent-network/crescent repository.
+- Fork or clone the https://github.com/redactedfury/fury repository.
 
 Internal Tendermint users have different permissions, if you're not sure, fork the repo.
 

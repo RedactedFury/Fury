@@ -37,7 +37,7 @@ Note that [jq](https://stedolan.github.io/jq/) is recommended to be installed as
 
 <!-- markdown-link-check-disable -->
 
-++ https://github.com/crescent-network/crescent/blob/main/proto/crescent/farming/v1beta1/tx.proto
+++ https://github.com/redactedfury/fury/blob/main/proto/crescent/farming/v1beta1/tx.proto
 
 ## CreateFixedAmountPlan
 
@@ -256,7 +256,7 @@ crescentd tx farming remove-plan 1 \
 
 <!-- markdown-link-check-disable -->
 
-++ https://github.com/crescent-network/crescent/blob/main/proto/crescent/farming/v1beta1/query.proto
+++ https://github.com/redactedfury/fury/blob/main/proto/crescent/farming/v1beta1/query.proto
 
 ## Params
 

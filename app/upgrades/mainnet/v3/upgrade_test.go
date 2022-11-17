@@ -10,17 +10,17 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/crescent-network/crescent/v3/app"
-	v3 "github.com/crescent-network/crescent/v3/app/upgrades/mainnet/v3"
-	"github.com/crescent-network/crescent/v3/cmd/crescentd/cmd"
-	utils "github.com/crescent-network/crescent/v3/types"
-	"github.com/crescent-network/crescent/v3/x/farming"
-	farmingkeeper "github.com/crescent-network/crescent/v3/x/farming/keeper"
-	farmingtypes "github.com/crescent-network/crescent/v3/x/farming/types"
-	liquiditytypes "github.com/crescent-network/crescent/v3/x/liquidity/types"
-	"github.com/crescent-network/crescent/v3/x/lpfarm"
-	lpfarmtypes "github.com/crescent-network/crescent/v3/x/lpfarm/types"
-	marketmakertypes "github.com/crescent-network/crescent/v3/x/marketmaker/types"
+	chain "github.com/redactedfury/app"
+	v3 "github.com/redactedfury/app/upgrades/mainnet/v3"
+	"github.com/redactedfury/cmd/crescentd/cmd"
+	utils "github.com/redactedfury/types"
+	"github.com/redactedfury/x/farming"
+	farmingkeeper "github.com/redactedfury/x/farming/keeper"
+	farmingtypes "github.com/redactedfury/x/farming/types"
+	liquiditytypes "github.com/redactedfury/x/liquidity/types"
+	"github.com/redactedfury/x/lpfarm"
+	lpfarmtypes "github.com/redactedfury/x/lpfarm/types"
+	marketmakertypes "github.com/redactedfury/x/marketmaker/types"
 )
 
 type UpgradeTestSuite struct {

@@ -27,7 +27,7 @@ One use case is to use the module to provide incentives for liquidity pool inves
 
 ```bash
 # Clone the demo project and build `crescentd` for testing
-git clone https://github.com/crescent-network/crescent.git
+git clone https://github.com/redactedfury/fury.git
 cd crescent
 make install-testing
 ```

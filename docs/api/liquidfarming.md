@@ -13,7 +13,7 @@ This document provides a high-level overview of what gRPC-gateway REST routes ar
 
 <!-- markdown-link-check-disable -->
 
-++https://github.com/crescent-network/crescent/blob/main/proto/crescent/liquidfarming/v1beta1/query.proto
+++https://github.com/redactedfury/fury/blob/main/proto/crescent/liquidfarming/v1beta1/query.proto
 
 - [Params](#Params)
 - [LiquidFarms](#Liquidfarms)

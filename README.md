@@ -8,13 +8,13 @@
 <p align="center">
 Expanding DeFi capabilities through InterBlockchain Technology<br/><br/>
 
-<a href="https://pkg.go.dev/github.com/crescent-network/crescent">
-    <img src="https://pkg.go.dev/badge/github.com/crescent-network/crescent">
+<a href="https://pkg.go.dev/github.com/redactedfury/fury">
+    <img src="https://pkg.go.dev/badge/github.com/redactedfury/fury">
 </a>
-<a href="https://codecov.io/gh/crescent-network/crescent">
-    <img src="https://codecov.io/gh/crescent-network/crescent/branch/main/graph/badge.svg">
+<a href="https://codecov.io/gh/redactedfury/fury">
+    <img src="https://codecov.io/gh/redactedfury/fury/branch/main/graph/badge.svg">
 </a>
-<img src="https://github.com/crescent-network/crescent/actions/workflows/test.yml/badge.svg">
+<img src="https://github.com/redactedfury/fury/actions/workflows/test.yml/badge.svg">
 </p>
 
 
@@ -31,7 +31,7 @@ Crescent Network is a DeFi Hub in Cosmos ecosystem with a goal of empowering use
 
 ### Use binaries
 
-Download a pre-built binary for your operating system. You can find the latest binaries in this [releases](https://github.com/crescent-network/crescent/releases) page.
+Download a pre-built binary for your operating system. You can find the latest binaries in this [releases](https://github.com/redactedfury/fury/releases) page.
 
 ### Build from source
 
@@ -43,10 +43,10 @@ If you haven't already, install Go by following the installation guide in [the o
 
 **Step 2. Get source code**
 
-Use `git` to retrieve Crescent Core from [the official repository](https://github.com/crescent-network/crescent) and checkout latest release, which will install the `crescentd` binary.
+Use `git` to retrieve Crescent Core from [the official repository](https://github.com/redactedfury/fury) and checkout latest release, which will install the `crescentd` binary.
 
 ```bash
-git clone https://github.com/crescent-network/crescent.git
+git clone https://github.com/redactedfury/fury.git
 cd crescent && git checkout release/v3.0.x
 make install
 ```

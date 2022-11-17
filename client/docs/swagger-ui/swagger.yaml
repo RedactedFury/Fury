@@ -20879,7 +20879,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/historical_rewards/{staking_coin_denom}':
     get:
       summary: >-
@@ -21212,7 +21212,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   /crescent/farming/v1beta1/params:
     get:
       summary: Params returns parameters of the farming module.
@@ -21475,7 +21475,7 @@ paths:
       externalDocs:
         description: Find out more about the params
         url: >-
-          https://github.com/crescent-network/crescent/blob/main/x/farming/spec/07_params.md
+          https://github.com/redactedfury/fury/blob/main/x/farming/spec/07_params.md
   /crescent/farming/v1beta1/plans:
     get:
       summary: Plans returns all plans.
@@ -21984,7 +21984,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/plans/{plan_id}':
     get:
       summary: Plan returns a specific plan.
@@ -22393,7 +22393,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/positions/{farmer}':
     get:
       description: Returns the farming position of the farmer
@@ -22668,7 +22668,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/queued_stakings/{farmer}':
     get:
       summary: QueryStakings returns all queued stakings by a farmer.
@@ -22989,7 +22989,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/rewards/{farmer}':
     get:
       summary: Rewards returns rewards for a farmer
@@ -23323,7 +23323,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/stakings/{farmer}':
     get:
       summary: Stakings returns all stakings by a farmer.
@@ -23646,7 +23646,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/total_stakings/{staking_coin_denom}':
     get:
       summary: TotalStakings returns total staking amount for a staking coin denom
@@ -23869,7 +23869,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   '/crescent/farming/v1beta1/unharvested_rewards/{farmer}':
     get:
       summary: UnharvestedRewards returns unharvested rewards for a farmer
@@ -24203,7 +24203,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   /crescent/liquidity/v1beta1/order_books:
     get:
       operationId: OrderBooks
@@ -26729,7 +26729,7 @@ paths:
       externalDocs:
         description: Find out more about the params
         url: >-
-          https://github.com/crescent-network/crescent/tree/main/x/liquidstaking/spec
+          https://github.com/redactedfury/fury/tree/main/x/liquidstaking/spec
   /crescent/liquidstaking/v1beta1/states:
     get:
       summary: States returns states of the liquidstaking module.
@@ -26825,7 +26825,7 @@ paths:
       externalDocs:
         description: Find out more about the liquid staking
         url: >-
-          https://github.com/crescent-network/crescent/tree/main/x/liquidstaking/spec
+          https://github.com/redactedfury/fury/tree/main/x/liquidstaking/spec
   /crescent/liquidstaking/v1beta1/validators:
     get:
       summary: >-
@@ -26911,7 +26911,7 @@ paths:
       externalDocs:
         description: Find out more about the liquid validators
         url: >-
-          https://github.com/crescent-network/crescent/tree/main/x/liquidstaking/spec
+          https://github.com/redactedfury/fury/tree/main/x/liquidstaking/spec
   '/crescent/liquidstaking/v1beta1/voting_power/{voter}':
     get:
       summary: >-
@@ -26997,7 +26997,7 @@ paths:
       externalDocs:
         description: Find out more about the liquid validators
         url: >-
-          https://github.com/crescent-network/crescent/tree/main/x/liquidstaking/spec
+          https://github.com/redactedfury/fury/tree/main/x/liquidstaking/spec
   /crescent/mint/v1beta1/last_block_time:
     get:
       summary: LastBlockTime returns the last block time.
@@ -27772,7 +27772,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   /crescent/marketmaker/v1beta1/marketmakers:
     get:
       summary: MarketMakers returns all market makers.
@@ -28103,7 +28103,7 @@ paths:
         - Query
       externalDocs:
         description: Find out more about the query and error codes
-        url: 'https://github.com/crescent-network/crescent/tree/main/docs'
+        url: 'https://github.com/redactedfury/fury/tree/main/docs'
   /crescent/marketmaker/v1beta1/params:
     get:
       summary: Params returns parameters of the marketmaker module.
@@ -28400,7 +28400,7 @@ paths:
       externalDocs:
         description: Find out more about the params
         url: >-
-          https://github.com/crescent-network/crescent/blob/main/x/marketmaker/spec/07_params.md
+          https://github.com/redactedfury/fury/blob/main/x/marketmaker/spec/07_params.md
 securityDefinitions:
   kms:
     type: basic

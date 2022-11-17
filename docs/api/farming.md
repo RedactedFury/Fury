@@ -17,7 +17,7 @@ This document provides a high-level overview of what gRPC-gateway REST routes ar
 ## gRPC-gateway REST Routes
 
 <!-- markdown-link-check-disable -->
-++https://github.com/crescent-network/crescent/blob/main/proto/crescent/farming/v1beta1/query.proto 
+++https://github.com/redactedfury/fury/blob/main/proto/crescent/farming/v1beta1/query.proto 
 
 - [Params](#Params)
 - [Plans](#Plans)

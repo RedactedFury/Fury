@@ -28,7 +28,7 @@ Note that [jq](https://stedolan.github.io/jq/) is recommended to be installed as
 
 Liquid stake coin.
 
-It requires `whitelisted_validators` to be registered. The [config.yml](https://github.com/crescent-network/crescent/blob/main/config.yml) file registers a single whitelist validator for testing purpose. 
+It requires `whitelisted_validators` to be registered. The [config.yml](https://github.com/redactedfury/fury/blob/main/config.yml) file registers a single whitelist validator for testing purpose. 
 
 Usage
 
