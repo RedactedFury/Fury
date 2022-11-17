@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 
-NAME=furyhubchain
+NAME=fury
 APPNAME=furyd
-REPO=github.com/RedactedFury/FuryHubChain
+REPO=github.com/RedactedFury/Fury
 
 VERSION := $(shell echo $(shell git describe --tags) | sed 's/^v//')
 COMMIT := $(shell git log -1 --format='%H')

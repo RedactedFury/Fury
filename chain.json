@@ -26,7 +26,7 @@
     ]
   },
   "codebase": {
-    "git_repo": "https://github.com/redactedfury/furyhubchain",
+    "git_repo": "https://github.com/redactedfury/xfury",
     "recommended_version": "v0.1.0",
     "compatible_versions": [
       "v0.1.0"

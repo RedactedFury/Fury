@@ -1,6 +1,6 @@
 {
-  "name": "furyhubchain",
-  "version": "1.0.0",
+  "name": "fury",
+  "version": "0.1.0",
   "description": "Fanfury Hub Chain",
   "main": "index.js",
   "directories": {
@@ -27,7 +27,7 @@
   "author": "nimrod",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RedactedFury/FuryHubChain/issues"
+    "url": "https://github.com/RedactedFury/Fury/issues"
   },
-  "homepage": "https://github.com/RedactedFury/FuryHubChain#readme"
+  "homepage": "https://github.com/RedactedFury/Fury#readme"
 }

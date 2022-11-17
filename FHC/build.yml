@@ -1,4 +1,4 @@
-version: '1.0.1'
+version: '0.1.0'
 
 services:
   node_1:
@@ -9,7 +9,7 @@ services:
         PROJECT_BIN: furyd
         PROJECT_DIR: .fury
         VERSION: v0.1.0
-        REPOSITORY: https://github.com/RedactedFury/FuryChainHub
+        REPOSITORY: https://github.com/RedactedFury/Fury
         NAMESPACE: REDSHIFT
     ports:
       - '26656:26656'

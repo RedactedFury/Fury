@@ -2,7 +2,7 @@ version: '0.1.0'
 
 services:
   node_1:
-    image: ghcr.io/redactedfury/furyhubchain:main
+    image: ghcr.io/redactedfury/xfury:main
     ports:
       - '26656:26656'
       - '26657:26657'

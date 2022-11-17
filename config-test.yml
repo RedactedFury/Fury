@@ -1,6 +1,6 @@
 version: 1
 init:
-  home: "$HOME/.furyhubchain"
+  home: "$HOME/.xfury"
 build:
   ldflags:
     - -X github.com/RedactedFury/FuryHubChain/x/farming/keeper.enableAdvanceEpoch=true

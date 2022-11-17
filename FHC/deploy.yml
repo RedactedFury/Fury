@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   node:
-    image: ghcr.io/redactedfury/furyhubchain:main
+    image: ghcr.io/redactedfury/xfury:main
     env:
       - MONIKER=redshift
       - CHAIN_JSON=https://github.com/RedactedFury/FuryHubChain/blob/main/chain.json
