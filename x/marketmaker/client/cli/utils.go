@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 // ParseMarketMakerProposal reads and parses a MarketMakerProposal from a file.

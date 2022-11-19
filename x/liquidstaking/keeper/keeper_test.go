@@ -21,14 +21,14 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
-	"github.com/RedactedFury/fury/x/liquidstaking"
-	"github.com/RedactedFury/fury/x/liquidstaking/keeper"
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
-	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
-	"github.com/RedactedFury/fury/x/mint"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidstaking"
+	"github.com/redactedfury/fury/x/liquidstaking/keeper"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
+	"github.com/redactedfury/fury/x/mint"
 )
 
 var (

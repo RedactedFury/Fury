@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 func (s *KeeperTestSuite) TestSimulation1() {

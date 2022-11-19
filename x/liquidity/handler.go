@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/RedactedFury/fury/x/liquidity/keeper"
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidity/keeper"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // NewHandler returns a new msg handler.

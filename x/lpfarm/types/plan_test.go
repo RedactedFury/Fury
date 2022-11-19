@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/lpfarm/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 func TestPlan_Validate(t *testing.T) {

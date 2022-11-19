@@ -10,10 +10,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/RedactedFury/fury/app/params"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidstaking/keeper"
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
+	appparams "github.com/redactedfury/fury/app/params"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidstaking/keeper"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
 )
 
 // Simulation operation weights constants.

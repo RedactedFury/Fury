@@ -18,10 +18,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/RedactedFury/fury/x/liquidfarming/client/cli"
-	"github.com/RedactedFury/fury/x/liquidfarming/keeper"
-	"github.com/RedactedFury/fury/x/liquidfarming/simulation"
-	"github.com/RedactedFury/fury/x/liquidfarming/types"
+	"github.com/redactedfury/fury/x/liquidfarming/client/cli"
+	"github.com/redactedfury/fury/x/liquidfarming/keeper"
+	"github.com/redactedfury/fury/x/liquidfarming/simulation"
+	"github.com/redactedfury/fury/x/liquidfarming/types"
 )
 
 var (

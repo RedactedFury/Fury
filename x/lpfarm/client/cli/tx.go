@@ -16,7 +16,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/fury/x/lpfarm/types"
+	"github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 // GetTxCmd returns the transaction commands for the module

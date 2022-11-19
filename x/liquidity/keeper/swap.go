@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/RedactedFury/fury/x/liquidity/amm"
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidity/amm"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 func (k Keeper) PriceLimits(ctx sdk.Context, lastPrice sdk.Dec) (lowest, highest sdk.Dec) {

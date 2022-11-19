@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/RedactedFury/fury/x/mint/types"
+	"github.com/redactedfury/fury/x/mint/types"
 )
 
 //NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

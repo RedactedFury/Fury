@@ -3,9 +3,9 @@ package types_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidity/amm"
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidity/amm"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 func ExampleMakeOrderBookPairResponse() {

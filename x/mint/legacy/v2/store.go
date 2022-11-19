@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/RedactedFury/fury/x/mint/types"
+	"github.com/redactedfury/fury/x/mint/types"
 )
 
 func MigrateStore(ctx sdk.Context, paramSpace paramtypes.Subspace) error {

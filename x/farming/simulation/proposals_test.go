@@ -8,9 +8,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/app/params"
-	"github.com/RedactedFury/fury/x/farming/simulation"
-	"github.com/RedactedFury/fury/x/farming/types"
+	"github.com/redactedfury/fury/app/params"
+	"github.com/redactedfury/fury/x/farming/simulation"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 func TestProposalContents(t *testing.T) {

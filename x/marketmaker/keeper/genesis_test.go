@@ -3,7 +3,7 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 
 	_ "github.com/stretchr/testify/suite"
 )

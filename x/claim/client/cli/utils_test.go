@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/RedactedFury/fury/x/claim/client/cli"
-	"github.com/RedactedFury/fury/x/claim/types"
+	"github.com/redactedfury/fury/x/claim/client/cli"
+	"github.com/redactedfury/fury/x/claim/types"
 )
 
 func TestNormalizeConditionType(t *testing.T) {

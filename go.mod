@@ -1,4 +1,4 @@
-module github.com/RedactedFury/fury
+module github.com/redactedfury/fury
 
 go 1.18
 

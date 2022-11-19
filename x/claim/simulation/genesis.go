@@ -9,8 +9,8 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/claim/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/claim/types"
 )
 
 // GenAirdrops randomly generates airdrops.

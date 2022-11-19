@@ -12,11 +12,11 @@ import (
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/mint"
-	"github.com/RedactedFury/fury/x/mint/keeper"
-	"github.com/RedactedFury/fury/x/mint/types"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/mint"
+	"github.com/redactedfury/fury/x/mint/keeper"
+	"github.com/redactedfury/fury/x/mint/types"
 )
 
 var (

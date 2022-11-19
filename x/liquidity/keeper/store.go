@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // GetLastPairId returns the last pair id.

@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/liquidity/amm"
+	"github.com/redactedfury/fury/x/liquidity/amm"
 )
 
 func OrderBookBasePrice(ov amm.OrderView, tickPrec int) (sdk.Dec, bool) {

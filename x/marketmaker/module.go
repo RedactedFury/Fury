@@ -18,10 +18,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/RedactedFury/fury/x/marketmaker/client/cli"
-	"github.com/RedactedFury/fury/x/marketmaker/keeper"
-	"github.com/RedactedFury/fury/x/marketmaker/simulation"
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/client/cli"
+	"github.com/redactedfury/fury/x/marketmaker/keeper"
+	"github.com/redactedfury/fury/x/marketmaker/simulation"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 var (

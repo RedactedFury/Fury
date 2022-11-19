@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/RedactedFury/fury/x/claim/types"
+	"github.com/redactedfury/fury/x/claim/types"
 )
 
 func TestClaimableCoinsForCondition(t *testing.T) {

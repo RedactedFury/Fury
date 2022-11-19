@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/address"
 
-	utils "github.com/RedactedFury/fury/types"
+	utils "github.com/redactedfury/fury/types"
 )
 
 const (

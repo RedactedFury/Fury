@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/farming"
-	"github.com/RedactedFury/fury/x/farming/keeper"
-	"github.com/RedactedFury/fury/x/farming/types"
+	"github.com/redactedfury/fury/x/farming"
+	"github.com/redactedfury/fury/x/farming/keeper"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 func (suite *KeeperTestSuite) TestGlobalPlanId() {

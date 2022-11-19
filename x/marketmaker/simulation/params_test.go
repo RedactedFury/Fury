@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/RedactedFury/fury/x/marketmaker/simulation"
+	"github.com/redactedfury/fury/x/marketmaker/simulation"
 )
 
 func TestParamChanges(t *testing.T) {

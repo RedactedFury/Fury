@@ -7,7 +7,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/farming/types"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 // GetLastEpochTime returns the last time the epoch ended.

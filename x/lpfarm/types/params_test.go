@@ -7,8 +7,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/lpfarm/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 func TestParams_Validate(t *testing.T) {

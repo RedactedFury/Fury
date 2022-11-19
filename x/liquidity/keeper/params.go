@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // GetBatchSize returns the current batch size parameter.

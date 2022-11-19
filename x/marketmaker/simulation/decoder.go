@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 func NewDecodeStore(cdc codec.Codec) func(kvA, kvB kv.Pair) string {

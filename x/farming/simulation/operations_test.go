@@ -13,13 +13,13 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	"github.com/RedactedFury/fury/app/params"
-	"github.com/RedactedFury/fury/x/farming"
-	"github.com/RedactedFury/fury/x/farming/keeper"
-	"github.com/RedactedFury/fury/x/farming/simulation"
-	"github.com/RedactedFury/fury/x/farming/types"
-	minttypes "github.com/RedactedFury/fury/x/mint/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/app/params"
+	"github.com/redactedfury/fury/x/farming"
+	"github.com/redactedfury/fury/x/farming/keeper"
+	"github.com/redactedfury/fury/x/farming/simulation"
+	"github.com/redactedfury/fury/x/farming/types"
+	minttypes "github.com/redactedfury/fury/x/mint/types"
 )
 
 // TestWeightedOperations tests the weights of the operations.

@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 	"github.com/tendermint/tendermint/libs/json"
 
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 // DONTCOVER

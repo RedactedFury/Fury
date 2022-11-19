@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	v1farming "github.com/RedactedFury/fury/x/farming/legacy/v1"
-	v2farming "github.com/RedactedFury/fury/x/farming/legacy/v2"
-	"github.com/RedactedFury/fury/x/farming/types"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	v1farming "github.com/redactedfury/fury/x/farming/legacy/v1"
+	v2farming "github.com/redactedfury/fury/x/farming/legacy/v2"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 func TestMigrateQueuedStaking(t *testing.T) {

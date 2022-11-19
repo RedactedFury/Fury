@@ -3,9 +3,9 @@ package keeper_test
 import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/claim/types"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/claim/types"
 
 	_ "github.com/stretchr/testify/suite"
 )

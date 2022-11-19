@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/RedactedFury/fury/x/liquidstaking/keeper"
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
+	"github.com/redactedfury/fury/x/liquidstaking/keeper"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
 )
 
 // NewHandler returns a new msg handler.

@@ -12,7 +12,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/fury/x/claim/types"
+	"github.com/redactedfury/fury/x/claim/types"
 )
 
 // GetQueryCmd returns the cli query commands for the module.

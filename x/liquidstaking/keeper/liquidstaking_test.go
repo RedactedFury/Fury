@@ -7,9 +7,9 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
-	minttypes "github.com/RedactedFury/fury/x/mint/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
+	minttypes "github.com/redactedfury/fury/x/mint/types"
 )
 
 // tests LiquidStake, LiquidUnstake

@@ -16,7 +16,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/fury/x/farming/types"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 // GetQueryCmd returns a root CLI command handler for all x/farming query commands.

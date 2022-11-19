@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/RedactedFury/fury/x/farming"
-	"github.com/RedactedFury/fury/x/farming/types"
+	"github.com/redactedfury/fury/x/farming"
+	"github.com/redactedfury/fury/x/farming/types"
 
 	_ "github.com/stretchr/testify/suite"
 )

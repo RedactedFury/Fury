@@ -3,9 +3,9 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/farming/types"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 func (suite *KeeperTestSuite) TestScenario1() {

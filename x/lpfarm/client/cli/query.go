@@ -11,7 +11,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/fury/x/lpfarm/types"
+	"github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

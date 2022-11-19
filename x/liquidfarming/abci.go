@@ -7,8 +7,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/liquidfarming/keeper"
-	"github.com/RedactedFury/fury/x/liquidfarming/types"
+	"github.com/redactedfury/fury/x/liquidfarming/keeper"
+	"github.com/redactedfury/fury/x/liquidfarming/types"
 )
 
 // BeginBlocker compares all LiquidFarms stored in KVstore with all LiquidFarms registered in params.

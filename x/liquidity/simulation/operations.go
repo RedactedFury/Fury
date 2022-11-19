@@ -12,11 +12,11 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/RedactedFury/fury/app/params"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidity/amm"
-	"github.com/RedactedFury/fury/x/liquidity/keeper"
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	appparams "github.com/redactedfury/fury/app/params"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidity/amm"
+	"github.com/redactedfury/fury/x/liquidity/keeper"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // Simulation operation weights constants.

@@ -10,8 +10,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	"github.com/RedactedFury/fury/x/mint/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/mint/types"
 )
 
 type MintTestSuite struct {

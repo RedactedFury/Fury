@@ -21,13 +21,13 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	dbm "github.com/tendermint/tm-db"
 
-	chain "github.com/RedactedFury/fury/app"
-	"github.com/RedactedFury/fury/app/params"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidfarming/client/cli"
-	"github.com/RedactedFury/fury/x/liquidfarming/types"
-	liquiditytestutil "github.com/RedactedFury/fury/x/liquidity/client/testutil"
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/app/params"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidfarming/client/cli"
+	"github.com/redactedfury/fury/x/liquidfarming/types"
+	liquiditytestutil "github.com/redactedfury/fury/x/liquidity/client/testutil"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
 )
 
 type IntegrationTestSuite struct {

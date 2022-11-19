@@ -8,7 +8,7 @@ import "google/api/annotations.proto";
 import "fury/liquidfarming/v1beta1/liquidfarming.proto";
 import "fury/liquidfarming/v1beta1/params.proto";
 
-option go_package = "github.com/RedactedFury/fury/x/liquidfarming/types";
+option go_package = "github.com/redactedfury/fury/x/liquidfarming/types";
 
 // Query defines the gRPC querier service.
 service Query {

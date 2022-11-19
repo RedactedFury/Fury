@@ -8,9 +8,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/RedactedFury/fury/app"
-	"github.com/RedactedFury/fury/x/farming/keeper"
-	"github.com/RedactedFury/fury/x/farming/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/farming/keeper"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 const (

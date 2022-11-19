@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/lpfarm/types"
+	"github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 func (k Keeper) GetLastBlockTime(ctx sdk.Context) (t time.Time, found bool) {

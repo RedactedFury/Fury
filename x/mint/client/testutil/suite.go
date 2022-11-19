@@ -12,9 +12,9 @@ import (
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 	tmdb "github.com/tendermint/tm-db"
 
-	chain "github.com/RedactedFury/fury/app"
-	"github.com/RedactedFury/fury/x/mint/client/cli"
-	minttypes "github.com/RedactedFury/fury/x/mint/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/mint/client/cli"
+	minttypes "github.com/redactedfury/fury/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

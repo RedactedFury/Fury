@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // NewRewardsAuction creates a new RewardsAuction.

@@ -12,11 +12,11 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/RedactedFury/fury/app/params"
-	utils "github.com/RedactedFury/fury/types"
-	farmingkeeper "github.com/RedactedFury/fury/x/farming/keeper"
-	farmingtypes "github.com/RedactedFury/fury/x/farming/types"
-	minttypes "github.com/RedactedFury/fury/x/mint/types"
+	appparams "github.com/redactedfury/fury/app/params"
+	utils "github.com/redactedfury/fury/types"
+	farmingkeeper "github.com/redactedfury/fury/x/farming/keeper"
+	farmingtypes "github.com/redactedfury/fury/x/farming/types"
+	minttypes "github.com/redactedfury/fury/x/mint/types"
 )
 
 // Simulation operation weights constants.

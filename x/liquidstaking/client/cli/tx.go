@@ -15,7 +15,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
 )
 
 // GetTxCmd returns a root CLI command handler for all x/liquidstaking transaction commands.

@@ -7,7 +7,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/fury/types"
+	utils "github.com/redactedfury/fury/types"
 )
 
 func Test_char(t *testing.T) {

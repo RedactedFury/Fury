@@ -10,10 +10,10 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	appparams "github.com/RedactedFury/fury/app/params"
-	utils "github.com/RedactedFury/fury/types"
-	marketmakerkeeper "github.com/RedactedFury/fury/x/marketmaker/keeper"
-	marketmakertypes "github.com/RedactedFury/fury/x/marketmaker/types"
+	appparams "github.com/redactedfury/fury/app/params"
+	utils "github.com/redactedfury/fury/types"
+	marketmakerkeeper "github.com/redactedfury/fury/x/marketmaker/keeper"
+	marketmakertypes "github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 // Simulation operation weights constants.

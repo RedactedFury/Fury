@@ -5,7 +5,7 @@ package app
 import (
 	"github.com/cosmos/cosmos-sdk/std"
 
-	"github.com/RedactedFury/fury/app/params"
+	"github.com/redactedfury/fury/app/params"
 )
 
 // MakeEncodingConfig creates an EncodingConfig for testing

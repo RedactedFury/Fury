@@ -5,8 +5,8 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
-	liquidstakingtypes "github.com/RedactedFury/fury/x/liquidstaking/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	liquidstakingtypes "github.com/redactedfury/fury/x/liquidstaking/types"
 )
 
 // AccountKeeper is the expected x/auth module keeper.

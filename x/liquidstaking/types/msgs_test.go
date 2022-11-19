@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
 )
 
 func TestMsgLiquidStake(t *testing.T) {

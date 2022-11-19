@@ -18,7 +18,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/gov/client/cli"
 	gov "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 // GetTxCmd returns a root CLI command handler for all x/marketmaker transaction commands.

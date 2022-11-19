@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/RedactedFury/fury/x/liquidity/simulation"
+	"github.com/redactedfury/fury/x/liquidity/simulation"
 )
 
 func TestParamChanges(t *testing.T) {

@@ -9,11 +9,11 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/RedactedFury/fury/app"
+	chain "github.com/redactedfury/fury/app"
 
-	"github.com/RedactedFury/fury/x/marketmaker"
-	"github.com/RedactedFury/fury/x/marketmaker/keeper"
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker"
+	"github.com/redactedfury/fury/x/marketmaker/keeper"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 const (

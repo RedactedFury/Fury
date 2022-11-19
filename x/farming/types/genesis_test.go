@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/farming/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 func TestValidateGenesis(t *testing.T) {

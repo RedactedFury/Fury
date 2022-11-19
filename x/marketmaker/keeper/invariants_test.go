@@ -3,8 +3,8 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/RedactedFury/fury/x/marketmaker/keeper"
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/keeper"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 func (suite *KeeperTestSuite) TestDepositReservedAmountInvariant() {

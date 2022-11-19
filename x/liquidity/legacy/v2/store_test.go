@@ -7,11 +7,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	v1liquidity "github.com/RedactedFury/fury/x/liquidity/legacy/v1"
-	v2liquidity "github.com/RedactedFury/fury/x/liquidity/legacy/v2"
-	"github.com/RedactedFury/fury/x/liquidity/types"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	v1liquidity "github.com/redactedfury/fury/x/liquidity/legacy/v1"
+	v2liquidity "github.com/redactedfury/fury/x/liquidity/legacy/v2"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 func TestMigratePool(t *testing.T) {

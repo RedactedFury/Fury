@@ -12,8 +12,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/types/simulation"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/liquidfarming/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidfarming/types"
 )
 
 // Simulation parameter constants.

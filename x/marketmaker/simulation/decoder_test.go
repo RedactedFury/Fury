@@ -9,8 +9,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/RedactedFury/fury/x/marketmaker/simulation"
-	"github.com/RedactedFury/fury/x/marketmaker/types"
+	"github.com/redactedfury/fury/x/marketmaker/simulation"
+	"github.com/redactedfury/fury/x/marketmaker/types"
 )
 
 func TestDecodeMarketMakerStore(t *testing.T) {

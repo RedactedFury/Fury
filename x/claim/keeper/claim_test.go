@@ -4,11 +4,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	v1_1_0 "github.com/RedactedFury/fury/app/upgrades/mainnet/v1.1.0"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/claim"
-	"github.com/RedactedFury/fury/x/claim/types"
-	"github.com/RedactedFury/fury/x/liquidity"
+	v1_1_0 "github.com/redactedfury/fury/app/upgrades/mainnet/v1.1.0"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/claim"
+	"github.com/redactedfury/fury/x/claim/types"
+	"github.com/redactedfury/fury/x/liquidity"
 
 	_ "github.com/stretchr/testify/suite"
 )

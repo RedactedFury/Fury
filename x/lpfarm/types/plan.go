@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/fury/types"
+	utils "github.com/redactedfury/fury/types"
 )
 
 const day = 24 * time.Hour

@@ -4,7 +4,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // AccountKeeper defines the expected keeper interface of the auth module.

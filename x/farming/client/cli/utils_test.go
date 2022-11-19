@@ -8,8 +8,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 
-	"github.com/RedactedFury/fury/app/params"
-	"github.com/RedactedFury/fury/x/farming/client/cli"
+	"github.com/redactedfury/fury/app/params"
+	"github.com/redactedfury/fury/x/farming/client/cli"
 )
 
 func TestParsePrivateFixedPlan(t *testing.T) {

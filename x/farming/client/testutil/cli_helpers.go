@@ -10,7 +10,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	bankcli "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
 
-	"github.com/RedactedFury/fury/x/farming/client/cli"
+	"github.com/redactedfury/fury/x/farming/client/cli"
 )
 
 var commonArgs = []string{

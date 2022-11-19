@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	utils "github.com/RedactedFury/fury/types"
+	utils "github.com/redactedfury/fury/types"
 )
 
 // NewGenesisState creates a new GenesisState object

@@ -7,10 +7,10 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	utils "github.com/RedactedFury/fury/types"
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
-	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
+	utils "github.com/redactedfury/fury/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 // GetVoterBalanceByDenom return map of balance amount of voter by denom

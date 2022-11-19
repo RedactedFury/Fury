@@ -3,8 +3,8 @@ package client
 import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 
-	"github.com/RedactedFury/fury/x/lpfarm/client/cli"
-	"github.com/RedactedFury/fury/x/lpfarm/client/rest"
+	"github.com/redactedfury/fury/x/lpfarm/client/cli"
+	"github.com/redactedfury/fury/x/lpfarm/client/rest"
 )
 
 // ProposalHandler is the public plan command handler.

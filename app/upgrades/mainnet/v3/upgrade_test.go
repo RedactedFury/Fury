@@ -12,7 +12,7 @@ import (
 
 	chain "github.com/redactedfury/fury/app"
 	v3 "github.com/redactedfury/fury/app/upgrades/mainnet/v3"
-	"github.com/redactedfury/cmd/furyd/cmd"
+	"github.com/redactedfury/fury/cmd/furyd/cmd"
 	utils "github.com/redactedfury/fury/types"
 	"github.com/redactedfury/fury/x/farming"
 	farmingkeeper "github.com/redactedfury/fury/x/farming/keeper"

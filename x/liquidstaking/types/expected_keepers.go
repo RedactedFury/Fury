@@ -9,8 +9,8 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
-	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 // BankKeeper defines the expected bank send keeper

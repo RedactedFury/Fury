@@ -6,7 +6,7 @@ import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "fury/claim/v1beta1/claim.proto";
 
-option go_package = "github.com/RedactedFury/fury//x/claim/types";
+option go_package = "github.com/redactedfury/fury/x/claim/types";
 
 // Query defines the gRPC querier service.
 service Query {

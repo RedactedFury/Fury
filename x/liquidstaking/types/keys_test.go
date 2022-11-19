@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	farmingtypes "github.com/RedactedFury/fury/x/farming/types"
+	farmingtypes "github.com/redactedfury/fury/x/farming/types"
 
-	"github.com/RedactedFury/fury/x/liquidstaking/types"
+	"github.com/redactedfury/fury/x/liquidstaking/types"
 )
 
 type keysTestSuite struct {

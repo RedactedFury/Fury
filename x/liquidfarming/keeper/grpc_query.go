@@ -10,8 +10,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/RedactedFury/fury/x/liquidfarming/types"
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidfarming/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
 )
 
 // Querier is used as Keeper will have duplicate methods if used directly, and gRPC names take precedence over keeper.

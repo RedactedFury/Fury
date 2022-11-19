@@ -8,10 +8,10 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	chain "github.com/RedactedFury/fury/app"
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/claim/simulation"
-	"github.com/RedactedFury/fury/x/claim/types"
+	chain "github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/claim/simulation"
+	"github.com/redactedfury/fury/x/claim/types"
 )
 
 func TestDecodeClaimStore(t *testing.T) {

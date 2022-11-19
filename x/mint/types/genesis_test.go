@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/mint/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/mint/types"
 )
 
 func TestGenesisState_Validate(t *testing.T) {

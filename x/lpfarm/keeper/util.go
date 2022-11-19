@@ -3,8 +3,8 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
-	"github.com/RedactedFury/fury/x/lpfarm/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 // cachingKeeper acts like a proxy to keeper methods,

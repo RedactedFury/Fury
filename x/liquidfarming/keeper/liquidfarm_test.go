@@ -4,10 +4,10 @@ import (
 	_ "github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	utils "github.com/RedactedFury/fury/types"
+	utils "github.com/redactedfury/fury/types"
 
-	"github.com/RedactedFury/fury/x/liquidfarming/types"
-	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
+	"github.com/redactedfury/fury/x/liquidfarming/types"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 func (s *KeeperTestSuite) TestLiquidFarm_Validation() {

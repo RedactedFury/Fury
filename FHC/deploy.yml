@@ -6,7 +6,7 @@ services:
     image: ghcr.io/redactedfury/fury:main
     env:
       - MONIKER=redshift
-      - CHAIN_JSON=https://github.com/RedactedFury/fury/blob/main/chain.json
+      - CHAIN_JSON=https://github.com/redactedfury/fury/blob/main/chain.json
     expose:
       - port: 26657
         as: 80

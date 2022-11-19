@@ -6,7 +6,7 @@ import "gogoproto/gogo.proto";
 import "fury/lpfarm/v1beta1/lpfarm.proto";
 import "google/protobuf/timestamp.proto";
 
-option go_package                      = "github.com/RedactedFury/fury/x/lpfarm/types";
+option go_package                      = "github.com/redactedfury/fury/x/lpfarm/types";
 option (gogoproto.goproto_getters_all) = false;
 
 message GenesisState {

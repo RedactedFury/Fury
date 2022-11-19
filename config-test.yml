@@ -3,8 +3,8 @@ init:
   home: "$HOME/.fury"
 build:
   ldflags:
-    - -X github.com/RedactedFury/fury/x/farming/keeper.enableAdvanceEpoch=true
-    - -X github.com/RedactedFury/fury/x/liquidfarming/keeper.enableAdvanceAuction=true
+    - -X github.com/redactedfury/fury/x/farming/keeper.enableAdvanceEpoch=true
+    - -X github.com/redactedfury/fury/x/liquidfarming/keeper.enableAdvanceAuction=true
   proto:
     path: proto
     third_party_paths:
@@ -110,7 +110,7 @@ genesis:
       params:
         liquid_bond_denom: "bfury"
         whitelisted_validators:
-          - validator_address: "crevaloper1zaavvzxez0elundtn32qnk9lkm8kmcszyvldht"
+          - validator_address: "furyvaloper13w4ueuk80d3kmwk7ntlhp84fk0arlm3mugy5fe"
             target_weight: "100000000"
     liquidfarming:
       params:

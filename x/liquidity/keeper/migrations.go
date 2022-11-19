@@ -3,8 +3,8 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	v2 "github.com/RedactedFury/fury/x/liquidity/legacy/v2"
-	v3 "github.com/RedactedFury/fury/x/liquidity/legacy/v3"
+	v2 "github.com/redactedfury/fury/x/liquidity/legacy/v2"
+	v3 "github.com/redactedfury/fury/x/liquidity/legacy/v3"
 )
 
 type Migrator struct {

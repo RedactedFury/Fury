@@ -32,8 +32,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	chain "github.com/RedactedFury/fury/app"
-	farmingparams "github.com/RedactedFury/fury/app/params"
+	chain "github.com/redactedfury/fury/app"
+	farmingparams "github.com/redactedfury/fury/app/params"
 )
 
 var (

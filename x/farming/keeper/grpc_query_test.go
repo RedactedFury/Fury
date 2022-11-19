@@ -3,9 +3,9 @@ package keeper_test
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/RedactedFury/fury/types"
-	"github.com/RedactedFury/fury/x/farming"
-	"github.com/RedactedFury/fury/x/farming/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/farming"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 func (suite *KeeperTestSuite) TestGRPCParams() {

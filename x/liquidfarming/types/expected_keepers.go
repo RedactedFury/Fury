@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	liquiditytypes "github.com/RedactedFury/fury/x/liquidity/types"
-	lpfarmtypes "github.com/RedactedFury/fury/x/lpfarm/types"
+	liquiditytypes "github.com/redactedfury/fury/x/liquidity/types"
+	lpfarmtypes "github.com/redactedfury/fury/x/lpfarm/types"
 )
 
 // AccountKeeper defines the expected interface needed for the module.

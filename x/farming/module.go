@@ -18,10 +18,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/RedactedFury/fury/x/farming/client/cli"
-	"github.com/RedactedFury/fury/x/farming/keeper"
-	"github.com/RedactedFury/fury/x/farming/simulation"
-	"github.com/RedactedFury/fury/x/farming/types"
+	"github.com/redactedfury/fury/x/farming/client/cli"
+	"github.com/redactedfury/fury/x/farming/keeper"
+	"github.com/redactedfury/fury/x/farming/simulation"
+	"github.com/redactedfury/fury/x/farming/types"
 )
 
 var (
