@@ -13,7 +13,7 @@ import (
 
 	"github.com/redactedfury/fury/app"
 	v2_0_0 "github.com/redactedfury/fury/app/upgrades/mainnet/v2.0.0"
-	"github.com/redactedfury/cmd/furyd/cmd"
+	"github.com/redactedfury/fury/cmd/furyd/cmd"
 	utils "github.com/redactedfury/fury/types"
 )
 

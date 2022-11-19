@@ -8,8 +8,8 @@
 
 ```bash
 # Clone the demo project and build `furyd` for testing
-git clone https://github.com/redactedfury/xfury.git
-cd xfury
+git clone https://github.com/redactedfury/fury.git
+cd fury
 make install-testing
 ```
 

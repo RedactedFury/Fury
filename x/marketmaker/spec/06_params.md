@@ -9,7 +9,7 @@ The `marketmaker` module contains the following parameters:
 | Key                    | Type               | Example                                                                                                                                                                                          |
 |------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IncentiveBudgetAddress | string             | cre1ddn66jv0sjpmck0ptegmhmqtn35qsg2vxyk2hn9sqf4qxtzqz3sq3qhhde                                                                                                                                   |
-| DepositAmount          | string (sdk.Coins) | [{"denom":"ucre","amount":"1000000000"}]                                                                                                                                                         |
+| DepositAmount          | string (sdk.Coins) | [{"denom":"ufury","amount":"1000000000"}]                                                                                                                                                         |
 | Common                 | Common             | {"min_open_ratio":"0.500000000000000000","min_open_depth_ratio":"0.100000000000000000","max_downtime":20,"max_total_downtime":100,"min_hours":16,"min_days":22}                                  |
 | IncentivePairs         | []IncentivePair    | [{"pair_id":"20","update_time":"2022-12-01T00:00:00Z","incentive_weight":"0.100000000000000000","max_spread":"0.012000000000000000","min_width":"0.002000000000000000","min_depth":"100000000"}] |
 

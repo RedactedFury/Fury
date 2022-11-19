@@ -38,7 +38,7 @@ func TestLiquidFarmCoinDenom(t *testing.T) {
 		{"lf01", true},
 		{"lf-10", true},
 		{"lf+10", true},
-		{"ucre", true},
+		{"ufury", true},
 		{"denom1", true},
 	} {
 		t.Run("", func(t *testing.T) {
