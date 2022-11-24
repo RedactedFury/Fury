@@ -1,7 +1,0 @@
-syntax = "proto3";
-package fury.rewards.v1beta1;
-
-option go_package = "github.com/Fury-Labs/fury/x/rewards/types";
-
-// Params defines the parameters for the module.
-message Params {}

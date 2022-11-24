@@ -65,10 +65,10 @@ func InitializeStates(
 		{Name: "FURY", Denom: "ufury", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
 		{Name: "FUST", Denom: "ufust", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: true, IsCdpMintable: true},
 		{Name: "OSMO", Denom: "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
-		{Name: "CATOM", Denom: "ucatom", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
+		{Name: "sATOM", Denom: "usatom", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
 		{Name: "sFURY", Denom: "usfury", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
-		{Name: "CFUST", Denom: "usfust", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
-		{Name: "COSMO", Denom: "ucosmo", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
+		{Name: "sFUST", Denom: "usfust", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
+		{Name: "sOSMO", Denom: "usosmo", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
 		{Name: "HARBOR", Denom: "uharbor", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: false},
 		{Name: "AXLUSDC", Denom: "ibc/E1616E7C19EA474C565737709A628D6F8A23FF9D3E9A7A6871306CF5E0A5341E", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
 	}
