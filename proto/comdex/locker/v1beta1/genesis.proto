@@ -1,9 +1,9 @@
 syntax = "proto3";
-package comdex.locker.v1beta1;
+package fury.locker.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/locker/v1beta1/locker.proto";
-import "comdex/locker/v1beta1/params.proto";
+import "fury/locker/v1beta1/locker.proto";
+import "fury/locker/v1beta1/params.proto";
 
 option go_package            = "github.com/Fury-Labs/fury/x/locker/types";
 option (gogoproto.equal_all) = false;

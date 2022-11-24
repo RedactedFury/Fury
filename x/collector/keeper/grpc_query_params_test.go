@@ -12,14 +12,14 @@ import (
 )
 
 func TestParamsQuery(t *testing.T) {
-	comdexApp := app.Setup(false)
-	ctx := comdexApp.BaseApp.NewContext(false, tmproto.Header{})
+	furyApp := app.Setup(false)
+	ctx := furyApp.BaseApp.NewContext(false, tmproto.Header{})
 
 	wctx := sdk.WrapSDKContext(ctx)
 	params := types.DefaultParams()
-	comdexApp.CollectorKeeper.SetParams(ctx, params)
+	furyApp.CollectorKeeper.SetParams(ctx, params)
 
-	response, err := comdexApp.CollectorKeeper.Params(wctx, &types.QueryParamsRequest{})
+	response, err := furyApp.CollectorKeeper.Params(wctx, &types.QueryParamsRequest{})
 	require.NoError(t, err)
 	require.Equal(t, &types.QueryParamsResponse{Params: params}, response)
 }

@@ -1,1 +1,1 @@
-comdex start
+fury start

@@ -1,8 +1,8 @@
 syntax = "proto3";
-package comdex.lend.v1beta1;
+package fury.lend.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/lend/v1beta1/lend.proto";
+import "fury/lend/v1beta1/lend.proto";
 
 
 option go_package = "github.com/Fury-Labs/fury/x/lend/types";

@@ -22,19 +22,19 @@ import (
 )
 
 func SetupCustomApp() (*app.App, *sdk.Context) {
-	comdex, ctx := CreateTestInput()
-	return comdex, ctx
+	fury, ctx := CreateTestInput()
+	return fury, ctx
 }
 
 func CreateTestInput() (*app.App, *sdk.Context) {
-	comdex := app.Setup(false)
-	ctx := comdex.BaseApp.NewContext(false, tmproto.Header{Height: 1, ChainID: "comdex-1", Time: time.Now().UTC()})
-	return comdex, &ctx
+	fury := app.Setup(false)
+	ctx := fury.BaseApp.NewContext(false, tmproto.Header{Height: 1, ChainID: "fury-1", Time: time.Now().UTC()})
+	return fury, &ctx
 }
 
-func FundAccount(t *testing.T, ctx sdk.Context, comdex *app.App, acct sdk.AccAddress) {
-	err := simapp.FundAccount(comdex.BankKeeper, ctx, acct, sdk.NewCoins(
-		sdk.NewCoin("ucmdx", sdk.NewInt(10000000000)),
+func FundAccount(t *testing.T, ctx sdk.Context, fury *app.App, acct sdk.AccAddress) {
+	err := simapp.FundAccount(fury.BankKeeper, ctx, acct, sdk.NewCoins(
+		sdk.NewCoin("ufury", sdk.NewInt(10000000000)),
 	))
 	require.NoError(t, err)
 }
@@ -77,8 +77,8 @@ func AddAppAsset(app *app.App, ctx1 sdk.Context) {
 	_ = assetKeeper.AddAppRecords(*ctx, msg1)
 
 	msg2 := assetTypes.Asset{
-		Name:          "CMDX",
-		Denom:         "ucmdx",
+		Name:          "FURY",
+		Denom:         "ufury",
 		Decimals:      sdk.NewInt(1000000),
 		IsOnChain:     true,
 		IsCdpMintable: true,
@@ -86,8 +86,8 @@ func AddAppAsset(app *app.App, ctx1 sdk.Context) {
 	_ = assetKeeper.AddAssetRecords(*ctx, msg2)
 
 	msg3 := assetTypes.Asset{
-		Name:          "CMST",
-		Denom:         "ucmst",
+		Name:          "FUST",
+		Denom:         "ufust",
 		Decimals:      sdk.NewInt(1000000),
 		IsOnChain:     true,
 		IsCdpMintable: true,
@@ -116,13 +116,13 @@ func AddPair(app *app.App, ctx1 sdk.Context) {
 		pairID                 uint64
 	}{
 		{
-			"Add Pair 1: cmdx cmst",
+			"Add Pair 1: fury fust",
 			assetTypes.Pair{
 				AssetIn:  1,
 				AssetOut: 2,
 			},
-			"ucmdx",
-			"ucmst",
+			"ufury",
+			"ufust",
 			false,
 			1,
 		},
@@ -165,7 +165,7 @@ func AddExtendedPairVault(app *app.App, ctx1 sdk.Context) {
 		msg  bindings.MsgAddExtendedPairsVault
 	}{
 		{
-			"Add Extended Pair Vault : cmdx cmst",
+			"Add Extended Pair Vault : fury fust",
 
 			bindings.MsgAddExtendedPairsVault{
 				AppID:               1,
@@ -179,7 +179,7 @@ func AddExtendedPairVault(app *app.App, ctx1 sdk.Context) {
 				DebtFloor:           sdk.NewInt(1000000),
 				IsStableMintVault:   false,
 				MinCr:               sdk.MustNewDecFromStr("1.5"),
-				PairName:            "CMDX-A",
+				PairName:            "FURY-A",
 				AssetOutOraclePrice: true,
 				AssetOutPrice:       1000000,
 				MinUsdValueLeft:     1000000,

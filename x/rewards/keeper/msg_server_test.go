@@ -38,8 +38,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 	s.Require().NoError(err)
 
 	msg3 := assetTypes.Asset{
-		Name:          "CMDX",
-		Denom:         "ucmdx",
+		Name:          "FURY",
+		Denom:         "ufury",
 		Decimals:      sdk.NewInt(1000000),
 		IsOnChain:     true,
 		IsCdpMintable: true,
@@ -60,8 +60,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 	s.Suite.NoError(err)
 
 	msg4 := assetTypes.Asset{
-		Name:          "CMST",
-		Denom:         "ucmst",
+		Name:          "FUST",
+		Denom:         "ufust",
 		Decimals:      sdk.NewInt(1000000),
 		IsOnChain:     true,
 		IsCdpMintable: true,
@@ -197,7 +197,7 @@ func (s *KeeperTestSuite) TestCreateLocker() {
 		AppId:     1,
 	}
 
-	s.fundAddr(userAddress, sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(1000000000)))
+	s.fundAddr(userAddress, sdk.NewCoin("ufury", sdk.NewIntFromUint64(1000000000)))
 	_, err := server.MsgCreateLocker(sdk.WrapSDKContext(*ctx), &msg2)
 	s.Require().NoError(err)
 }
@@ -268,7 +268,7 @@ func (s *KeeperTestSuite) TestCreateVault() {
 	s.AddAppAsset()
 
 	pairID := s.CreateNewPair(addr1, 1, 2)
-	extendedVaultPairID1 := s.CreateNewExtendedVaultPair("CMDX-C", 1, pairID, false, true)
+	extendedVaultPairID1 := s.CreateNewExtendedVaultPair("FURY-C", 1, pairID, false, true)
 
 	vaultKeeper, ctx := &s.vaultKeeper, &s.ctx
 	server := vaultkeeper.NewMsgServer(*vaultKeeper)
@@ -281,7 +281,7 @@ func (s *KeeperTestSuite) TestCreateVault() {
 		AmountOut:           sdk.NewInt(200000000),
 	}
 
-	s.fundAddr(userAddress, sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(1000000000)))
+	s.fundAddr(userAddress, sdk.NewCoin("ufury", sdk.NewIntFromUint64(1000000000)))
 	_, err := server.MsgCreate(sdk.WrapSDKContext(*ctx), &msg2)
 	s.Require().NoError(err)
 
@@ -293,7 +293,7 @@ func (s *KeeperTestSuite) TestCreateVault() {
 		AmountOut:           sdk.NewInt(100000000),
 	}
 
-	s.fundAddr(userAddress1, sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(1000000000)))
+	s.fundAddr(userAddress1, sdk.NewCoin("ufury", sdk.NewIntFromUint64(1000000000)))
 	_, err = server.MsgCreate(sdk.WrapSDKContext(*ctx), &msg3)
 	s.Require().NoError(err)
 }

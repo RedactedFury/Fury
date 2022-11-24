@@ -1,8 +1,8 @@
 syntax = "proto3";
-package comdex.bandoracle.v1beta1;
+package fury.bandoracle.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/bandoracle/v1beta1/tx.proto";
+import "fury/bandoracle/v1beta1/tx.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/bandoracle/types";
 

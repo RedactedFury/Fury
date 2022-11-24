@@ -9,13 +9,13 @@ import (
 )
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&AddAssetsProposal{}, "comdex/asset/AddAssetsProposal", nil)
-	cdc.RegisterConcrete(&UpdateAssetProposal{}, "comdex/asset/UpdateAssetProposal", nil)
-	cdc.RegisterConcrete(&AddPairsProposal{}, "comdex/asset/AddPairsProposal", nil)
-	cdc.RegisterConcrete(&UpdatePairProposal{}, "comdex/asset/UpdatePairProposal", nil)
-	cdc.RegisterConcrete(&AddAppProposal{}, "comdex/asset/AddAppProposal", nil)
-	cdc.RegisterConcrete(&AddAssetInAppProposal{}, "comdex/asset/AddAssetInAppProposal", nil)
-	cdc.RegisterConcrete(&UpdateGovTimeInAppProposal{}, "comdex/asset/UpdateGovTimeInAppProposal", nil)
+	cdc.RegisterConcrete(&AddAssetsProposal{}, "fury/asset/AddAssetsProposal", nil)
+	cdc.RegisterConcrete(&UpdateAssetProposal{}, "fury/asset/UpdateAssetProposal", nil)
+	cdc.RegisterConcrete(&AddPairsProposal{}, "fury/asset/AddPairsProposal", nil)
+	cdc.RegisterConcrete(&UpdatePairProposal{}, "fury/asset/UpdatePairProposal", nil)
+	cdc.RegisterConcrete(&AddAppProposal{}, "fury/asset/AddAppProposal", nil)
+	cdc.RegisterConcrete(&AddAssetInAppProposal{}, "fury/asset/AddAssetInAppProposal", nil)
+	cdc.RegisterConcrete(&UpdateGovTimeInAppProposal{}, "fury/asset/UpdateGovTimeInAppProposal", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

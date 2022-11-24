@@ -1,14 +1,14 @@
 syntax = "proto3";
-package comdex.asset.v1beta1;
+package fury.asset.v1beta1;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/asset/v1beta1/asset.proto";
-import "comdex/asset/v1beta1/params.proto";
-import "comdex/asset/v1beta1/app.proto";
-import "comdex/asset/v1beta1/pair.proto";
-import "comdex/asset/v1beta1/extendedPairVault.proto";
+import "fury/asset/v1beta1/asset.proto";
+import "fury/asset/v1beta1/params.proto";
+import "fury/asset/v1beta1/app.proto";
+import "fury/asset/v1beta1/pair.proto";
+import "fury/asset/v1beta1/extendedPairVault.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/asset/types";
 option (gogoproto.equal_all) = false;
@@ -161,40 +161,40 @@ message QueryAllExtendedPairStableVaultsByAppResponse {
 
 service Query {
   rpc QueryAssets(QueryAssetsRequest) returns (QueryAssetsResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/assets";
+    option (google.api.http).get = "/fury/asset/v1beta1/assets";
   }
   rpc QueryAsset(QueryAssetRequest) returns (QueryAssetResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/assets/{id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/assets/{id}";
   }
   rpc QueryPairs(QueryPairsRequest) returns (QueryPairsResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/pairs";
+    option (google.api.http).get = "/fury/asset/v1beta1/pairs";
   }
   rpc QueryPair(QueryPairRequest) returns (QueryPairResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/pairs/{id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/pairs/{id}";
   }
   rpc QueryApps(QueryAppsRequest) returns (QueryAppsResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/apps";
+    option (google.api.http).get = "/fury/asset/v1beta1/apps";
   }
   rpc QueryApp(QueryAppRequest) returns (QueryAppResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/app/{id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/app/{id}";
   }
   rpc QueryExtendedPairVault(QueryExtendedPairVaultRequest) returns (QueryExtendedPairVaultResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/extended_pair_vault/{id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/extended_pair_vault/{id}";
   }
   rpc QueryAllExtendedPairVaults(QueryAllExtendedPairVaultsRequest) returns (QueryAllExtendedPairVaultsResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/extended_pair_vaults";
+    option (google.api.http).get = "/fury/asset/v1beta1/extended_pair_vaults";
   }
   rpc QueryAllExtendedPairVaultsByApp(QueryAllExtendedPairVaultsByAppRequest) returns (QueryAllExtendedPairVaultsByAppResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/product_to_extended_pair/{app_id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/product_to_extended_pair/{app_id}";
   }
   rpc QueryAllExtendedPairStableVaultsIDByApp(QueryAllExtendedPairStableVaultsIDByAppRequest) returns (QueryAllExtendedPairStableVaultsIDByAppResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/extended_pair_stable_vault_wise/{app_id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/extended_pair_stable_vault_wise/{app_id}";
   }
   rpc QueryGovTokenByApp(QueryGovTokenByAppRequest) returns (QueryGovTokenByAppResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/gov_token_in_an_app/{app_id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/gov_token_in_an_app/{app_id}";
   }
   rpc QueryAllExtendedPairStableVaultsByApp(QueryAllExtendedPairStableVaultsByAppRequest) returns (QueryAllExtendedPairStableVaultsByAppResponse) {
-    option (google.api.http).get = "/comdex/asset/v1beta1/extended_pair_stable_vault_data/{app_id}";
+    option (google.api.http).get = "/fury/asset/v1beta1/extended_pair_stable_vault_data/{app_id}";
   }
 
 }

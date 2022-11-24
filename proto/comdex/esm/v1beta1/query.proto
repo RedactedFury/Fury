@@ -1,11 +1,11 @@
 syntax = "proto3";
-package comdex.esm.v1beta1;
+package fury.esm.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
-import "comdex/esm/v1beta1/params.proto";
-import "comdex/esm/v1beta1/esm.proto";
+import "fury/esm/v1beta1/params.proto";
+import "fury/esm/v1beta1/esm.proto";
 
 
 option go_package = "github.com/Fury-Labs/fury/x/esm/types";
@@ -83,34 +83,34 @@ message QueryAssetDataAfterCoolOffResponse {
 
 service Query {
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/v1beta1/esm/params";
+    option (google.api.http).get = "/fury/v1beta1/esm/params";
   }
 
   rpc QueryESMTriggerParams(QueryESMTriggerParamsRequest) returns (QueryESMTriggerParamsResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/esm_trigger_params/{id}";
+    option (google.api.http).get = "/fury/esm/v1beta1/esm_trigger_params/{id}";
   }
 
   rpc QueryESMStatus(QueryESMStatusRequest) returns (QueryESMStatusResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/esm_status/{id}";
+    option (google.api.http).get = "/fury/esm/v1beta1/esm_status/{id}";
   }
 
   rpc QueryCurrentDepositStats(QueryCurrentDepositStatsRequest) returns (QueryCurrentDepositStatsResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/current_deposit_stats/{id}";
+    option (google.api.http).get = "/fury/esm/v1beta1/current_deposit_stats/{id}";
   }
 
   rpc QueryUsersDepositMapping(QueryUsersDepositMappingRequest) returns (QueryUsersDepositMappingResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/user_deposit_mapping/{id}/{depositor}";
+    option (google.api.http).get = "/fury/esm/v1beta1/user_deposit_mapping/{id}/{depositor}";
   }
 
   rpc QueryDataAfterCoolOff(QueryDataAfterCoolOffRequest) returns (QueryDataAfterCoolOffResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/data_after_cool_off/{id}";
+    option (google.api.http).get = "/fury/esm/v1beta1/data_after_cool_off/{id}";
   }
 
   rpc QuerySnapshotPrice(QuerySnapshotPriceRequest) returns (QuerySnapshotPriceResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/price_snapshot/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/esm/v1beta1/price_snapshot/{app_id}/{asset_id}";
   }
 
   rpc QueryAssetDataAfterCoolOff(QueryAssetDataAfterCoolOffRequest) returns (QueryAssetDataAfterCoolOffResponse) {
-    option (google.api.http).get = "/comdex/esm/v1beta1/asset_data_after_cool_off/{app_id}";
+    option (google.api.http).get = "/fury/esm/v1beta1/asset_data_after_cool_off/{app_id}";
   }
 }

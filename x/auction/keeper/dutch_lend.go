@@ -198,7 +198,7 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	outFlowTokenCurrentPrice := auction.OutflowTokenCurrentPrice.Ceil().TruncateInt()
 	inFlowTokenCurrentPrice := auction.InflowTokenCurrentPrice.Ceil().TruncateInt()
 
-	slice := bid.Amount // cmdx
+	slice := bid.Amount // fury
 
 	a := auction.InflowTokenTargetAmount.Amount
 	b := auction.InflowTokenCurrentAmount.Amount
@@ -216,8 +216,8 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	}
 	inFlowTokenCoin := sdk.NewCoin(auction.InflowTokenTargetAmount.Denom, inFlowTokenAmount)
 
-	// required target cmst to raise in usd * 10**-12
-	// here we are multiplying each ucmdx with uusd so cmdx tokens price will be calculated amount * 10**-12
+	// required target fust to raise in usd * 10**-12
+	// here we are multiplying each ufury with uusd so fury tokens price will be calculated amount * 10**-12
 
 	lockedVault, found := k.liquidation.GetLockedVault(ctx, appID, auction.LockedVaultId)
 	if !found {
@@ -234,12 +234,12 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	// here subtracting current amount and slice to get amount left in auction and also converting it to usd * 10**-12
 	outLeft := auction.OutflowTokenCurrentAmount.Amount.Mul(outFlowTokenCurrentPrice)
 	amountLeftInPUSD := outLeft.Sub(owe)
-	// convert amountLeft to uusd from pusd(10**-12) so we can compare dust and amountLeft in UUSD . this happens by converting ucmdx to cmdx
+	// convert amountLeft to uusd from pusd(10**-12) so we can compare dust and amountLeft in UUSD . this happens by converting ufury to fury
 
-	// check if bid in usd*10**-12 is greater than required target cmst in usd*10**-12
-	// if user wants to buy more than target cmst then user should be sold only required cmst amount
+	// check if bid in usd*10**-12 is greater than required target fust in usd*10**-12
+	// if user wants to buy more than target fust then user should be sold only required fust amount
 	// so we need to divide tab by outflow token current price and we get outflowtoken amount to be sold to user
-	// if user is not buying more than required cmst then we check for dust
+	// if user is not buying more than required fust then we check for dust
 	// here tab is divided by price again so price ration is only considered , we are not using owe again in this function so no problem
 	// As tab is the amount calculated from difference of target and current inflow token we will be using same as inflow token
 
@@ -280,7 +280,7 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	auction.OutflowTokenCurrentAmount = auction.OutflowTokenCurrentAmount.Sub(outFlowTokenCoin)
 	auction.InflowTokenCurrentAmount = auction.InflowTokenCurrentAmount.Add(inFlowTokenCoin)
 
-	// collateral not over but target cmst reached then send remaining collateral to owner
+	// collateral not over but target fust reached then send remaining collateral to owner
 	// if inflow token current amount >= InflowTokenTargetAmount
 	if auction.InflowTokenCurrentAmount.IsGTE(auction.InflowTokenTargetAmount) {
 		total := auction.OutflowTokenCurrentAmount

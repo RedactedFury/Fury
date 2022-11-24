@@ -1,10 +1,10 @@
 syntax = "proto3";
-package comdex.collector.v1beta1;
+package fury.collector.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/collector/v1beta1/params.proto";
-import "comdex/collector/v1beta1/collector.proto";
+import "fury/collector/v1beta1/params.proto";
+import "fury/collector/v1beta1/collector.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/collector/types";
@@ -16,19 +16,19 @@ service Query {
     option (google.api.http).get = "/Fury-Labs/fury/collector/params";
   }
   rpc QueryCollectorLookupByApp(QueryCollectorLookupByAppRequest) returns (QueryCollectorLookupByAppResponse) {
-    option (google.api.http).get = "/comdex/collector/v1beta1/collector-lookup-by-app/{app_id}";
+    option (google.api.http).get = "/fury/collector/v1beta1/collector-lookup-by-app/{app_id}";
   };
   rpc QueryCollectorLookupByAppAndAsset(QueryCollectorLookupByAppAndAssetRequest) returns (QueryCollectorLookupByAppAndAssetResponse) {
-    option (google.api.http).get = "/comdex/collector/v1beta1/collector-lookup-by-app-and-asset/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/collector/v1beta1/collector-lookup-by-app-and-asset/{app_id}/{asset_id}";
   };
   rpc QueryCollectorDataByAppAndAsset(QueryCollectorDataByAppAndAssetRequest) returns (QueryCollectorDataByAppAndAssetResponse) {
-    option (google.api.http).get = "/comdex/collector/v1beta1/collector-data-by-app-and-asset/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/collector/v1beta1/collector-data-by-app-and-asset/{app_id}/{asset_id}";
   };
   rpc QueryAuctionMappingForAppAndAsset(QueryAuctionMappingForAppAndAssetRequest) returns (QueryAuctionMappingForAppAndAssetResponse) {
-    option (google.api.http).get = "/comdex/collector/v1beta1/auction-data-by-app-and-asset/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/collector/v1beta1/auction-data-by-app-and-asset/{app_id}/{asset_id}";
   };
   rpc QueryNetFeeCollectedForAppAndAsset(QueryNetFeeCollectedForAppAndAssetRequest) returns (QueryNetFeeCollectedForAppAndAssetResponse) {
-    option (google.api.http).get = "/comdex/collector/v1beta1/net-fee-data-by-app-and-asset/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/collector/v1beta1/net-fee-data-by-app-and-asset/{app_id}/{asset_id}";
   };
 
 }

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package comdex.liquidity.v1beta1;
+package fury.liquidity.v1beta1;
 
 import "gogoproto/gogo.proto";
 

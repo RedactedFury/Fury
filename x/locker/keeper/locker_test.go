@@ -32,8 +32,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 	s.Require().NoError(err)
 
 	msg3 := assetTypes.Asset{
-		Name:      "CMDX",
-		Denom:     "ucmdx",
+		Name:      "FURY",
+		Denom:     "ufury",
 		Decimals:  sdk.NewInt(1000000),
 		IsOnChain: true,
 	}
@@ -42,8 +42,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 	s.Require().NoError(err)
 
 	msg4 := assetTypes.Asset{
-		Name:      "CMST",
-		Denom:     "ucmst",
+		Name:      "FUST",
+		Denom:     "ufust",
 		Decimals:  sdk.NewInt(1000000),
 		IsOnChain: true,
 	}
@@ -265,9 +265,9 @@ func (s *KeeperTestSuite) TestCreateLocker() {
 	} {
 		s.Run(tc.name, func() {
 			if tc.msg.AssetId == 1 {
-				s.fundAddr(userAddress, sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(tc.fundAmount)))
+				s.fundAddr(userAddress, sdk.NewCoin("ufury", sdk.NewIntFromUint64(tc.fundAmount)))
 			} else {
-				s.fundAddr(userAddress, sdk.NewCoin("ucmst", sdk.NewIntFromUint64(tc.fundAmount)))
+				s.fundAddr(userAddress, sdk.NewCoin("ufust", sdk.NewIntFromUint64(tc.fundAmount)))
 			}
 			_, err := server.MsgCreateLocker(sdk.WrapSDKContext(*ctx), &tc.msg)
 			if tc.ExpErr != nil {
@@ -448,9 +448,9 @@ func (s *KeeperTestSuite) TestDepositLocker() {
 	} {
 		s.Run(tc.name, func() {
 			if tc.msg.AssetId == 1 {
-				s.fundAddr(userAddress, sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(tc.fundAmount)))
+				s.fundAddr(userAddress, sdk.NewCoin("ufury", sdk.NewIntFromUint64(tc.fundAmount)))
 			} else {
-				s.fundAddr(userAddress, sdk.NewCoin("ucmst", sdk.NewIntFromUint64(tc.fundAmount)))
+				s.fundAddr(userAddress, sdk.NewCoin("ufust", sdk.NewIntFromUint64(tc.fundAmount)))
 			}
 			lockerInfo, err := s.querier.QueryLockerInfo(sdk.WrapSDKContext(*ctx), &tc.query)
 			s.Require().NoError(err)
@@ -801,9 +801,9 @@ func (s *KeeperTestSuite) TestSetNetFeeCollectedData() {
 }
 
 func (s *KeeperTestSuite) TestFundModule() {
-	err := s.app.BankKeeper.MintCoins(s.ctx, lockerTypes.ModuleName, sdk.NewCoins(sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(10000000000))))
+	err := s.app.BankKeeper.MintCoins(s.ctx, lockerTypes.ModuleName, sdk.NewCoins(sdk.NewCoin("ufury", sdk.NewIntFromUint64(10000000000))))
 	s.Require().NoError(err)
-	err = s.app.BankKeeper.SendCoinsFromModuleToModule(s.ctx, lockerTypes.ModuleName, collectortypes.ModuleName, sdk.NewCoins(sdk.NewCoin("ucmdx", sdk.NewIntFromUint64(10000000000))))
+	err = s.app.BankKeeper.SendCoinsFromModuleToModule(s.ctx, lockerTypes.ModuleName, collectortypes.ModuleName, sdk.NewCoins(sdk.NewCoin("ufury", sdk.NewIntFromUint64(10000000000))))
 	s.Require().NoError(err)
 }
 

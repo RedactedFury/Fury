@@ -1,9 +1,9 @@
 syntax = "proto3";
-package comdex.liquidation.v1beta1;
+package fury.liquidation.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/liquidation/v1beta1/params.proto";
-import "comdex/liquidation/v1beta1/locked_vault.proto";
+import "fury/liquidation/v1beta1/params.proto";
+import "fury/liquidation/v1beta1/locked_vault.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/liquidation/types";
 

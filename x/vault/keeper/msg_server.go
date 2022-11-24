@@ -1321,7 +1321,7 @@ func (k msgServer) MsgWithdrawStableMint(c context.Context, msg *types.MsgWithdr
 	if stableAmountIn.LT(sdk.NewInt(0)) {
 		return nil, types.ErrorInvalidAmount
 	}
-	// updated amount is the CMST amount
+	// updated amount is the FUST amount
 	var updatedAmount sdk.Int
 	// Take amount from user
 	if msg.Amount.GT(sdk.ZeroInt()) {

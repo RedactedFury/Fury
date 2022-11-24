@@ -9,10 +9,10 @@ import (
 )
 
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgCreateGauge{}, "comdex/rewards/MsgCreateGauge", nil)
-	cdc.RegisterConcrete(&ActivateExternalRewardsLockers{}, "comdex/rewards/activateExternalRewardsLockers", nil)
-	cdc.RegisterConcrete(&ActivateExternalRewardsVault{}, "comdex/rewards/activateExternalRewardsVault", nil)
-	cdc.RegisterConcrete(&ActivateExternalRewardsLend{}, "comdex/rewards/activateExternalRewardsLend", nil)
+	cdc.RegisterConcrete(&MsgCreateGauge{}, "fury/rewards/MsgCreateGauge", nil)
+	cdc.RegisterConcrete(&ActivateExternalRewardsLockers{}, "fury/rewards/activateExternalRewardsLockers", nil)
+	cdc.RegisterConcrete(&ActivateExternalRewardsVault{}, "fury/rewards/activateExternalRewardsVault", nil)
+	cdc.RegisterConcrete(&ActivateExternalRewardsLend{}, "fury/rewards/activateExternalRewardsLend", nil)
 }
 
 func RegisterInterfaces(registry cdctypes.InterfaceRegistry) {

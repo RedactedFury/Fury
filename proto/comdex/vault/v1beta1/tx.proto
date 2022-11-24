@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package comdex.vault.v1beta1;
+package fury.vault.v1beta1;
 
 import "gogoproto/gogo.proto";
 

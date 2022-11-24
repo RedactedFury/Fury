@@ -32,7 +32,7 @@ func GetQueryCmd() *cobra.Command {
 	return cmd
 }
 
-// QueryAllTokenMintedForAllApps Queries the total token minted for all the apps on comdex.
+// QueryAllTokenMintedForAllApps Queries the total token minted for all the apps on fury.
 func QueryAllTokenMintedForAllApps() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "total-token-minted-all-apps",

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package comdex.esm.v1beta1;
+package fury.esm.v1beta1;
 
 import "gogoproto/gogo.proto";
 

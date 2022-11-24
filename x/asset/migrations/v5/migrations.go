@@ -37,7 +37,7 @@ func MigrateValueApps(store sdk.KVStore, cdc codec.BinaryCodec) error {
 		AssetId:       9,
 		GenesisSupply: sdk.NewIntFromUint64(1000000000000000),
 		IsGovToken:    true,
-		Recipient:     "comdex1unvvj23q89dlgh82rdtk5su7akdl5932reqarg",
+		Recipient:     "fury1unvvj23q89dlgh82rdtk5su7akdl5932reqarg",
 	}
 	var gToken []assettypes.MintGenesisToken
 	gToken = append(gToken, genesisToken)
@@ -82,8 +82,8 @@ func MigrateValueAsset(store sdk.KVStore, cdc codec.BinaryCodec) error {
 
 	asset2 := assettypes.Asset{
 		Id:                    2,
-		Name:                  "CMDX",
-		Denom:                 "ucmdx",
+		Name:                  "FURY",
+		Denom:                 "ufury",
 		Decimals:              sdk.NewInt(1000000),
 		IsOnChain:             false,
 		IsOraclePriceRequired: true,
@@ -94,8 +94,8 @@ func MigrateValueAsset(store sdk.KVStore, cdc codec.BinaryCodec) error {
 
 	asset3 := assettypes.Asset{
 		Id:                    3,
-		Name:                  "CMST",
-		Denom:                 "ucmst",
+		Name:                  "FUST",
+		Denom:                 "ufust",
 		Decimals:              sdk.NewInt(1000000),
 		IsOnChain:             false,
 		IsOraclePriceRequired: true,
@@ -130,8 +130,8 @@ func MigrateValueAsset(store sdk.KVStore, cdc codec.BinaryCodec) error {
 
 	asset6 := assettypes.Asset{
 		Id:                    6,
-		Name:                  "cCMDX",
-		Denom:                 "uccmdx",
+		Name:                  "cFURY",
+		Denom:                 "usfury",
 		Decimals:              sdk.NewInt(1000000),
 		IsOnChain:             false,
 		IsOraclePriceRequired: false,
@@ -142,8 +142,8 @@ func MigrateValueAsset(store sdk.KVStore, cdc codec.BinaryCodec) error {
 
 	asset7 := assettypes.Asset{
 		Id:                    7,
-		Name:                  "cCMST",
-		Denom:                 "uccmst",
+		Name:                  "cFUST",
+		Denom:                 "usfust",
 		Decimals:              sdk.NewInt(1000000),
 		IsOnChain:             false,
 		IsOraclePriceRequired: false,

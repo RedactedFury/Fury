@@ -1,11 +1,11 @@
 syntax = "proto3";
-package comdex.locker.v1beta1;
+package fury.locker.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/locker/v1beta1/locker.proto";
-import "comdex/locker/v1beta1/params.proto";
-import "comdex/asset/v1beta1/asset.proto";
+import "fury/locker/v1beta1/locker.proto";
+import "fury/locker/v1beta1/params.proto";
+import "fury/asset/v1beta1/asset.proto";
 import "cosmos/base/v1beta1/coin.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
@@ -16,76 +16,76 @@ option (gogoproto.goproto_getters_all) = false;
 service Query {
 
   rpc QueryLockerInfo(QueryLockerInfoRequest) returns (QueryLockerInfoResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/locker_info/{id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/locker_info/{id}";
   };
 
   rpc QueryLockersByAppToAssetID(QueryLockersByAppToAssetIDRequest) returns (QueryLockersByAppToAssetIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/lockers_info_asset_id/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/lockers_info_asset_id/{app_id}/{asset_id}";
   };
 
   rpc QueryLockerInfoByAppID(QueryLockerInfoByAppIDRequest) returns (QueryLockerInfoByAppIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/lockers_info_app_id/{app_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/lockers_info_app_id/{app_id}";
   };
 
 
   rpc QueryTotalDepositByAppAndAssetID(QueryTotalDepositByAppAndAssetIDRequest) returns (QueryTotalDepositByAppAndAssetIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/total_deposit_app_asset_id/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/total_deposit_app_asset_id/{app_id}/{asset_id}";
   };
 
   rpc QueryOwnerLockerByAppIDbyOwner(QueryOwnerLockerByAppIDbyOwnerRequest) returns (QueryOwnerLockerByAppIDbyOwnerResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/owner_locker_by_all_app_by_owner/{app_id}/{owner}";
+    option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_by_all_app_by_owner/{app_id}/{owner}";
   };
 
   rpc QueryOwnerLockerOfAllAppsByOwner(QueryOwnerLockerOfAllAppsByOwnerRequest) returns (QueryOwnerLockerOfAllAppsByOwnerResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/owner_locker_info_by_all_apps_owner/{owner}";
+    option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_info_by_all_apps_owner/{owner}";
   };
 
   rpc QueryOwnerTxDetailsLockerOfAppByOwnerByAsset(QueryOwnerTxDetailsLockerOfAppByOwnerByAssetRequest) returns (QueryOwnerTxDetailsLockerOfAppByOwnerByAssetResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/owner_locker_tx-details_by_app_asset/{app_id}/{owner}/{asset_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_tx-details_by_app_asset/{app_id}/{owner}/{asset_id}";
   };
 
   rpc QueryOwnerLockerByAppToAssetIDbyOwner(QueryOwnerLockerByAppToAssetIDbyOwnerRequest) returns (QueryOwnerLockerByAppToAssetIDbyOwnerResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/owner_locker_info_app_asset_id_owner/{app_id}/{asset_id}/{owner}";
+    option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_info_app_asset_id_owner/{app_id}/{asset_id}/{owner}";
   };
 
   rpc QueryLockerByAppByOwner(QueryLockerByAppByOwnerRequest) returns (QueryLockerByAppByOwnerResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/locker_info_app_owner/{app_id}/{owner}";
+    option (google.api.http).get = "/fury/locker/v1beta1/locker_info_app_owner/{app_id}/{owner}";
   };
 
   rpc QueryLockerCountByAppID(QueryLockerCountByAppIDRequest) returns (QueryLockerCountByAppIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/total_locker_app_id/{app_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/total_locker_app_id/{app_id}";
   };
 
   rpc QueryLockerCountByAppToAssetID(QueryLockerCountByAppToAssetIDRequest) returns (QueryLockerCountByAppToAssetIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/total_locker_app_asset_id/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/total_locker_app_asset_id/{app_id}/{asset_id}";
   };
 
   rpc QueryWhiteListedAssetIDsByAppID(QueryWhiteListedAssetIDsByAppIDRequest) returns (QueryWhiteListedAssetIDsByAppIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/whitelisted_asset_ids_by_app_id/{app_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/whitelisted_asset_ids_by_app_id/{app_id}";
   };
 
   rpc QueryWhiteListedAssetByAllApps(QueryWhiteListedAssetByAllAppsRequest) returns (QueryWhiteListedAssetByAllAppsResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/whitelisted_asset_app_id";
+    option (google.api.http).get = "/fury/locker/v1beta1/whitelisted_asset_app_id";
   };
 
   rpc QueryParams(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/params";
+    option (google.api.http).get = "/fury/locker/v1beta1/params";
   };
 
   rpc QueryLockerLookupTableByApp(QueryLockerLookupTableByAppRequest) returns (QueryLockerLookupTableByAppResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/locker-lookup-by-app/{app_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/locker-lookup-by-app/{app_id}";
   };
 
   rpc QueryLockerLookupTableByAppAndAssetID(QueryLockerLookupTableByAppAndAssetIDRequest) returns (QueryLockerLookupTableByAppAndAssetIDResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/locker-lookup-by-app-and-assetId/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/locker-lookup-by-app-and-assetId/{app_id}/{asset_id}";
   };
 
   rpc QueryLockerTotalRewardsByAssetAppWise(QueryLockerTotalRewardsByAssetAppWiseRequest) returns (QueryLockerTotalRewardsByAssetAppWiseResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/loker-rewards-by-app-and-assetId/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/loker-rewards-by-app-and-assetId/{app_id}/{asset_id}";
   };
 
   rpc QueryLockerTotalDepositedByApp(QueryLockerTotalDepositedByAppRequest) returns (QueryLockerTotalDepositedByAppResponse) {
-    option (google.api.http).get = "/comdex/locker/v1beta1/locker-deposited-by-app/{app_id}";
+    option (google.api.http).get = "/fury/locker/v1beta1/locker-deposited-by-app/{app_id}";
   };
 
 }
@@ -254,7 +254,7 @@ message QueryWhiteListedAssetByAllAppsResponse {
 message AppToAllAsset {
 
   uint64  app_id = 1;
-  repeated comdex.asset.v1beta1.Asset assets = 2 [
+  repeated fury.asset.v1beta1.Asset assets = 2 [
     (gogoproto.moretags) = "yaml:\"assets\"",
     (gogoproto.nullable) = false
   ];

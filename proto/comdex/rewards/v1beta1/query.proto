@@ -1,13 +1,13 @@
 syntax = "proto3";
-package comdex.rewards.v1beta1;
+package fury.rewards.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
-import "comdex/rewards/v1beta1/params.proto";
-import "comdex/rewards/v1beta1/rewards.proto";
-import "comdex/rewards/v1beta1/gauge.proto";
-import "comdex/rewards/v1beta1/epochs.proto";
+import "fury/rewards/v1beta1/params.proto";
+import "fury/rewards/v1beta1/rewards.proto";
+import "fury/rewards/v1beta1/gauge.proto";
+import "fury/rewards/v1beta1/epochs.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/rewards/types";
 
@@ -15,41 +15,41 @@ option go_package = "github.com/Fury-Labs/fury/x/rewards/types";
 service Query {
 
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/params";
+    option (google.api.http).get = "/fury/rewards/v1beta1/params";
   }
   rpc QueryAllEpochsInfo(QueryAllEpochsInfoRequest) returns (QueryAllEpochsInfoResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/epochs";
+    option (google.api.http).get = "/fury/rewards/v1beta1/epochs";
   }
   rpc QueryEpochInfoByDuration(QueryEpochInfoByDurationRequest) returns (QueryEpochInfoByDurationResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/epoch_duration/{duration_seconds}";
+    option (google.api.http).get = "/fury/rewards/v1beta1/epoch_duration/{duration_seconds}";
   }
   rpc QueryAllGauges(QueryAllGaugesRequest) returns (QueryAllGaugesResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/gauges";
+    option (google.api.http).get = "/fury/rewards/v1beta1/gauges";
   }
   rpc QueryGaugeByID(QueryGaugeByIdRequest) returns (QueryGaugeByIdResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/gauge/{gauge_id}";
+    option (google.api.http).get = "/fury/rewards/v1beta1/gauge/{gauge_id}";
   }
   rpc QueryGaugeByDuration(QueryGaugesByDurationRequest) returns (QueryGaugeByDurationResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/gauge_duration/{duration_seconds}";
+    option (google.api.http).get = "/fury/rewards/v1beta1/gauge_duration/{duration_seconds}";
   }
 
   rpc QueryRewards(QueryRewardsRequest) returns (QueryRewardsResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/rewards";
+    option (google.api.http).get = "/fury/rewards/v1beta1/rewards";
   }
   rpc QueryReward(QueryRewardRequest) returns (QueryRewardResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/reward/{id}";
+    option (google.api.http).get = "/fury/rewards/v1beta1/reward/{id}";
   }
   rpc QueryExternalRewardsLockers(QueryExternalRewardsLockersRequest) returns (QueryExternalRewardsLockersResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/locker_external_rewards";
+    option (google.api.http).get = "/fury/rewards/v1beta1/locker_external_rewards";
   }
   rpc QueryExternalRewardVaults(QueryExternalRewardVaultsRequest) returns (QueryExternalRewardVaultsResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/vault_external_rewards";
+    option (google.api.http).get = "/fury/rewards/v1beta1/vault_external_rewards";
   }
   rpc QueryWhitelistedAppIdsVault(QueryWhitelistedAppIdsVaultRequest) returns (QueryWhitelistedAppIdsVaultResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/whitelisted_appids_Vault";
+    option (google.api.http).get = "/fury/rewards/v1beta1/whitelisted_appids_Vault";
   }
   rpc QueryExternalRewardLends(QueryExternalRewardLendsRequest) returns (QueryExternalRewardLendsResponse) {
-    option (google.api.http).get = "/comdex/rewards/v1beta1/lend_external_rewards";
+    option (google.api.http).get = "/fury/rewards/v1beta1/lend_external_rewards";
   }
 }
 

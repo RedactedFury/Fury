@@ -1,9 +1,9 @@
 syntax = "proto3";
-package comdex.esm.v1beta1;
+package fury.esm.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/esm/v1beta1/params.proto";
-import "comdex/esm/v1beta1/esm.proto";
+import "fury/esm/v1beta1/params.proto";
+import "fury/esm/v1beta1/esm.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/esm/types";
 

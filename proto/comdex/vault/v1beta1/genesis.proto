@@ -1,8 +1,8 @@
 syntax = "proto3";
-package comdex.vault.v1beta1;
+package fury.vault.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/vault/v1beta1/vault.proto";
+import "fury/vault/v1beta1/vault.proto";
 
 option go_package            = "github.com/Fury-Labs/fury/x/vault/types";
 option (gogoproto.equal_all) = false;

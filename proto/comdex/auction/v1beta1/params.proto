@@ -1,5 +1,5 @@
 syntax = "proto3";
-package comdex.auction.v1beta1;
+package fury.auction.v1beta1;
 
 
 option go_package = "github.com/Fury-Labs/fury/x/auction/types";

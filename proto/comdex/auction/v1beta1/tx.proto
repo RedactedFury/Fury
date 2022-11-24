@@ -1,5 +1,5 @@
 syntax = "proto3";
-package comdex.auction.v1beta1;
+package fury.auction.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";

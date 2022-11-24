@@ -1,9 +1,9 @@
 syntax = "proto3";
-package comdex.collector.v1beta1;
+package fury.collector.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/collector/v1beta1/params.proto";
-import "comdex/collector/v1beta1/collector.proto";
+import "fury/collector/v1beta1/params.proto";
+import "fury/collector/v1beta1/collector.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/collector/types";
 

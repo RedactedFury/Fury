@@ -16,25 +16,25 @@ const (
 
 func init() {
 	govtypes.RegisterProposalType(ProposalAddAssets)
-	govtypes.RegisterProposalTypeCodec(&AddAssetsProposal{}, "comdex/AddAssetsProposal")
+	govtypes.RegisterProposalTypeCodec(&AddAssetsProposal{}, "fury/AddAssetsProposal")
 
 	govtypes.RegisterProposalType(ProposalUpdateAsset)
-	govtypes.RegisterProposalTypeCodec(&UpdateAssetProposal{}, "comdex/UpdateAssetProposal")
+	govtypes.RegisterProposalTypeCodec(&UpdateAssetProposal{}, "fury/UpdateAssetProposal")
 
 	govtypes.RegisterProposalType(ProposalAddPairs)
-	govtypes.RegisterProposalTypeCodec(&AddPairsProposal{}, "comdex/AddPairsProposal")
+	govtypes.RegisterProposalTypeCodec(&AddPairsProposal{}, "fury/AddPairsProposal")
 
 	govtypes.RegisterProposalType(ProposalUpdatePair)
-	govtypes.RegisterProposalTypeCodec(&UpdatePairProposal{}, "comdex/UpdatePairProposal")
+	govtypes.RegisterProposalTypeCodec(&UpdatePairProposal{}, "fury/UpdatePairProposal")
 
 	govtypes.RegisterProposalType(ProposalUpdateGovTimeInApp)
-	govtypes.RegisterProposalTypeCodec(&UpdateGovTimeInAppProposal{}, "comdex/UpdateGovTimeInAppProposal")
+	govtypes.RegisterProposalTypeCodec(&UpdateGovTimeInAppProposal{}, "fury/UpdateGovTimeInAppProposal")
 
 	govtypes.RegisterProposalType(ProposalAddApp)
-	govtypes.RegisterProposalTypeCodec(&AddAppProposal{}, "comdex/AddAppProposal")
+	govtypes.RegisterProposalTypeCodec(&AddAppProposal{}, "fury/AddAppProposal")
 
 	govtypes.RegisterProposalType(ProposalAddAssetInApp)
-	govtypes.RegisterProposalTypeCodec(&AddAssetInAppProposal{}, "comdex/AddAssetInAppProposal")
+	govtypes.RegisterProposalTypeCodec(&AddAssetInAppProposal{}, "fury/AddAssetInAppProposal")
 }
 
 var (

@@ -1,11 +1,11 @@
 syntax = "proto3";
-package comdex.auction.v1beta1;
+package fury.auction.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/auction/v1beta1/params.proto";
-import "comdex/auction/v1beta1/auction.proto";
-import "comdex/auction/v1beta1/biddings.proto";
+import "fury/auction/v1beta1/params.proto";
+import "fury/auction/v1beta1/auction.proto";
+import "fury/auction/v1beta1/biddings.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/auction/types";
@@ -285,51 +285,51 @@ message QueryFilterDutchAuctionsResponse {
 
 service Query {
   rpc QuerySurplusAuction(QuerySurplusAuctionRequest) returns (QuerySurplusAuctionResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/surplusauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/surplusauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
   }
   rpc QuerySurplusAuctions(QuerySurplusAuctionsRequest) returns (QuerySurplusAuctionsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/surplusauctions/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/surplusauctions/{app_id}/{history}";
   }
   rpc QuerySurplusBiddings(QuerySurplusBiddingsRequest) returns (QuerySurplusBiddingsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/surplusbiddings/{bidder}/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/surplusbiddings/{bidder}/{app_id}/{history}";
   }
   rpc QueryDebtAuction(QueryDebtAuctionRequest) returns (QueryDebtAuctionResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/debtauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/debtauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
   }
   rpc QueryDebtAuctions(QueryDebtAuctionsRequest) returns (QueryDebtAuctionsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/debtauctions/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/debtauctions/{app_id}/{history}";
   }
   rpc QueryDebtBiddings(QueryDebtBiddingsRequest) returns (QueryDebtBiddingsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/debtbiddings/{bidder}/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/debtbiddings/{bidder}/{app_id}/{history}";
   }
   rpc QueryDutchAuction(QueryDutchAuctionRequest) returns (QueryDutchAuctionResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/dutchauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/dutchauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
   }
   rpc QueryDutchAuctions(QueryDutchAuctionsRequest) returns (QueryDutchAuctionsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/dutchauctions/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/dutchauctions/{app_id}/{history}";
   }
   rpc QueryDutchBiddings(QueryDutchBiddingsRequest) returns (QueryDutchBiddingsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/dutchbiddings/{bidder}/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/dutchbiddings/{bidder}/{app_id}/{history}";
   }
   rpc QueryParams(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/params";
+    option (google.api.http).get = "/fury/auction/v1beta1/params";
   }
   rpc QueryProtocolStatistics(QueryProtocolStatisticsRequest) returns (QueryProtocolStatisticsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/protocolstats/{app_id}";
+    option (google.api.http).get = "/fury/auction/v1beta1/protocolstats/{app_id}";
   }
   rpc QueryAuctionParams(QueryAuctionParamRequest) returns (QueryAuctionParamResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/auctionparams/{app_id}";
+    option (google.api.http).get = "/fury/auction/v1beta1/auctionparams/{app_id}";
   }
   rpc QueryDutchLendAuction(QueryDutchLendAuctionRequest) returns (QueryDutchLendAuctionResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/dutchlendauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/dutchlendauction/{app_id}/{auction_mapping_id}/{auction_id}/{history}";
   }
   rpc QueryDutchLendAuctions(QueryDutchLendAuctionsRequest) returns (QueryDutchLendAuctionsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/dutchlendauctions/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/dutchlendauctions/{app_id}/{history}";
   }
   rpc QueryDutchLendBiddings(QueryDutchLendBiddingsRequest) returns (QueryDutchLendBiddingsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/dutchlendbiddings/{bidder}/{app_id}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/dutchlendbiddings/{bidder}/{app_id}/{history}";
   }
   rpc QueryFilterDutchAuctions(QueryFilterDutchAuctionsRequest) returns (QueryFilterDutchAuctionsResponse) {
-    option (google.api.http).get = "/comdex/auction/v1beta1/filterdutchauctions/{app_id}/{denom}/{history}";
+    option (google.api.http).get = "/fury/auction/v1beta1/filterdutchauctions/{app_id}/{denom}/{history}";
   }
 }

@@ -1,4 +1,4 @@
-<h1 align="center">Comdex : Democratizing Finance </h1>
+<h1 align="center">Fury : Democratizing Finance </h1>
 
 <p align="center">
   <img src="./logo.svg" width="300">
@@ -11,11 +11,11 @@
 A DeFi infrastructure layer for the Cosmos ecosystem
 A layer-1 infrastructure for seamless deployment of DeFi applications in the Cosmos ecosystem, powering DeFi in the multi-chain future.
 
-Plug & play customizable Comdex modules to deliver bleeding edge dApps
+Plug & play customizable Fury modules to deliver bleeding edge dApps
 
 ## Docs
 
-Checkout the documents here [docs.comdex.one](https://docs.comdex.one).
+Checkout the documents here [docs.fury.one](https://docs.fury.one).
 
 Harbour protocol : [docs.harborprotocol.one](http://docs.harborprotocol.one).
 
@@ -24,7 +24,7 @@ Commodo : [docs.commodo.one](http://docs.commodo.one).
 cSwap :  [docs.cswap.one](https://docs.cswap.one).
 
 
-If you have technical questions or concerns, ask a developer or community member in the [Comdex discord](https://discord.com/invite/7vjPvWKKMT).
+If you have technical questions or concerns, ask a developer or community member in the [Fury discord](https://discord.com/invite/7vjPvWKKMT).
 
 ### Installation
 
@@ -33,8 +33,8 @@ Requires [Go 1.18+](https://golang.org/dl/)
 ### Linux
 
 ```shell
-mkdir -p ${GOPATH}/src/github.com/comdex-official/ && \
-cd ${GOPATH}/src/github.com/comdex-official/ && \
+mkdir -p ${GOPATH}/src/github.com/fury-official/ && \
+cd ${GOPATH}/src/github.com/fury-official/ && \
 git clone https://github.com/Fury-Labs/fury.git && \
 cd ${GOPATH}/src/github.com/Fury-Labs/fury/ && \
 make install
@@ -43,35 +43,35 @@ make install
 ## Testnet
 
 To verify latest testnet and main net version check
-[Version](https://github.com/comdex-official/networks/blob/main/README.md)
+[Version](https://github.com/fury-official/networks/blob/main/README.md)
 
 For further information on joining the testnet, head over to the
-[Comdex Networks TestNet](https://github.com/comdex-official/networks/tree/main/testnet).
+[Fury Networks TestNet](https://github.com/fury-official/networks/tree/main/testnet).
 
-The explorer for this chain is hosted [Meteor - TestNet Explorer](https://meteor-explorer.comdex.one)
+The explorer for this chain is hosted [Meteor - TestNet Explorer](https://meteor-explorer.fury.one)
 
 ## Main Net
 For further information on joining the mainnet, head over to the
-[Comdex Networks MainNet](https://github.com/comdex-official/networks/tree/main/mainnet).
+[Fury Networks MainNet](https://github.com/fury-official/networks/tree/main/mainnet).
 
 
 ## Main Net Explorers
 The explorer for this chain is hosted
 
-* [Mintscan](https://www.mintscan.io/comdex/)
-* [Aneka - Vitwit](https://comdex.aneka.io/)
-* [Look.Chill](https://look.chillvalidation.com/comdex)
-* [Atomscan](https://atomscan.com/comdex)
-* [ZenChainLabs](https://comdex.zenscan.io/)
+* [Mintscan](https://www.mintscan.io/fury/)
+* [Aneka - Vitwit](https://fury.aneka.io/)
+* [Look.Chill](https://look.chillvalidation.com/fury)
+* [Atomscan](https://atomscan.com/fury)
+* [ZenChainLabs](https://fury.zenscan.io/)
 
-## want to contribute to comdex, please go through the contribution guides
-* [Contribution guides](https://github.com/comdex-official/contribution-docs)
+## want to contribute to fury, please go through the contribution guides
+* [Contribution guides](https://github.com/fury-official/contribution-docs)
 
 ## License
 
-Copyright © Comdex Technologies Pte Ltd. All rights reserved.
+Copyright © Fury Technologies Pte Ltd. All rights reserved.
 
-Licensed under the [comdex license](LICENSE).
+Licensed under the [fury license](LICENSE).
 
 [![Project Status: Active -- The project has reached a stable, usable
 state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-green.svg?style=flat-square)](https://www.repostatus.org/#active)
@@ -80,5 +80,5 @@ state and is being actively developed.](https://img.shields.io/badge/repo%20stat
 [![API Reference](https://godoc.org/github.com/Fury-Labs/fury?status.svg)](https://godoc.org/github.com/Fury-Labs/fury)
 [![GitHub](https://img.shields.io/github/license/Fury-Labs/fury.svg)](https://github.com/Fury-Labs/fury/blob/development/LICENSE)
 [![Lines Of Code](https://img.shields.io/tokei/lines/github/Fury-Labs/fury?style=flat-square)](https://github.com/Fury-Labs/fury)
-[![Twitter Follow](https://img.shields.io/twitter/follow/ComdexOfficial?label=Follow&style=social)](https://twitter.com/ComdexOfficial)
+[![Twitter Follow](https://img.shields.io/twitter/follow/FuryOfficial?label=Follow&style=social)](https://twitter.com/FuryOfficial)
 [![Discord Chat](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/7vjPvWKKMT)

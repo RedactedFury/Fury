@@ -169,8 +169,8 @@ import (
 )
 
 const (
-	AccountAddressPrefix = "comdex"
-	Name                 = "comdex"
+	AccountAddressPrefix = "fury"
+	Name                 = "fury"
 )
 
 // GetWasmEnabledProposals parses the WasmProposalsEnabled / EnableSpecificWasmProposals values to
@@ -730,7 +730,7 @@ func New(
 	if err != nil {
 		panic(fmt.Sprintf("error while reading wasm config: %s", err))
 	}
-	supportedFeatures := "iterator,staking,stargate,comdex"
+	supportedFeatures := "iterator,staking,stargate,fury"
 
 	wasmOpts = append(cwasm.RegisterCustomPlugins(&app.LockerKeeper, &app.TokenmintKeeper, &app.AssetKeeper, &app.Rewardskeeper, &app.CollectorKeeper, &app.LiquidationKeeper, &app.AuctionKeeper, &app.EsmKeeper, &app.VaultKeeper, &app.LendKeeper, &app.LiquidityKeeper), wasmOpts...)
 

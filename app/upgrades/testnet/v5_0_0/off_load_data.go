@@ -36,9 +36,9 @@ func FuncMigrateLiquidatedBorrow(ctx sdk.Context, k lendkeeper.Keeper, liqK liqu
 			amountOut := sdk.NewCoin(assetOut.Denom, v.AmountOut)
 			var cpoolName string
 			if pair.AssetOutPoolID == 1 {
-				cpoolName = "CMDX-ATOM-CMST"
+				cpoolName = "FURY-ATOM-FUST"
 			} else {
-				cpoolName = "OSMO-ATOM-CMST"
+				cpoolName = "OSMO-ATOM-FUST"
 			}
 
 			globalIndex, _ := sdk.NewDecFromStr("0.002")

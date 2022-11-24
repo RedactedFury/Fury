@@ -11,12 +11,12 @@ import (
 )
 
 func TestGetParams(t *testing.T) {
-	comdexApp := app.Setup(false)
-	ctx := comdexApp.BaseApp.NewContext(false, tmproto.Header{})
+	furyApp := app.Setup(false)
+	ctx := furyApp.BaseApp.NewContext(false, tmproto.Header{})
 
 	params := types.DefaultParams()
 
-	comdexApp.Rewardskeeper.SetParams(ctx, params)
+	furyApp.Rewardskeeper.SetParams(ctx, params)
 
-	require.EqualValues(t, params, comdexApp.Rewardskeeper.GetParams(ctx))
+	require.EqualValues(t, params, furyApp.Rewardskeeper.GetParams(ctx))
 }

@@ -206,8 +206,8 @@ func (k Keeper) CalculateCollateral(ctx sdk.Context, appID uint64, amount sdk.Co
 	}
 
 	// Calculating share of all collateral asset that needs to be paid to the user upto the $ value of totalDebtAssetWorth
-	// Eg. If user brought $20 of CMST (totalDebtAssetWorth) and if 2 collateral exist as CMDX(80%) and ATOM(20%) then 20% of tokens that
-	// will be paid will be in terms of ATOM tokens , rest CMDX.
+	// Eg. If user brought $20 of FUST (totalDebtAssetWorth) and if 2 collateral exist as FURY(80%) and ATOM(20%) then 20% of tokens that
+	// will be paid will be in terms of ATOM tokens , rest FURY.
 	allAssetToAmtData := k.GetAllAssetToAmount(ctx, appID)
 	for _, tokenData := range allAssetToAmtData {
 		assetData, found := k.asset.GetAsset(ctx, tokenData.AssetID)
@@ -224,7 +224,7 @@ func (k Keeper) CalculateCollateral(ctx sdk.Context, appID uint64, amount sdk.Co
 					return types.ErrPriceNotFound
 				}
 			}
-			tokenShare := totalDebtAssetWorth.Mul(tokenData.Share) //$CMST Multiplied with Share of collateral give $share of collateral
+			tokenShare := totalDebtAssetWorth.Mul(tokenData.Share) //$FUST Multiplied with Share of collateral give $share of collateral
 			// To calculate quantity of collateral token from the $share of tokenShare
 			collateralQuantity := tokenShare.Quo(sdk.NewDecFromInt(sdk.NewIntFromUint64(unitRate)))
 			collateralQuantity = collateralQuantity.Mul(sdk.NewDecFromInt(assetData.Decimals))

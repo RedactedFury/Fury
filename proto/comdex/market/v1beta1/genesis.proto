@@ -1,8 +1,8 @@
 syntax = "proto3";
-package comdex.market.v1beta1;
+package fury.market.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/market/v1beta1/market.proto";
+import "fury/market/v1beta1/market.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/market/types";
 option (gogoproto.equal_all)           = false;

@@ -1,10 +1,10 @@
 syntax = "proto3";
-package comdex.vault.v1beta1;
+package fury.vault.v1beta1;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/vault/v1beta1/vault.proto";
+import "fury/vault/v1beta1/vault.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/vault/types";
 option (gogoproto.equal_all) = false;
@@ -366,100 +366,100 @@ message QueryPairsLockedAndMintedStatisticByAppResponse {
 
 service Query {
   rpc QueryVault(QueryVaultRequest) returns (QueryVaultResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaults/{id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaults/{id}";
   };
 
   rpc QueryUserExtendedPairTotalData(QueryUserExtendedPairTotalDataRequest) returns (QueryUserExtendedPairTotalDataResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/user-extended-pair-total-data/{owner}";
+    option (google.api.http).get = "/fury/vault/v1beta1/user-extended-pair-total-data/{owner}";
   };
 
   rpc QueryVaultInfoByVaultID(QueryVaultInfoByVaultIDRequest) returns (QueryVaultInfoByVaultIDResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaultsInfo-by-vault-id/{id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaultsInfo-by-vault-id/{id}";
   };
 
   rpc QueryVaultInfoOfOwnerByApp(QueryVaultInfoOfOwnerByAppRequest) returns (QueryVaultInfoOfOwnerByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaultsInfo-of-owner-by-app/{app_id}/{owner}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaultsInfo-of-owner-by-app/{app_id}/{owner}";
   };
 
   rpc QueryAllVaults(QueryAllVaultsRequest) returns (QueryAllVaultsResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaults";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaults";
   };
   rpc QueryAllVaultsByApp(QueryAllVaultsByAppRequest) returns (QueryAllVaultsByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaults-by-App/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaults-by-App/{app_id}";
   };
   rpc QueryAllVaultsByAppAndExtendedPair(QueryAllVaultsByAppAndExtendedPairRequest) returns (QueryAllVaultsByAppAndExtendedPairResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaults-by-app-and-extended-pair/{app_id}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaults-by-app-and-extended-pair/{app_id}/{extended_pair_id}";
   };
 
   rpc QueryVaultIDOfOwnerByExtendedPairAndApp(QueryVaultIDOfOwnerByExtendedPairAndAppRequest) returns (QueryVaultIDOfOwnerByExtendedPairAndAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vault-id-of-owner-by-extended-pair-and-app/{app_id}/{owner}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vault-id-of-owner-by-extended-pair-and-app/{app_id}/{owner}/{extended_pair_id}";
   };
 
   rpc QueryVaultIdsByAppInAllExtendedPairs(QueryVaultIdsByAppInAllExtendedPairsRequest) returns (QueryVaultIdsByAppInAllExtendedPairsResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vaultIds-by-app-in-all-extendedPairs/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vaultIds-by-app-in-all-extendedPairs/{app_id}";
   };
 
   rpc QueryAllVaultIdsByAnOwner(QueryAllVaultIdsByAnOwnerRequest) returns (QueryAllVaultIdsByAnOwnerResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vault-ids-by-an-owner/{owner}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vault-ids-by-an-owner/{owner}";
   };
 
   rpc QueryTokenMintedByAppAndExtendedPair(QueryTokenMintedByAppAndExtendedPairRequest) returns (QueryTokenMintedByAppAndExtendedPairResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/token-minted-by-App-and-extended-pair/{app_id}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/token-minted-by-App-and-extended-pair/{app_id}/{extended_pair_id}";
   };
 
   rpc QueryTokenMintedAssetWiseByApp(QueryTokenMintedAssetWiseByAppRequest) returns (QueryTokenMintedAssetWiseByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/token-minted-asset-wise-by-app/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/token-minted-asset-wise-by-app/{app_id}";
   };
 
   rpc QueryVaultCountByApp(QueryVaultCountByAppRequest) returns (QueryVaultCountByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vault-count-by-an-App/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vault-count-by-an-App/{app_id}";
   };
 
   rpc QueryVaultCountByAppAndExtendedPair(QueryVaultCountByAppAndExtendedPairRequest) returns (QueryVaultCountByAppAndExtendedPairResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/vault-count-by-an-App-and-extended-pair/{app_id}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/vault-count-by-an-App-and-extended-pair/{app_id}/{extended_pair_id}";
   };
 
   rpc QueryTotalValueLockedByAppAndExtendedPair(QueryTotalValueLockedByAppAndExtendedPairRequest) returns (QueryTotalValueLockedByAppAndExtendedPairResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/value-locked-by-App-and-extended-pair/{app_id}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/value-locked-by-App-and-extended-pair/{app_id}/{extended_pair_id}";
   };
 
   rpc QueryExtendedPairIDsByApp(QueryExtendedPairIDsByAppRequest) returns (QueryExtendedPairIDsByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/external-pair-id-by-App/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/external-pair-id-by-App/{app_id}";
   };
 
   rpc QueryStableVaultByVaultID(QueryStableVaultByVaultIDRequest) returns (QueryStableVaultByVaultIDResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/stable-vault-by-id/{stable_vault_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/stable-vault-by-id/{stable_vault_id}";
   };
 
   rpc QueryStableVaultByApp(QueryStableVaultByAppRequest) returns (QueryStableVaultByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/stable-vault-by-App/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/stable-vault-by-App/{app_id}";
   };
 
   rpc QueryStableVaultByAppAndExtendedPair(QueryStableVaultByAppAndExtendedPairRequest) returns (QueryStableVaultByAppAndExtendedPairResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/stable-vault-by-App-and-extendedPair/{app_id}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/stable-vault-by-App-and-extendedPair/{app_id}/{extended_pair_id}";
   };
 
   rpc QueryExtendedPairVaultMappingByAppAndExtendedPair(QueryExtendedPairVaultMappingByAppAndExtendedPairRequest) returns (QueryExtendedPairVaultMappingByAppAndExtendedPairResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/extendedPairVault-mapping-by-App-and-ExtendedPair/{app_id}/{extended_pair_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/extendedPairVault-mapping-by-App-and-ExtendedPair/{app_id}/{extended_pair_id}";
   };
 
   rpc QueryExtendedPairVaultMappingByApp(QueryExtendedPairVaultMappingByAppRequest) returns (QueryExtendedPairVaultMappingByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/extendedPairVault-mapping-by-App/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/extendedPairVault-mapping-by-App/{app_id}";
   };
 
   rpc QueryTVLByAppOfAllExtendedPairs(QueryTVLByAppOfAllExtendedPairsRequest) returns (QueryTVLByAppOfAllExtendedPairsResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/tvl-by-app-all-extended-pairs/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/tvl-by-app-all-extended-pairs/{app_id}";
   };
 
   rpc QueryTVLByApp(QueryTVLByAppRequest) returns (QueryTVLByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/tvl-by-app/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/tvl-by-app/{app_id}";
   };
 
   rpc QueryUserMyPositionByApp(QueryUserMyPositionByAppRequest) returns (QueryUserMyPositionByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/user-my-position-by-app/{app_id}/{owner}";
+    option (google.api.http).get = "/fury/vault/v1beta1/user-my-position-by-app/{app_id}/{owner}";
   };
 
   rpc QueryPairsLockedAndMintedStatisticByApp(QueryPairsLockedAndMintedStatisticByAppRequest) returns (QueryPairsLockedAndMintedStatisticByAppResponse) {
-    option (google.api.http).get = "/comdex/vault/v1beta1/pairs-locked-and-minted-statistic-by-app/{app_id}";
+    option (google.api.http).get = "/fury/vault/v1beta1/pairs-locked-and-minted-statistic-by-app/{app_id}";
   };
 }

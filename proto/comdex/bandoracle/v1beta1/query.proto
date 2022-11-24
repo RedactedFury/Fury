@@ -1,25 +1,25 @@
 syntax = "proto3";
-package comdex.bandoracle.v1beta1;
+package fury.bandoracle.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/bandoracle/v1beta1/fetch_price.proto";
-import "comdex/bandoracle/v1beta1/params.proto";
+import "fury/bandoracle/v1beta1/fetch_price.proto";
+import "fury/bandoracle/v1beta1/params.proto";
 
 
 option go_package = "github.com/Fury-Labs/fury/x/bandoracle/types";
 
 service Query {
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/bandoracle/v1beta1/params";
+    option (google.api.http).get = "/fury/bandoracle/v1beta1/params";
   }
 
   rpc FetchPriceResult(QueryFetchPriceRequest) returns (QueryFetchPriceResponse) {
-    option (google.api.http).get = "/comdex/bandoracle/v1beta1/fetch_price_result/{request_id}";
+    option (google.api.http).get = "/fury/bandoracle/v1beta1/fetch_price_result/{request_id}";
   }
 
   rpc LastFetchPriceID(QueryLastFetchPriceIdRequest) returns (QueryLastFetchPriceIdResponse) {
-    option (google.api.http).get = "/comdex/bandoracle/v1beta1/last_fetch_price_id";
+    option (google.api.http).get = "/fury/bandoracle/v1beta1/last_fetch_price_id";
   }
 }
 

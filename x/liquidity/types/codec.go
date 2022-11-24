@@ -12,18 +12,18 @@ import (
 // RegisterLegacyAminoCodec registers the necessary x/liquidity interfaces and concrete types
 // on the provided LegacyAmino codec. These types are used for Amino JSON serialization.
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgCreatePair{}, "comdex/liquidity/MsgCreatePair", nil)
-	cdc.RegisterConcrete(&MsgCreatePool{}, "comdex/liquidity/MsgCreatePool", nil)
-	cdc.RegisterConcrete(&MsgDeposit{}, "comdex/liquidity/MsgDeposit", nil)
-	cdc.RegisterConcrete(&MsgWithdraw{}, "comdex/liquidity/MsgWithdraw", nil)
-	cdc.RegisterConcrete(&MsgLimitOrder{}, "comdex/liquidity/MsgLimitOrder", nil)
-	cdc.RegisterConcrete(&MsgMarketOrder{}, "comdex/liquidity/MsgMarketOrder", nil)
-	cdc.RegisterConcrete(&MsgCancelOrder{}, "comdex/liquidity/MsgCancelOrder", nil)
-	cdc.RegisterConcrete(&MsgCancelAllOrders{}, "comdex/liquidity/MsgCancelAllOrders", nil)
-	cdc.RegisterConcrete(&MsgFarm{}, "comdex/liquidity/MsgFarm", nil)
-	cdc.RegisterConcrete(&MsgUnfarm{}, "comdex/liquidity/MsgUnfarm", nil)
-	cdc.RegisterConcrete(&UpdateGenericParamsProposal{}, "comdex/liquidity/UpdateGenericParamsProposal", nil)
-	cdc.RegisterConcrete(&CreateNewLiquidityPairProposal{}, "comdex/liquidity/CreateNewLiquidityPairProposal", nil)
+	cdc.RegisterConcrete(&MsgCreatePair{}, "fury/liquidity/MsgCreatePair", nil)
+	cdc.RegisterConcrete(&MsgCreatePool{}, "fury/liquidity/MsgCreatePool", nil)
+	cdc.RegisterConcrete(&MsgDeposit{}, "fury/liquidity/MsgDeposit", nil)
+	cdc.RegisterConcrete(&MsgWithdraw{}, "fury/liquidity/MsgWithdraw", nil)
+	cdc.RegisterConcrete(&MsgLimitOrder{}, "fury/liquidity/MsgLimitOrder", nil)
+	cdc.RegisterConcrete(&MsgMarketOrder{}, "fury/liquidity/MsgMarketOrder", nil)
+	cdc.RegisterConcrete(&MsgCancelOrder{}, "fury/liquidity/MsgCancelOrder", nil)
+	cdc.RegisterConcrete(&MsgCancelAllOrders{}, "fury/liquidity/MsgCancelAllOrders", nil)
+	cdc.RegisterConcrete(&MsgFarm{}, "fury/liquidity/MsgFarm", nil)
+	cdc.RegisterConcrete(&MsgUnfarm{}, "fury/liquidity/MsgUnfarm", nil)
+	cdc.RegisterConcrete(&UpdateGenericParamsProposal{}, "fury/liquidity/UpdateGenericParamsProposal", nil)
+	cdc.RegisterConcrete(&CreateNewLiquidityPairProposal{}, "fury/liquidity/CreateNewLiquidityPairProposal", nil)
 }
 
 // RegisterInterfaces registers the x/liquidity interfaces types with the

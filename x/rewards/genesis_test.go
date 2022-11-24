@@ -12,14 +12,14 @@ import (
 )
 
 func TestGenesis(t *testing.T) {
-	comdexApp := app.Setup(false)
-	ctx := comdexApp.BaseApp.NewContext(false, tmproto.Header{})
+	furyApp := app.Setup(false)
+	ctx := furyApp.BaseApp.NewContext(false, tmproto.Header{})
 
 	genesisState := types.GenesisState{
 		Params: types.DefaultParams(),
 	}
 
-	rewards.InitGenesis(ctx, comdexApp.Rewardskeeper, &genesisState)
-	got := rewards.ExportGenesis(ctx, comdexApp.Rewardskeeper)
+	rewards.InitGenesis(ctx, furyApp.Rewardskeeper, &genesisState)
+	got := rewards.ExportGenesis(ctx, furyApp.Rewardskeeper)
 	require.NotNil(t, got)
 }

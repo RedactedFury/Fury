@@ -1,11 +1,11 @@
 syntax = "proto3";
-package comdex.market.v1beta1;
+package fury.market.v1beta1;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/market/v1beta1/market.proto";
-import "comdex/market/v1beta1/params.proto";
+import "fury/market/v1beta1/market.proto";
+import "fury/market/v1beta1/params.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/market/types";
 option (gogoproto.equal_all) = false;
@@ -47,12 +47,12 @@ message QueryParamsResponse {
 
 service Query {
   rpc QueryMarkets(QueryMarketsRequest) returns (QueryMarketsResponse) {
-    option (google.api.http).get = "/comdex/market/v1beta1/timeWeightedAverage";
+    option (google.api.http).get = "/fury/market/v1beta1/timeWeightedAverage";
   }
   rpc QueryMarket(QueryMarketRequest) returns (QueryMarketResponse) {
-    option (google.api.http).get = "/comdex/market/v1beta1/timeWeightedAverage/{assetID}";
+    option (google.api.http).get = "/fury/market/v1beta1/timeWeightedAverage/{assetID}";
   }
   rpc QueryParams(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/market/v1beta1/params";
+    option (google.api.http).get = "/fury/market/v1beta1/params";
   }
 }

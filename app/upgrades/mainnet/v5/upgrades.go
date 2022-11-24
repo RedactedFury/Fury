@@ -43,7 +43,7 @@ func InitializeStates(
 		AssetId:       9,
 		GenesisSupply: sdk.NewIntFromUint64(500000000000000),
 		IsGovToken:    true,
-		Recipient:     "comdex1tadhnvwa0sqzwr3m60f7dsjw4ua77qsz3ptcyw",
+		Recipient:     "fury1tadhnvwa0sqzwr3m60f7dsjw4ua77qsz3ptcyw",
 	}
 	var gToken []assettypes.MintGenesisToken
 	gToken = append(gToken, genesisToken)
@@ -62,12 +62,12 @@ func InitializeStates(
 
 	assets := []assettypes.Asset{
 		{Name: "ATOM", Denom: "ibc/961FA3E54F5DCCA639F37A7C45F7BBE41815579EF1513B5AFBEFCFEB8F256352", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
-		{Name: "CMDX", Denom: "ucmdx", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
-		{Name: "CMST", Denom: "ucmst", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: true, IsCdpMintable: true},
+		{Name: "FURY", Denom: "ufury", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
+		{Name: "FUST", Denom: "ufust", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: true, IsCdpMintable: true},
 		{Name: "OSMO", Denom: "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
 		{Name: "CATOM", Denom: "ucatom", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
-		{Name: "CCMDX", Denom: "uccmdx", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
-		{Name: "CCMST", Denom: "uccmst", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
+		{Name: "sFURY", Denom: "usfury", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
+		{Name: "CFUST", Denom: "usfust", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
 		{Name: "COSMO", Denom: "ucosmo", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: true},
 		{Name: "HARBOR", Denom: "uharbor", Decimals: sdk.NewInt(1000000), IsOnChain: true, IsOraclePriceRequired: false, IsCdpMintable: false},
 		{Name: "AXLUSDC", Denom: "ibc/E1616E7C19EA474C565737709A628D6F8A23FF9D3E9A7A6871306CF5E0A5341E", Decimals: sdk.NewInt(1000000), IsOnChain: false, IsOraclePriceRequired: true, IsCdpMintable: false},
@@ -99,7 +99,7 @@ func InitializeStates(
 		{
 			AppID: 2, PairID: 4, StabilityFee: sdk.ZeroDec(), ClosingFee: sdk.ZeroDec(), LiquidationPenalty: sdk.ZeroDec(),
 			DrawDownFee: sdk.MustNewDecFromStr("0.001"), IsVaultActive: true, DebtCeiling: sdk.NewInt(40000000000000), DebtFloor: sdk.NewInt(1000000), IsStableMintVault: true, MinCr: sdk.MustNewDecFromStr("1"),
-			PairName: "AXL-USDC-CMST", AssetOutOraclePrice: false, AssetOutPrice: 1000000, MinUsdValueLeft: 10000000000,
+			PairName: "AXL-USDC-FUST", AssetOutOraclePrice: false, AssetOutPrice: 1000000, MinUsdValueLeft: 10000000000,
 		},
 	}
 
@@ -161,7 +161,7 @@ func InitializeStates(
 		panic(err)
 	}
 
-	// whitlist cmst for locker
+	// whitlist fust for locker
 	locker := lockertypes.MsgAddWhiteListedAssetRequest{
 		AppId:   2,
 		AssetId: 3,
@@ -202,10 +202,10 @@ func InitializeStates(
 	}
 
 	liquidityPairs := []LiquidityPair{
-		{AppID: 1, From: "comdex12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ucmdx", QuoteCoinDenom: "ibc/961FA3E54F5DCCA639F37A7C45F7BBE41815579EF1513B5AFBEFCFEB8F256352"},
-		{AppID: 1, From: "comdex12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ucmdx", QuoteCoinDenom: "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B"},
-		{AppID: 1, From: "comdex12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ucmdx", QuoteCoinDenom: "ucmst"},
-		{AppID: 1, From: "comdex12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ucmdx", QuoteCoinDenom: "uharbor"},
+		{AppID: 1, From: "fury12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ufury", QuoteCoinDenom: "ibc/961FA3E54F5DCCA639F37A7C45F7BBE41815579EF1513B5AFBEFCFEB8F256352"},
+		{AppID: 1, From: "fury12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ufury", QuoteCoinDenom: "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B"},
+		{AppID: 1, From: "fury12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ufury", QuoteCoinDenom: "ufust"},
+		{AppID: 1, From: "fury12gfx7e3p08ljrwhq4lxz0360czcv9jpzajlytv", BaseCoinDenom: "ufury", QuoteCoinDenom: "uharbor"},
 	}
 
 	for _, lpair := range liquidityPairs {

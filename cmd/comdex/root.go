@@ -33,12 +33,12 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmdb "github.com/tendermint/tm-db"
 
-	comdex "github.com/Fury-Labs/fury/app"
+	fury "github.com/Fury-Labs/fury/app"
 )
 
-func NewRootCmd() (*cobra.Command, comdex.EncodingConfig) {
+func NewRootCmd() (*cobra.Command, fury.EncodingConfig) {
 	var (
-		config  = comdex.MakeEncodingConfig()
+		config  = fury.MakeEncodingConfig()
 		context = client.Context{}.
 			WithCodec(config.Marshaler).
 			WithInterfaceRegistry(config.InterfaceRegistry).
@@ -47,13 +47,13 @@ func NewRootCmd() (*cobra.Command, comdex.EncodingConfig) {
 			WithInput(os.Stdin).
 			WithAccountRetriever(authtypes.AccountRetriever{}).
 			WithBroadcastMode(flags.BroadcastBlock).
-			WithHomeDir(comdex.DefaultNodeHome)
+			WithHomeDir(fury.DefaultNodeHome)
 	)
 
 	cobra.EnableCommandSorting = false
 	root := &cobra.Command{
-		Use:   "comdex",
-		Short: "Comdex - Decentralised Synthetic Asset Exchange",
+		Use:   "fury",
+		Short: "Fury - Decentralised Synthetic Asset Exchange",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			if err := client.SetCmdClientContextHandler(context, cmd); err != nil {
 				return err
@@ -67,25 +67,25 @@ func NewRootCmd() (*cobra.Command, comdex.EncodingConfig) {
 	return root, config
 }
 
-func initRootCmd(rootCmd *cobra.Command, encoding comdex.EncodingConfig) {
+func initRootCmd(rootCmd *cobra.Command, encoding fury.EncodingConfig) {
 	rootCmd.AddCommand(
-		genutilcli.InitCmd(comdex.ModuleBasics, comdex.DefaultNodeHome),
-		genutilcli.CollectGenTxsCmd(banktypes.GenesisBalancesIterator{}, comdex.DefaultNodeHome),
-		genutilcli.GenTxCmd(comdex.ModuleBasics, encoding.TxConfig, banktypes.GenesisBalancesIterator{}, comdex.DefaultNodeHome),
-		genutilcli.ValidateGenesisCmd(comdex.ModuleBasics),
-		AddGenesisAccountCmd(comdex.DefaultNodeHome),
-		AddGenesisWasmMsgCmd(comdex.DefaultNodeHome),
+		genutilcli.InitCmd(fury.ModuleBasics, fury.DefaultNodeHome),
+		genutilcli.CollectGenTxsCmd(banktypes.GenesisBalancesIterator{}, fury.DefaultNodeHome),
+		genutilcli.GenTxCmd(fury.ModuleBasics, encoding.TxConfig, banktypes.GenesisBalancesIterator{}, fury.DefaultNodeHome),
+		genutilcli.ValidateGenesisCmd(fury.ModuleBasics),
+		AddGenesisAccountCmd(fury.DefaultNodeHome),
+		AddGenesisWasmMsgCmd(fury.DefaultNodeHome),
 		tmcli.NewCompletionCmd(rootCmd, true),
-		testnetCmd(comdex.ModuleBasics, banktypes.GenesisBalancesIterator{}),
+		testnetCmd(fury.ModuleBasics, banktypes.GenesisBalancesIterator{}),
 		debug.Cmd(),
 	)
 
-	server.AddCommands(rootCmd, comdex.DefaultNodeHome, appCreatorFunc, appExportFunc, addModuleInitFlags)
+	server.AddCommands(rootCmd, fury.DefaultNodeHome, appCreatorFunc, appExportFunc, addModuleInitFlags)
 	rootCmd.AddCommand(
 		rpc.StatusCommand(),
 		queryCommand(),
 		txCommand(),
-		keys.Commands(comdex.DefaultNodeHome),
+		keys.Commands(fury.DefaultNodeHome),
 	)
 }
 
@@ -111,7 +111,7 @@ func queryCommand() *cobra.Command {
 		authcli.QueryTxCmd(),
 	)
 
-	comdex.ModuleBasics.AddQueryCommands(cmd)
+	fury.ModuleBasics.AddQueryCommands(cmd)
 	cmd.PersistentFlags().String(flags.FlagChainID, "", "The network chain ID")
 
 	return cmd
@@ -137,7 +137,7 @@ func txCommand() *cobra.Command {
 		authcli.GetDecodeCommand(),
 	)
 
-	comdex.ModuleBasics.AddTxCommands(cmd)
+	fury.ModuleBasics.AddTxCommands(cmd)
 	cmd.PersistentFlags().String(flags.FlagChainID, "", "The network chain ID")
 
 	return cmd
@@ -172,13 +172,13 @@ func appCreatorFunc(logger log.Logger, db tmdb.DB, tracer io.Writer, options ser
 	if cast.ToBool(options.Get("telemetry.enabled")) {
 		wasmOpts = append(wasmOpts, wasmkeeper.WithVMCacheMetrics(prometheus.DefaultRegisterer))
 	}
-	return comdex.New(
+	return fury.New(
 		logger, db, tracer, true, skipUpgradeHeights,
 		cast.ToString(options.Get(flags.FlagHome)),
 		cast.ToUint(options.Get(server.FlagInvCheckPeriod)),
-		comdex.MakeEncodingConfig(),
+		fury.MakeEncodingConfig(),
 		options,
-		comdex.GetWasmEnabledProposals(),
+		fury.GetWasmEnabledProposals(),
 		wasmOpts,
 		baseapp.SetPruning(pruningOptions),
 		baseapp.SetMinGasPrices(cast.ToString(options.Get(server.FlagMinGasPrices))),
@@ -197,22 +197,22 @@ func appCreatorFunc(logger log.Logger, db tmdb.DB, tracer io.Writer, options ser
 func appExportFunc(logger log.Logger, db tmdb.DB, tracer io.Writer, height int64,
 	forZeroHeight bool, jailAllowedAddrs []string, options servertypes.AppOptions,
 ) (servertypes.ExportedApp, error) {
-	config := comdex.MakeEncodingConfig()
+	config := fury.MakeEncodingConfig()
 	config.Marshaler = codec.NewProtoCodec(config.InterfaceRegistry)
 	homePath, ok := options.Get(flags.FlagHome).(string)
 	if !ok || homePath == "" {
 		return servertypes.ExportedApp{}, errors.New("application home is not set")
 	}
 	var emptyWasmOpts []wasm.Option
-	var app *comdex.App
+	var app *fury.App
 	if height != -1 {
-		app = comdex.New(logger, db, tracer, false, map[int64]bool{}, homePath, cast.ToUint(options.Get(server.FlagInvCheckPeriod)), config, options, comdex.GetWasmEnabledProposals(), emptyWasmOpts)
+		app = fury.New(logger, db, tracer, false, map[int64]bool{}, homePath, cast.ToUint(options.Get(server.FlagInvCheckPeriod)), config, options, fury.GetWasmEnabledProposals(), emptyWasmOpts)
 
 		if err := app.LoadHeight(height); err != nil {
 			return servertypes.ExportedApp{}, err
 		}
 	} else {
-		app = comdex.New(logger, db, tracer, true, map[int64]bool{}, homePath, cast.ToUint(options.Get(server.FlagInvCheckPeriod)), config, options, comdex.GetWasmEnabledProposals(), emptyWasmOpts)
+		app = fury.New(logger, db, tracer, true, map[int64]bool{}, homePath, cast.ToUint(options.Get(server.FlagInvCheckPeriod)), config, options, fury.GetWasmEnabledProposals(), emptyWasmOpts)
 	}
 
 	return app.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)

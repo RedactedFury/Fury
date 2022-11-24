@@ -1,12 +1,12 @@
 syntax = "proto3";
-package comdex.lend.v1beta1;
+package fury.lend.v1beta1;
 
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "comdex/lend/v1beta1/lend.proto";
-import "comdex/lend/v1beta1/params.proto";
+import "fury/lend/v1beta1/lend.proto";
+import "fury/lend/v1beta1/params.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/lend/types";
 option (gogoproto.equal_all) = false;
@@ -302,100 +302,100 @@ message QueryModuleBalanceResponse {
 
 service Query {
   rpc QueryLends(QueryLendsRequest) returns (QueryLendsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/lends";
+    option (google.api.http).get = "/fury/lend/v1beta1/lends";
   }
   rpc QueryLend(QueryLendRequest) returns (QueryLendResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/lends/{id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/lends/{id}";
   }
 
   rpc QueryAllLendByOwner(QueryAllLendByOwnerRequest) returns (QueryAllLendByOwnerResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/lends_by_owner/{owner}";
+    option (google.api.http).get = "/fury/lend/v1beta1/lends_by_owner/{owner}";
   };
 
   rpc QueryAllLendByOwnerAndPool(QueryAllLendByOwnerAndPoolRequest) returns (QueryAllLendByOwnerAndPoolResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/lends_by_owner_pool/{owner}/{pool_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/lends_by_owner_pool/{owner}/{pool_id}";
   };
 
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/params";
+    option (google.api.http).get = "/fury/lend/v1beta1/params";
   }
 
   rpc QueryPairs(QueryPairsRequest) returns (QueryPairsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/pairs";
+    option (google.api.http).get = "/fury/lend/v1beta1/pairs";
   }
   rpc QueryPair(QueryPairRequest) returns (QueryPairResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/pairs/{id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/pairs/{id}";
   }
 
   rpc QueryAssetRatesParams(QueryAssetRatesParamsRequest) returns (QueryAssetRatesParamsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/asset_rates_params";
+    option (google.api.http).get = "/fury/lend/v1beta1/asset_rates_params";
   }
   rpc QueryAssetRatesParam(QueryAssetRatesParamRequest) returns (QueryAssetRatesParamResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/asset_rates_param/{id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/asset_rates_param/{id}";
   }
 
   rpc QueryPools(QueryPoolsRequest) returns (QueryPoolsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/pools";
+    option (google.api.http).get = "/fury/lend/v1beta1/pools";
   }
   rpc QueryPool(QueryPoolRequest) returns (QueryPoolResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/pools/{id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/pools/{id}";
   }
 
   rpc QueryAssetToPairMappings(QueryAssetToPairMappingsRequest) returns (QueryAssetToPairMappingsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/asset_to_pair_mappings";
+    option (google.api.http).get = "/fury/lend/v1beta1/asset_to_pair_mappings";
   }
   rpc QueryAssetToPairMapping(QueryAssetToPairMappingRequest) returns (QueryAssetToPairMappingResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/asset_to_pair_mappings/{asset_id}/{pool_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/asset_to_pair_mappings/{asset_id}/{pool_id}";
   }
 
   rpc QueryBorrows(QueryBorrowsRequest) returns (QueryBorrowsResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/borrows";
+    option (google.api.http).get = "/fury/lend/v1beta1/borrows";
   }
   rpc QueryBorrow(QueryBorrowRequest) returns (QueryBorrowResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/borrows/{id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/borrows/{id}";
   }
 
   rpc QueryAllBorrowByOwner(QueryAllBorrowByOwnerRequest) returns (QueryAllBorrowByOwnerResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/borrows_by_owner/{owner}";
+    option (google.api.http).get = "/fury/lend/v1beta1/borrows_by_owner/{owner}";
   }
 
   rpc QueryAllBorrowByOwnerAndPool(QueryAllBorrowByOwnerAndPoolRequest) returns (QueryAllBorrowByOwnerAndPoolResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/borrows_by_owner_pool/{owner}/{pool_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/borrows_by_owner_pool/{owner}/{pool_id}";
   }
 
   rpc QueryPoolAssetLBMapping(QueryPoolAssetLBMappingRequest) returns (QueryPoolAssetLBMappingResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/pool_asset_lb_mapping/{asset_id}/{pool_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/pool_asset_lb_mapping/{asset_id}/{pool_id}";
   };
 
   // rpc QueryModuleBalance(QueryModuleBalanceRequest) returns (QueryModuleBalanceResponse) {
-  //   option (google.api.http).get = "/comdex/lend/v1beta1/module_balance/{pool_id}";
+  //   option (google.api.http).get = "/fury/lend/v1beta1/module_balance/{pool_id}";
   // };
 
   // rpc QueryDepositStats(QueryDepositStatsRequest) returns (QueryDepositStatsResponse) {
-  //   option (google.api.http).get = "/comdex/lend/v1beta1/deposit_stats";
+  //   option (google.api.http).get = "/fury/lend/v1beta1/deposit_stats";
   // }
 
   // rpc QueryUserDepositStats(QueryUserDepositStatsRequest) returns (QueryUserDepositStatsResponse) {
-  //   option (google.api.http).get = "/comdex/lend/v1beta1/user_deposit_stats";
+  //   option (google.api.http).get = "/fury/lend/v1beta1/user_deposit_stats";
   // }
 
   // rpc QueryReserveDepositStats(QueryReserveDepositStatsRequest) returns (QueryReserveDepositStatsResponse) {
-  //   option (google.api.http).get = "/comdex/lend/v1beta1/reserve_deposit_stats";
+  //   option (google.api.http).get = "/fury/lend/v1beta1/reserve_deposit_stats";
   // }
 
   rpc QueryReserveBuybackAssetData(QueryReserveBuybackAssetDataRequest) returns (QueryReserveBuybackAssetDataResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/reserve_buyback_asset_data/{asset_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/reserve_buyback_asset_data/{asset_id}";
   }
 
   // rpc QueryBorrowStats(QueryBorrowStatsRequest) returns (QueryBorrowStatsResponse) {
-  //   option (google.api.http).get = "/comdex/lend/v1beta1/borrow_stats";
+  //   option (google.api.http).get = "/fury/lend/v1beta1/borrow_stats";
   // }
 
   rpc QueryAuctionParams(QueryAuctionParamRequest) returns (QueryAuctionParamResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/auctionparams/{app_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/auctionparams/{app_id}";
   }
   rpc QueryModuleBalance(QueryModuleBalanceRequest) returns (QueryModuleBalanceResponse) {
-    option (google.api.http).get = "/comdex/lend/v1beta1/module_balance/{pool_id}";
+    option (google.api.http).get = "/fury/lend/v1beta1/module_balance/{pool_id}";
   };
 }
 

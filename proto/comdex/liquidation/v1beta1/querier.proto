@@ -1,11 +1,11 @@
 syntax = "proto3";
-package comdex.liquidation.v1beta1;
+package fury.liquidation.v1beta1;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "google/api/annotations.proto";
 import "gogoproto/gogo.proto";
-import "comdex/liquidation/v1beta1/params.proto";
-import "comdex/liquidation/v1beta1/locked_vault.proto";
+import "fury/liquidation/v1beta1/params.proto";
+import "fury/liquidation/v1beta1/locked_vault.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/liquidation/types";
 option (gogoproto.equal_all)           = false;
@@ -112,27 +112,27 @@ message QueryAppIdsResponse {
 
 service Query {
   rpc QueryLockedVault(QueryLockedVaultRequest) returns (QueryLockedVaultResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/locked_vault/{id}";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/locked_vault/{id}";
   }
   rpc QueryLockedVaults(QueryLockedVaultsRequest) returns (QueryLockedVaultsResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/locked_vaults";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/locked_vaults";
   }
   rpc QueryParams(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/params";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/params";
   }
   rpc QueryLockedVaultsHistory(QueryLockedVaultsHistoryRequest) returns (QueryLockedVaultsHistoryResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/locked_vaults_history";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/locked_vaults_history";
   }
   rpc QueryUserLockedVaults(QueryUserLockedVaultsRequest) returns (QueryUserLockedVaultsResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/user_locked_vaults";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/user_locked_vaults";
   }
   rpc QueryUserLockedVaultsHistory(QueryUserLockedVaultsHistoryRequest) returns (QueryUserLockedVaultsHistoryResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/user_locked_vaults_history";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/user_locked_vaults_history";
   }
   rpc QueryLockedVaultsPair(QueryLockedVaultsPairRequest) returns (QueryLockedVaultsPairResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/user_locked_vaults_pair";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/user_locked_vaults_pair";
   }
   rpc QueryAppIds(QueryAppIdsRequest) returns (QueryAppIdsResponse) {
-    option (google.api.http).get = "/comdex/liquidation/v1beta1/app_ids";
+    option (google.api.http).get = "/fury/liquidation/v1beta1/app_ids";
   }
 }

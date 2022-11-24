@@ -10,10 +10,10 @@ import (
 )
 
 func RegisterCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgDepositESM{}, "comdex/esm/deposit-esm", nil)
-	cdc.RegisterConcrete(&MsgExecuteESM{}, "comdex/esm/execute-esm", nil)
-	cdc.RegisterConcrete(&MsgKillRequest{}, "comdex/esm/stop-all-actions", nil)
-	cdc.RegisterConcrete(&MsgCollateralRedemptionRequest{}, "comdex/esm/redeem-collateral", nil)
+	cdc.RegisterConcrete(&MsgDepositESM{}, "fury/esm/deposit-esm", nil)
+	cdc.RegisterConcrete(&MsgExecuteESM{}, "fury/esm/execute-esm", nil)
+	cdc.RegisterConcrete(&MsgKillRequest{}, "fury/esm/stop-all-actions", nil)
+	cdc.RegisterConcrete(&MsgCollateralRedemptionRequest{}, "fury/esm/redeem-collateral", nil)
 }
 
 func RegisterInterfaces(registry cdctypes.InterfaceRegistry) {

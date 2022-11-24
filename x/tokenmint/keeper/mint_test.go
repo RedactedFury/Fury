@@ -52,8 +52,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 	s.Require().NoError(err)
 
 	msg3 := assetTypes.Asset{
-		Name:      "CMDX",
-		Denom:     "ucmdx",
+		Name:      "FURY",
+		Denom:     "ufury",
 		Decimals:  sdk.NewInt(1000000),
 		IsOnChain: true,
 	}
@@ -62,8 +62,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 	s.Require().NoError(err)
 
 	msg4 := assetTypes.Asset{
-		Name:      "CMST",
-		Denom:     "ucmst",
+		Name:      "FUST",
+		Denom:     "ufust",
 		Decimals:  sdk.NewInt(1000000),
 		IsOnChain: true,
 	}

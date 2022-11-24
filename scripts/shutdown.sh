@@ -1,3 +1,3 @@
-killall comdex
+killall fury
 echo "
 Node Shutdown."

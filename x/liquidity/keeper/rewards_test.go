@@ -683,7 +683,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataLinearLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -692,10 +692,10 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataLinearLPs() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("1000000000ucmdx").IsEqual(mappedResp[liquidityProvider1.String()]))
-	s.Require().True(utils.ParseCoin("1999999999ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("2999999999ucmdx").IsEqual(mappedResp[liquidityProvider3.String()]))
-	s.Require().True(utils.ParseCoin("4000000000ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("1000000000ufury").IsEqual(mappedResp[liquidityProvider1.String()]))
+	s.Require().True(utils.ParseCoin("1999999999ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("2999999999ufury").IsEqual(mappedResp[liquidityProvider3.String()]))
+	s.Require().True(utils.ParseCoin("4000000000ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 
 	liquidityGauge = rewardtypes.LiquidtyGaugeMetaData{
 		PoolId:       pool.Id,
@@ -703,7 +703,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataLinearLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(20000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(20000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -712,10 +712,10 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataLinearLPs() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("2000000000ucmdx").IsEqual(mappedResp[liquidityProvider1.String()]))
-	s.Require().True(utils.ParseCoin("3999999999ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("5999999999ucmdx").IsEqual(mappedResp[liquidityProvider3.String()]))
-	s.Require().True(utils.ParseCoin("8000000000ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("2000000000ufury").IsEqual(mappedResp[liquidityProvider1.String()]))
+	s.Require().True(utils.ParseCoin("3999999999ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("5999999999ufury").IsEqual(mappedResp[liquidityProvider3.String()]))
+	s.Require().True(utils.ParseCoin("8000000000ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 }
 
 // Equal liquidity provided my by all liquidity providers
@@ -788,7 +788,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -797,10 +797,10 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPs() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("2500000001ucmdx").IsEqual(mappedResp[liquidityProvider1.String()]))
-	s.Require().True(utils.ParseCoin("2499999999ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("2499999999ucmdx").IsEqual(mappedResp[liquidityProvider3.String()]))
-	s.Require().True(utils.ParseCoin("2499999999ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("2500000001ufury").IsEqual(mappedResp[liquidityProvider1.String()]))
+	s.Require().True(utils.ParseCoin("2499999999ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("2499999999ufury").IsEqual(mappedResp[liquidityProvider3.String()]))
+	s.Require().True(utils.ParseCoin("2499999999ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 
 	liquidityGauge = rewardtypes.LiquidtyGaugeMetaData{
 		PoolId:       pool.Id,
@@ -808,7 +808,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(20000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(20000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -817,10 +817,10 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPs() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("5000000003ucmdx").IsEqual(mappedResp[liquidityProvider1.String()]))
-	s.Require().True(utils.ParseCoin("4999999998ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("4999999998ucmdx").IsEqual(mappedResp[liquidityProvider3.String()]))
-	s.Require().True(utils.ParseCoin("4999999998ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("5000000003ufury").IsEqual(mappedResp[liquidityProvider1.String()]))
+	s.Require().True(utils.ParseCoin("4999999998ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("4999999998ufury").IsEqual(mappedResp[liquidityProvider3.String()]))
+	s.Require().True(utils.ParseCoin("4999999998ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 }
 
 // no liquidity providers
@@ -852,7 +852,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataNoLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 	s.Require().Len(rewardDistrData, 0)
@@ -863,7 +863,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataNoLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(20000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(20000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 	s.Require().Len(rewardDistrData, 0)
@@ -968,7 +968,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPsWChildPool() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -977,8 +977,8 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPsWChildPool() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("5000000000ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("5000000000ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("5000000000ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("5000000000ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 
 	liquidityGauge = rewardtypes.LiquidtyGaugeMetaData{
 		PoolId:       pool.Id,
@@ -986,7 +986,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPsWChildPool() {
 		ChildPoolIds: []uint64{1, 2},
 	}
 
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(40000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(40000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -995,8 +995,8 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPsWChildPool() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("20000000000ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("20000000000ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("20000000000ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("20000000000ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 
 	liquidityGauge = rewardtypes.LiquidtyGaugeMetaData{
 		PoolId:       pool.Id,
@@ -1004,7 +1004,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPsWChildPool() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(20000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(20000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
@@ -1013,10 +1013,10 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataEqualLPsWChildPool() {
 		mappedResp[d.RewardReceiver.String()] = d.RewardCoin
 	}
 
-	s.Require().True(utils.ParseCoin("5000000003ucmdx").IsEqual(mappedResp[liquidityProvider1.String()]))
-	s.Require().True(utils.ParseCoin("4999999998ucmdx").IsEqual(mappedResp[liquidityProvider2.String()]))
-	s.Require().True(utils.ParseCoin("4999999998ucmdx").IsEqual(mappedResp[liquidityProvider3.String()]))
-	s.Require().True(utils.ParseCoin("4999999998ucmdx").IsEqual(mappedResp[liquidityProvider4.String()]))
+	s.Require().True(utils.ParseCoin("5000000003ufury").IsEqual(mappedResp[liquidityProvider1.String()]))
+	s.Require().True(utils.ParseCoin("4999999998ufury").IsEqual(mappedResp[liquidityProvider2.String()]))
+	s.Require().True(utils.ParseCoin("4999999998ufury").IsEqual(mappedResp[liquidityProvider3.String()]))
+	s.Require().True(utils.ParseCoin("4999999998ufury").IsEqual(mappedResp[liquidityProvider4.String()]))
 }
 
 // pool reserve sent to somewhere else, and maked pool as depleted and disabled
@@ -1051,14 +1051,14 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataErrorHandellings() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().Error(err)
 	s.Require().EqualError(err, sdkerrors.Wrapf(types.ErrDepletedPool, "pool 1 is depleted").Error())
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 
 	s.Deposit(appID1, pool.Id, liquidityProvider1, "1000000000uasset1,1000000000uasset2")
 	s.nextBlock()
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().Error(err)
 	s.Require().EqualError(err, sdkerrors.Wrapf(types.ErrDisabledPool, "pool 1 is disabled").Error())
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
@@ -1147,7 +1147,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataZeroLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(10000000000)), liquidityGauge)
+	rewardDistrData, err := s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(10000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 	s.Require().Len(rewardDistrData, 0)
@@ -1158,7 +1158,7 @@ func (s *KeeperTestSuite) TestGetFarmingRewardsDataZeroLPs() {
 		ChildPoolIds: []uint64{},
 	}
 
-	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ucmdx", newInt(20000000000)), liquidityGauge)
+	rewardDistrData, err = s.keeper.GetFarmingRewardsData(s.ctx, appID1, sdk.NewCoin("ufury", newInt(20000000000)), liquidityGauge)
 	s.Require().NoError(err)
 	s.Require().IsType([]rewardtypes.RewardDistributionDataCollector{}, rewardDistrData)
 	s.Require().Len(rewardDistrData, 0)

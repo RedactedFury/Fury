@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package comdex.locker.v1beta1;
+package fury.locker.v1beta1;
 
 option go_package = "github.com/Fury-Labs/fury/x/locker/types";
 

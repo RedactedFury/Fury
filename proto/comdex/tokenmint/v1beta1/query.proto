@@ -1,8 +1,8 @@
 syntax = "proto3";
-package comdex.tokenmint.v1beta1;
+package fury.tokenmint.v1beta1;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
-import "comdex/tokenmint/v1beta1/mint.proto";
+import "fury/tokenmint/v1beta1/mint.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 
@@ -61,14 +61,14 @@ message QueryTokenMintedByAppAndAssetResponse {
 service Query {
 
   rpc QueryAllTokenMintedForAllApps(QueryAllTokenMintedForAllAppsRequest) returns (QueryAllTokenMintedForAllAppsResponse) {
-    option (google.api.http).get = "/comdex/tokenmint/v1beta1/total-token-minted-all-apps";
+    option (google.api.http).get = "/fury/tokenmint/v1beta1/total-token-minted-all-apps";
   }
 
   rpc QueryTokenMintedByApp(QueryTokenMintedByAppRequest) returns (QueryTokenMintedByAppResponse) {
-    option (google.api.http).get = "/comdex/tokenmint/v1beta1/token-minted-by-app/{app_id}";
+    option (google.api.http).get = "/fury/tokenmint/v1beta1/token-minted-by-app/{app_id}";
   }
   rpc QueryTokenMintedByAppAndAsset(QueryTokenMintedByAppAndAssetRequest) returns (QueryTokenMintedByAppAndAssetResponse) {
-    option (google.api.http).get = "/comdex/tokenmint/v1beta1/token-minted-by-app-and-asset/{app_id}/{asset_id}";
+    option (google.api.http).get = "/fury/tokenmint/v1beta1/token-minted-by-app-and-asset/{app_id}/{asset_id}";
   }
 
 }

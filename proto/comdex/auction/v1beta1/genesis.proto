@@ -1,10 +1,10 @@
 syntax = "proto3";
-package comdex.auction.v1beta1;
+package fury.auction.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/auction/v1beta1/params.proto";
-import "comdex/auction/v1beta1/auction.proto";
-import "comdex/auction/v1beta1/biddings.proto";
+import "fury/auction/v1beta1/params.proto";
+import "fury/auction/v1beta1/auction.proto";
+import "fury/auction/v1beta1/biddings.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/auction/types";
 

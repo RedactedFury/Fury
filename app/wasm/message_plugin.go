@@ -63,66 +63,66 @@ func (m *CustomMessenger) DispatchMsg(ctx sdk.Context, contractAddr sdk.AccAddre
 	if msg.Custom != nil {
 		// only handle the happy path where this is really minting / swapping ...
 		// leave everything else for the wrapped version
-		var comdexMsg bindings.ComdexMessages
-		if err := json.Unmarshal(msg.Custom, &comdexMsg); err != nil {
-			return nil, nil, sdkerrors.Wrap(err, "comdex msg error")
+		var furyMsg bindings.FuryMessages
+		if err := json.Unmarshal(msg.Custom, &furyMsg); err != nil {
+			return nil, nil, sdkerrors.Wrap(err, "fury msg error")
 		}
-		if comdexMsg.MsgWhiteListAssetLocker != nil {
-			return m.whitelistAssetLocker(ctx, contractAddr, comdexMsg.MsgWhiteListAssetLocker)
+		if furyMsg.MsgWhiteListAssetLocker != nil {
+			return m.whitelistAssetLocker(ctx, contractAddr, furyMsg.MsgWhiteListAssetLocker)
 		}
-		if comdexMsg.MsgWhitelistAppIDLockerRewards != nil {
-			return m.whitelistAppIDLockerRewards(ctx, contractAddr, comdexMsg.MsgWhitelistAppIDLockerRewards)
+		if furyMsg.MsgWhitelistAppIDLockerRewards != nil {
+			return m.whitelistAppIDLockerRewards(ctx, contractAddr, furyMsg.MsgWhitelistAppIDLockerRewards)
 		}
-		if comdexMsg.MsgWhitelistAppIDVaultInterest != nil {
-			return m.whitelistAppIDVaultInterest(ctx, contractAddr, comdexMsg.MsgWhitelistAppIDVaultInterest)
+		if furyMsg.MsgWhitelistAppIDVaultInterest != nil {
+			return m.whitelistAppIDVaultInterest(ctx, contractAddr, furyMsg.MsgWhitelistAppIDVaultInterest)
 		}
-		if comdexMsg.MsgAddExtendedPairsVault != nil {
-			return m.AddExtendedPairsVault(ctx, contractAddr, comdexMsg.MsgAddExtendedPairsVault)
+		if furyMsg.MsgAddExtendedPairsVault != nil {
+			return m.AddExtendedPairsVault(ctx, contractAddr, furyMsg.MsgAddExtendedPairsVault)
 		}
-		if comdexMsg.MsgSetCollectorLookupTable != nil {
-			return m.SetCollectorLookupTable(ctx, contractAddr, comdexMsg.MsgSetCollectorLookupTable)
+		if furyMsg.MsgSetCollectorLookupTable != nil {
+			return m.SetCollectorLookupTable(ctx, contractAddr, furyMsg.MsgSetCollectorLookupTable)
 		}
-		if comdexMsg.MsgSetAuctionMappingForApp != nil {
-			return m.SetAuctionMappingForApp(ctx, contractAddr, comdexMsg.MsgSetAuctionMappingForApp)
+		if furyMsg.MsgSetAuctionMappingForApp != nil {
+			return m.SetAuctionMappingForApp(ctx, contractAddr, furyMsg.MsgSetAuctionMappingForApp)
 		}
-		if comdexMsg.MsgUpdatePairsVault != nil {
-			return m.UpdatePairsVault(ctx, contractAddr, comdexMsg.MsgUpdatePairsVault)
+		if furyMsg.MsgUpdatePairsVault != nil {
+			return m.UpdatePairsVault(ctx, contractAddr, furyMsg.MsgUpdatePairsVault)
 		}
-		if comdexMsg.MsgUpdateCollectorLookupTable != nil {
-			return m.UpdateCollectorLookupTable(ctx, contractAddr, comdexMsg.MsgUpdateCollectorLookupTable)
+		if furyMsg.MsgUpdateCollectorLookupTable != nil {
+			return m.UpdateCollectorLookupTable(ctx, contractAddr, furyMsg.MsgUpdateCollectorLookupTable)
 		}
-		if comdexMsg.MsgRemoveWhitelistAssetLocker != nil {
-			return m.RemoveWhitelistAssetLocker(ctx, contractAddr, comdexMsg.MsgRemoveWhitelistAssetLocker)
+		if furyMsg.MsgRemoveWhitelistAssetLocker != nil {
+			return m.RemoveWhitelistAssetLocker(ctx, contractAddr, furyMsg.MsgRemoveWhitelistAssetLocker)
 		}
-		if comdexMsg.MsgRemoveWhitelistAppIDVaultInterest != nil {
-			return m.RemoveWhitelistAppIDVaultInterest(ctx, contractAddr, comdexMsg.MsgRemoveWhitelistAppIDVaultInterest)
+		if furyMsg.MsgRemoveWhitelistAppIDVaultInterest != nil {
+			return m.RemoveWhitelistAppIDVaultInterest(ctx, contractAddr, furyMsg.MsgRemoveWhitelistAppIDVaultInterest)
 		}
-		if comdexMsg.MsgWhitelistAppIDLiquidation != nil {
-			return m.WhitelistAppIDLiquidation(ctx, contractAddr, comdexMsg.MsgWhitelistAppIDLiquidation)
+		if furyMsg.MsgWhitelistAppIDLiquidation != nil {
+			return m.WhitelistAppIDLiquidation(ctx, contractAddr, furyMsg.MsgWhitelistAppIDLiquidation)
 		}
-		if comdexMsg.MsgRemoveWhitelistAppIDLiquidation != nil {
-			return m.RemoveWhitelistAppIDLiquidation(ctx, contractAddr, comdexMsg.MsgRemoveWhitelistAppIDLiquidation)
+		if furyMsg.MsgRemoveWhitelistAppIDLiquidation != nil {
+			return m.RemoveWhitelistAppIDLiquidation(ctx, contractAddr, furyMsg.MsgRemoveWhitelistAppIDLiquidation)
 		}
-		if comdexMsg.MsgAddAuctionParams != nil {
-			return m.AddAuctionParams(ctx, contractAddr, comdexMsg.MsgAddAuctionParams)
+		if furyMsg.MsgAddAuctionParams != nil {
+			return m.AddAuctionParams(ctx, contractAddr, furyMsg.MsgAddAuctionParams)
 		}
-		if comdexMsg.MsgBurnGovTokensForApp != nil {
-			return m.BurnGovTokensForApp(ctx, contractAddr, comdexMsg.MsgBurnGovTokensForApp)
+		if furyMsg.MsgBurnGovTokensForApp != nil {
+			return m.BurnGovTokensForApp(ctx, contractAddr, furyMsg.MsgBurnGovTokensForApp)
 		}
-		if comdexMsg.MsgAddESMTriggerParams != nil {
-			return m.AddESMTriggerParams(ctx, contractAddr, comdexMsg.MsgAddESMTriggerParams)
+		if furyMsg.MsgAddESMTriggerParams != nil {
+			return m.AddESMTriggerParams(ctx, contractAddr, furyMsg.MsgAddESMTriggerParams)
 		}
-		if comdexMsg.MsgEmissionRewards != nil {
-			return m.ExecuteAddEmissionRewards(ctx, contractAddr, comdexMsg.MsgEmissionRewards)
+		if furyMsg.MsgEmissionRewards != nil {
+			return m.ExecuteAddEmissionRewards(ctx, contractAddr, furyMsg.MsgEmissionRewards)
 		}
-		if comdexMsg.MsgFoundationEmission != nil {
-			return m.ExecuteFoundationEmission(ctx, contractAddr, comdexMsg.MsgFoundationEmission)
+		if furyMsg.MsgFoundationEmission != nil {
+			return m.ExecuteFoundationEmission(ctx, contractAddr, furyMsg.MsgFoundationEmission)
 		}
-		if comdexMsg.MsgRebaseMint != nil {
-			return m.ExecuteMsgRebaseMint(ctx, contractAddr, comdexMsg.MsgRebaseMint)
+		if furyMsg.MsgRebaseMint != nil {
+			return m.ExecuteMsgRebaseMint(ctx, contractAddr, furyMsg.MsgRebaseMint)
 		}
-		if comdexMsg.MsgGetSurplusFund != nil {
-			return m.ExecuteMsgGetSurplusFund(ctx, contractAddr, comdexMsg.MsgGetSurplusFund)
+		if furyMsg.MsgGetSurplusFund != nil {
+			return m.ExecuteMsgGetSurplusFund(ctx, contractAddr, furyMsg.MsgGetSurplusFund)
 		}
 	}
 	return m.wrapped.DispatchMsg(ctx, contractAddr, contractIBCPortID, msg)

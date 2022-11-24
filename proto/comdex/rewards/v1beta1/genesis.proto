@@ -1,11 +1,11 @@
 syntax = "proto3";
-package comdex.rewards.v1beta1;
+package fury.rewards.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "comdex/rewards/v1beta1/params.proto";
-import "comdex/rewards/v1beta1/rewards.proto";
-import "comdex/rewards/v1beta1/epochs.proto";
-import "comdex/rewards/v1beta1/gauge.proto";
+import "fury/rewards/v1beta1/params.proto";
+import "fury/rewards/v1beta1/rewards.proto";
+import "fury/rewards/v1beta1/epochs.proto";
+import "fury/rewards/v1beta1/gauge.proto";
 
 option go_package = "github.com/Fury-Labs/fury/x/rewards/types";
 
