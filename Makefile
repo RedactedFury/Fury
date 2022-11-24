@@ -63,8 +63,8 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=fury \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=fury \
+ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=comdex \
+		  -X github.com/cosmos/cosmos-sdk/version.AppName=comdex \
 		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
 		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
@@ -116,9 +116,9 @@ build:
 release: install
 	mkdir -p release
 ifeq (${OS},Windows_NT)
-	tar -czvf release/fury-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury.exe
+	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) comdex.exe
 else
-	tar -czvf release/fury-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury
+	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury
 endif
 
 ###############################################################################

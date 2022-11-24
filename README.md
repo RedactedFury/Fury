@@ -33,8 +33,8 @@ Requires [Go 1.18+](https://golang.org/dl/)
 ### Linux
 
 ```shell
-mkdir -p ${GOPATH}/src/github.com/fury-official/ && \
-cd ${GOPATH}/src/github.com/fury-official/ && \
+mkdir -p ${GOPATH}/src/github.com/Fury-Labs/ && \
+cd ${GOPATH}/src/github.com/Fury-Labs/ && \
 git clone https://github.com/Fury-Labs/fury.git && \
 cd ${GOPATH}/src/github.com/Fury-Labs/fury/ && \
 make install
@@ -43,16 +43,16 @@ make install
 ## Testnet
 
 To verify latest testnet and main net version check
-[Version](https://github.com/fury-official/networks/blob/main/README.md)
+[Version](https://github.com/Fury-Labs/networks/blob/main/README.md)
 
 For further information on joining the testnet, head over to the
-[Fury Networks TestNet](https://github.com/fury-official/networks/tree/main/testnet).
+[Fury Networks TestNet](https://github.com/Fury-Labs/networks/tree/main/testnet).
 
 The explorer for this chain is hosted [Meteor - TestNet Explorer](https://meteor-explorer.fury.one)
 
 ## Main Net
 For further information on joining the mainnet, head over to the
-[Fury Networks MainNet](https://github.com/fury-official/networks/tree/main/mainnet).
+[Fury Networks MainNet](https://github.com/Fury-Labs/networks/tree/main/mainnet).
 
 
 ## Main Net Explorers
@@ -65,7 +65,7 @@ The explorer for this chain is hosted
 * [ZenChainLabs](https://fury.zenscan.io/)
 
 ## want to contribute to fury, please go through the contribution guides
-* [Contribution guides](https://github.com/fury-official/contribution-docs)
+* [Contribution guides](https://github.com/Fury-Labs/contribution-docs)
 
 ## License
 
