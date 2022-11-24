@@ -1,4 +1,4 @@
-module github.com/comdex-official/comdex
+module github.com/fury-labs/fury
 
 go 1.18
 
