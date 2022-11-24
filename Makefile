@@ -63,8 +63,8 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=comdex \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=comdex \
+ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=fury \
+		  -X github.com/cosmos/cosmos-sdk/version.AppName=fury \
 		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
 		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
@@ -108,7 +108,7 @@ distclean: clean
 	rm -rf vendor/
 
 install: go.sum
-	go install -mod=readonly $(BUILD_FLAGS) ./cmd/fury
+	go install $(BUILD_FLAGS) ./cmd/fury
 
 build:
 	go build $(BUILD_FLAGS) -o bin/fury ./cmd/fury
@@ -116,9 +116,9 @@ build:
 release: install
 	mkdir -p release
 ifeq (${OS},Windows_NT)
-	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) comdex.exe
+	tar -czvf release/fury-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury.exe
 else
-	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury
+	tar -czvf release/fury-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury
 endif
 
 ###############################################################################
