@@ -16,17 +16,17 @@ tags:
     description: Everything about Assets
     externalDocs:
       description: Find out more
-      url: http://fury.one
+      url: http://comdex.one
   - name: Oracle
     description: Everything about Oracle
     externalDocs:
       description: Find out more
-      url: http://fury.one
+      url: http://comdex.one
   - name: Vault
     description: Everything about Vault
     externalDocs:
       description: Find out more
-      url: http://fury.one
+      url: http://comdex.one
 paths:
   /fury/asset/v1beta1/assets:
     get:

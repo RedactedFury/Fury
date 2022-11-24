@@ -28,7 +28,7 @@ func SetupCustomApp() (*app.App, *sdk.Context) {
 
 func CreateTestInput() (*app.App, *sdk.Context) {
 	fury := app.Setup(false)
-	ctx := fury.BaseApp.NewContext(false, tmproto.Header{Height: 1, ChainID: "fury-1", Time: time.Now().UTC()})
+	ctx := fury.BaseApp.NewContext(false, tmproto.Header{Height: 1, ChainID: "test-1", Time: time.Now().UTC()})
 	return fury, &ctx
 }
 

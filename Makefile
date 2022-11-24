@@ -116,9 +116,9 @@ build:
 release: install
 	mkdir -p release
 ifeq (${OS},Windows_NT)
-	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) comdex.exe
+	tar -czvf release/fury-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury.exe
 else
-	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) comdex
+	tar -czvf release/fury-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) fury
 endif
 
 ###############################################################################
