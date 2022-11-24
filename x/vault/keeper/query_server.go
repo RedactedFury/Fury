@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/comdex-official/comdex/x/vault/types"
+	"github.com/Fury-Labs/fury/x/vault/types"
 )
 
 var _ types.QueryServer = QueryServer{}

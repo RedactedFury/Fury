@@ -16,11 +16,11 @@ import (
 	"github.com/spf13/cobra"
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 
-	assetkeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	bandkeeper "github.com/comdex-official/comdex/x/bandoracle/keeper"
-	"github.com/comdex-official/comdex/x/market/client/cli"
-	"github.com/comdex-official/comdex/x/market/keeper"
-	"github.com/comdex-official/comdex/x/market/types"
+	assetkeeper "github.com/Fury-Labs/fury/x/asset/keeper"
+	bandkeeper "github.com/Fury-Labs/fury/x/bandoracle/keeper"
+	"github.com/Fury-Labs/fury/x/market/client/cli"
+	"github.com/Fury-Labs/fury/x/market/keeper"
+	"github.com/Fury-Labs/fury/x/market/types"
 )
 
 var (

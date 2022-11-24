@@ -4,8 +4,8 @@ package keeper
 //import (
 //	"testing"
 //
-//	"github.com/comdex-official/comdex/x/tokenmint/keeper"
-//	"github.com/comdex-official/comdex/x/tokenmint/types"
+//	"github.com/Fury-Labs/fury/x/tokenmint/keeper"
+//	"github.com/Fury-Labs/fury/x/tokenmint/types"
 //	"github.com/cosmos/cosmos-sdk/codec"
 //	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 //	"github.com/cosmos/cosmos-sdk/store"

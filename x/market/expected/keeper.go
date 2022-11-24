@@ -6,8 +6,8 @@ import (
 	ibcchanneltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/bandoracle/types"
+	assettypes "github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/Fury-Labs/fury/x/bandoracle/types"
 )
 
 type ChannelKeeper interface {

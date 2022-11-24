@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	assetTypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/tokenmint/keeper"
-	tokenmintTypes "github.com/comdex-official/comdex/x/tokenmint/types"
+	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/Fury-Labs/fury/x/tokenmint/keeper"
+	tokenmintTypes "github.com/Fury-Labs/fury/x/tokenmint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

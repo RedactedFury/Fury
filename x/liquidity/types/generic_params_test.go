@@ -7,7 +7,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/Fury-Labs/fury/x/liquidity/types"
 )
 
 func TestGenericParamsValidate(t *testing.T) {

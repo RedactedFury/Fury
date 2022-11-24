@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/liquidity/amm"
+	"github.com/Fury-Labs/fury/x/liquidity/amm"
 )
 
 const (

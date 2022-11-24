@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/comdex-official/comdex/x/liquidity/amm"
+	"github.com/Fury-Labs/fury/x/liquidity/amm"
 )
 
 var (

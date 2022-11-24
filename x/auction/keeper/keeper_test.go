@@ -9,17 +9,17 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assetKeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	"github.com/comdex-official/comdex/x/auction/keeper"
-	"github.com/comdex-official/comdex/x/auction/types"
-	collectKeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	liquidationKeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	liquidationTypes "github.com/comdex-official/comdex/x/liquidation/types"
-	marketKeeper "github.com/comdex-official/comdex/x/market/keeper"
-	tokenmintKeeper "github.com/comdex-official/comdex/x/tokenmint/keeper"
-	vaultKeeper "github.com/comdex-official/comdex/x/vault/keeper"
-	vaultTypes "github.com/comdex-official/comdex/x/vault/types"
+	chain "github.com/Fury-Labs/fury/app"
+	assetKeeper "github.com/Fury-Labs/fury/x/asset/keeper"
+	"github.com/Fury-Labs/fury/x/auction/keeper"
+	"github.com/Fury-Labs/fury/x/auction/types"
+	collectKeeper "github.com/Fury-Labs/fury/x/collector/keeper"
+	liquidationKeeper "github.com/Fury-Labs/fury/x/liquidation/keeper"
+	liquidationTypes "github.com/Fury-Labs/fury/x/liquidation/types"
+	marketKeeper "github.com/Fury-Labs/fury/x/market/keeper"
+	tokenmintKeeper "github.com/Fury-Labs/fury/x/tokenmint/keeper"
+	vaultKeeper "github.com/Fury-Labs/fury/x/vault/keeper"
+	vaultTypes "github.com/Fury-Labs/fury/x/vault/types"
 )
 
 type KeeperTestSuite struct {

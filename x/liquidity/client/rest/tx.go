@@ -10,7 +10,7 @@ import (
 	govrest "github.com/cosmos/cosmos-sdk/x/gov/client/rest"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/Fury-Labs/fury/x/liquidity/types"
 )
 
 type UpdateGenericParamsRequest struct {

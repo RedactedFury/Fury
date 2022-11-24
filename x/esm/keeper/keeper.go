@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/comdex-official/comdex/x/esm/expected"
+	"github.com/Fury-Labs/fury/x/esm/expected"
 
 	"github.com/tendermint/tendermint/libs/log"
 
@@ -12,9 +12,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/esm/types"
-	tokenminttypes "github.com/comdex-official/comdex/x/tokenmint/types"
+	assettypes "github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/Fury-Labs/fury/x/esm/types"
+	tokenminttypes "github.com/Fury-Labs/fury/x/tokenmint/types"
 )
 
 type (

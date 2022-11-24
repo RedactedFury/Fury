@@ -1,16 +1,16 @@
 package keeper_test
 
 import (
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	assetTypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/auction"
-	auctionKeeper "github.com/comdex-official/comdex/x/auction/keeper"
-	auctionTypes "github.com/comdex-official/comdex/x/auction/types"
-	collectorTypes "github.com/comdex-official/comdex/x/collector/types"
-	liquidationTypes "github.com/comdex-official/comdex/x/liquidation/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
-	vaultKeeper1 "github.com/comdex-official/comdex/x/vault/keeper"
-	vaultTypes "github.com/comdex-official/comdex/x/vault/types"
+	"github.com/Fury-Labs/fury/app/wasm/bindings"
+	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/Fury-Labs/fury/x/auction"
+	auctionKeeper "github.com/Fury-Labs/fury/x/auction/keeper"
+	auctionTypes "github.com/Fury-Labs/fury/x/auction/types"
+	collectorTypes "github.com/Fury-Labs/fury/x/collector/types"
+	liquidationTypes "github.com/Fury-Labs/fury/x/liquidation/types"
+	markettypes "github.com/Fury-Labs/fury/x/market/types"
+	vaultKeeper1 "github.com/Fury-Labs/fury/x/vault/keeper"
+	vaultTypes "github.com/Fury-Labs/fury/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

@@ -3,13 +3,13 @@ package auction
 import (
 	"fmt"
 
-	"github.com/comdex-official/comdex/x/auction/expected"
+	"github.com/Fury-Labs/fury/x/auction/expected"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/comdex-official/comdex/types"
-	"github.com/comdex-official/comdex/x/auction/keeper"
-	"github.com/comdex-official/comdex/x/auction/types"
+	utils "github.com/Fury-Labs/fury/types"
+	"github.com/Fury-Labs/fury/x/auction/keeper"
+	"github.com/Fury-Labs/fury/x/auction/types"
 )
 
 func BeginBlocker(ctx sdk.Context, k keeper.Keeper, assetKeeper expected.AssetKeeper, collectorKeeper expected.CollectorKeeper, esmKeeper expected.EsmKeeper) {

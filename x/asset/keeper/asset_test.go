@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	"github.com/comdex-official/comdex/x/asset/keeper"
-	assetTypes "github.com/comdex-official/comdex/x/asset/types"
+	"github.com/Fury-Labs/fury/app/wasm/bindings"
+	"github.com/Fury-Labs/fury/x/asset/keeper"
+	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

@@ -2,12 +2,12 @@ package keeper_test
 
 import (
 	"fmt"
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	utils "github.com/comdex-official/comdex/types"
-	assetTypes "github.com/comdex-official/comdex/x/asset/types"
-	collectortypes "github.com/comdex-official/comdex/x/collector/types"
-	"github.com/comdex-official/comdex/x/locker/keeper"
-	lockerTypes "github.com/comdex-official/comdex/x/locker/types"
+	"github.com/Fury-Labs/fury/app/wasm/bindings"
+	utils "github.com/Fury-Labs/fury/types"
+	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
+	collectortypes "github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/Fury-Labs/fury/x/locker/keeper"
+	lockerTypes "github.com/Fury-Labs/fury/x/locker/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

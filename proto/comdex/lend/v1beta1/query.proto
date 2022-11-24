@@ -8,7 +8,7 @@ import "google/api/annotations.proto";
 import "comdex/lend/v1beta1/lend.proto";
 import "comdex/lend/v1beta1/params.proto";
 
-option go_package = "github.com/comdex-official/comdex/x/lend/types";
+option go_package = "github.com/Fury-Labs/fury/x/lend/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 

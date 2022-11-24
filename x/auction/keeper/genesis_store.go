@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	auctiontypes "github.com/comdex-official/comdex/x/auction/types"
+	auctiontypes "github.com/Fury-Labs/fury/x/auction/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

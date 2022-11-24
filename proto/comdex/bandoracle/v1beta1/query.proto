@@ -7,7 +7,7 @@ import "comdex/bandoracle/v1beta1/fetch_price.proto";
 import "comdex/bandoracle/v1beta1/params.proto";
 
 
-option go_package = "github.com/comdex-official/comdex/x/bandoracle/types";
+option go_package = "github.com/Fury-Labs/fury/x/bandoracle/types";
 
 service Query {
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {

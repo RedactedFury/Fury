@@ -1,11 +1,11 @@
 package market
 
 import (
-	assetkeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	bandkeeper "github.com/comdex-official/comdex/x/bandoracle/keeper"
-	bandoraclemoduletypes "github.com/comdex-official/comdex/x/bandoracle/types"
-	"github.com/comdex-official/comdex/x/market/keeper"
-	"github.com/comdex-official/comdex/x/market/types"
+	assetkeeper "github.com/Fury-Labs/fury/x/asset/keeper"
+	bandkeeper "github.com/Fury-Labs/fury/x/bandoracle/keeper"
+	bandoraclemoduletypes "github.com/Fury-Labs/fury/x/bandoracle/types"
+	"github.com/Fury-Labs/fury/x/market/keeper"
+	"github.com/Fury-Labs/fury/x/market/types"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"

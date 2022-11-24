@@ -3,8 +3,8 @@ package keeper_test
 // import (
 // 	"testing"
 
-// 	testkeeper "github.com/comdex-official/comdex/testutil/keeper"
-// 	"github.com/comdex-official/comdex/x/tokenmint/types"
+// 	testkeeper "github.com/Fury-Labs/fury/testutil/keeper"
+// 	"github.com/Fury-Labs/fury/x/tokenmint/types"
 // 	"github.com/stretchr/testify/require"
 // )
 

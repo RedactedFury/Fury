@@ -7,8 +7,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/comdex-official/comdex/types"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
+	utils "github.com/Fury-Labs/fury/types"
+	"github.com/Fury-Labs/fury/x/liquidity/amm"
 )
 
 func newOrder(dir amm.OrderDirection, price sdk.Dec, amt sdk.Int) *amm.BaseOrder {

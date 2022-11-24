@@ -5,10 +5,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/comdex-official/comdex/types"
-	auctiontypes "github.com/comdex-official/comdex/x/auction/types"
-	lendtypes "github.com/comdex-official/comdex/x/lend/types"
-	"github.com/comdex-official/comdex/x/liquidation/types"
+	utils "github.com/Fury-Labs/fury/types"
+	auctiontypes "github.com/Fury-Labs/fury/x/auction/types"
+	lendtypes "github.com/Fury-Labs/fury/x/lend/types"
+	"github.com/Fury-Labs/fury/x/liquidation/types"
 )
 
 func (k Keeper) LiquidateBorrows(ctx sdk.Context) error {

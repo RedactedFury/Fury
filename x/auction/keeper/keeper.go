@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/comdex-official/comdex/x/auction/expected"
-	"github.com/comdex-official/comdex/x/auction/types"
+	"github.com/Fury-Labs/fury/x/auction/expected"
+	"github.com/Fury-Labs/fury/x/auction/types"
 )
 
 type (

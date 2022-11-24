@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/comdex-official/comdex/types"
+	utils "github.com/Fury-Labs/fury/types"
 )
 
 var (

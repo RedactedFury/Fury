@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/comdex-official/comdex/x/lend/types"
+	"github.com/Fury-Labs/fury/x/lend/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )

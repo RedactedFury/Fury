@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	servercmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	comdex "github.com/comdex-official/comdex/app"
+	comdex "github.com/Fury-Labs/fury/app"
 )
 
 func main() {

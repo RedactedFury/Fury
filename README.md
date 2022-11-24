@@ -35,8 +35,8 @@ Requires [Go 1.18+](https://golang.org/dl/)
 ```shell
 mkdir -p ${GOPATH}/src/github.com/comdex-official/ && \
 cd ${GOPATH}/src/github.com/comdex-official/ && \
-git clone https://github.com/comdex-official/comdex.git && \
-cd ${GOPATH}/src/github.com/comdex-official/comdex/ && \
+git clone https://github.com/Fury-Labs/fury.git && \
+cd ${GOPATH}/src/github.com/Fury-Labs/fury/ && \
 make install
 ```
 
@@ -75,10 +75,10 @@ Licensed under the [comdex license](LICENSE).
 
 [![Project Status: Active -- The project has reached a stable, usable
 state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-green.svg?style=flat-square)](https://www.repostatus.org/#active)
-[![version](https://img.shields.io/github/tag/comdex-official/comdex.svg)](https://github.com/comdex-official/comdex/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/comdex-official/comdex)](https://goreportcard.com/report/github.com/comdex-official/comdex)
-[![API Reference](https://godoc.org/github.com/comdex-official/comdex?status.svg)](https://godoc.org/github.com/comdex-official/comdex)
-[![GitHub](https://img.shields.io/github/license/comdex-official/comdex.svg)](https://github.com/comdex-official/comdex/blob/development/LICENSE)
-[![Lines Of Code](https://img.shields.io/tokei/lines/github/comdex-official/comdex?style=flat-square)](https://github.com/comdex-official/comdex)
+[![version](https://img.shields.io/github/tag/Fury-Labs/fury.svg)](https://github.com/Fury-Labs/fury/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Fury-Labs/fury)](https://goreportcard.com/report/github.com/Fury-Labs/fury)
+[![API Reference](https://godoc.org/github.com/Fury-Labs/fury?status.svg)](https://godoc.org/github.com/Fury-Labs/fury)
+[![GitHub](https://img.shields.io/github/license/Fury-Labs/fury.svg)](https://github.com/Fury-Labs/fury/blob/development/LICENSE)
+[![Lines Of Code](https://img.shields.io/tokei/lines/github/Fury-Labs/fury?style=flat-square)](https://github.com/Fury-Labs/fury)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ComdexOfficial?label=Follow&style=social)](https://twitter.com/ComdexOfficial)
 [![Discord Chat](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/7vjPvWKKMT)

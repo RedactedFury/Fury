@@ -11,15 +11,15 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/liquidity"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
-	"github.com/comdex-official/comdex/x/liquidity/keeper"
-	"github.com/comdex-official/comdex/x/liquidity/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
+	chain "github.com/Fury-Labs/fury/app"
+	assettypes "github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/Fury-Labs/fury/x/liquidity"
+	"github.com/Fury-Labs/fury/x/liquidity/amm"
+	"github.com/Fury-Labs/fury/x/liquidity/keeper"
+	"github.com/Fury-Labs/fury/x/liquidity/types"
+	markettypes "github.com/Fury-Labs/fury/x/market/types"
 
-	utils "github.com/comdex-official/comdex/types"
+	utils "github.com/Fury-Labs/fury/types"
 )
 
 type KeeperTestSuite struct {
