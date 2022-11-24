@@ -1,0 +1,12 @@
+syntax = "proto3";
+package fury.collector.v1beta1;
+
+
+option go_package = "github.com/Fury-Labs/fury/x/collector/types";
+
+// Msg defines the Msg service.
+service Msg {
+   
+}
+
+
