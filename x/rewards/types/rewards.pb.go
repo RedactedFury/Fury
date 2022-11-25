@@ -662,8 +662,8 @@ func (m *LendExternalRewards) GetEpochId() uint64 {
 type RewardsAssetPoolData struct {
 	CPoolId            uint64   `protobuf:"varint,1,opt,name=c_pool_id,json=cPoolId,proto3" json:"c_pool_id,omitempty" yaml:"c_pool_id"`
 	AssetId            []uint64 `protobuf:"varint,2,rep,packed,name=asset_id,json=assetId,proto3" json:"asset_id,omitempty" yaml:"asset_id"`
-	CSwapAppId         uint64   `protobuf:"varint,3,opt,name=c_swap_app_id,json=cSwapAppId,proto3" json:"c_swap_app_id,omitempty" yaml:"c_swap_app_id"`
-	CSwapMinLockAmount uint64   `protobuf:"varint,4,opt,name=c_swap_min_lock_amount,json=cSwapMinLockAmount,proto3" json:"c_swap_min_lock_amount,omitempty" yaml:"c_swap_min_lock_amount"`
+	CalmaAppId         uint64   `protobuf:"varint,3,opt,name=c_swap_app_id,json=CalmaAppId,proto3" json:"c_swap_app_id,omitempty" yaml:"c_swap_app_id"`
+	CalmaMinLockAmount uint64   `protobuf:"varint,4,opt,name=c_swap_min_lock_amount,json=CalmaMinLockAmount,proto3" json:"c_swap_min_lock_amount,omitempty" yaml:"c_swap_min_lock_amount"`
 }
 
 func (m *RewardsAssetPoolData) Reset()         { *m = RewardsAssetPoolData{} }
@@ -713,16 +713,16 @@ func (m *RewardsAssetPoolData) GetAssetId() []uint64 {
 	return nil
 }
 
-func (m *RewardsAssetPoolData) GetCSwapAppId() uint64 {
+func (m *RewardsAssetPoolData) GetCalmaAppId() uint64 {
 	if m != nil {
-		return m.CSwapAppId
+		return m.CalmaAppId
 	}
 	return 0
 }
 
-func (m *RewardsAssetPoolData) GetCSwapMinLockAmount() uint64 {
+func (m *RewardsAssetPoolData) GetCalmaMinLockAmount() uint64 {
 	if m != nil {
-		return m.CSwapMinLockAmount
+		return m.CalmaMinLockAmount
 	}
 	return 0
 }
@@ -1328,13 +1328,13 @@ func (m *RewardsAssetPoolData) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	_ = i
 	var l int
 	_ = l
-	if m.CSwapMinLockAmount != 0 {
-		i = encodeVarintRewards(dAtA, i, uint64(m.CSwapMinLockAmount))
+	if m.CalmaMinLockAmount != 0 {
+		i = encodeVarintRewards(dAtA, i, uint64(m.CalmaMinLockAmount))
 		i--
 		dAtA[i] = 0x20
 	}
-	if m.CSwapAppId != 0 {
-		i = encodeVarintRewards(dAtA, i, uint64(m.CSwapAppId))
+	if m.CalmaAppId != 0 {
+		i = encodeVarintRewards(dAtA, i, uint64(m.CalmaAppId))
 		i--
 		dAtA[i] = 0x18
 	}
@@ -1591,11 +1591,11 @@ func (m *RewardsAssetPoolData) Size() (n int) {
 		}
 		n += 1 + sovRewards(uint64(l)) + l
 	}
-	if m.CSwapAppId != 0 {
-		n += 1 + sovRewards(uint64(m.CSwapAppId))
+	if m.CalmaAppId != 0 {
+		n += 1 + sovRewards(uint64(m.CalmaAppId))
 	}
-	if m.CSwapMinLockAmount != 0 {
-		n += 1 + sovRewards(uint64(m.CSwapMinLockAmount))
+	if m.CalmaMinLockAmount != 0 {
+		n += 1 + sovRewards(uint64(m.CalmaMinLockAmount))
 	}
 	return n
 }
@@ -3270,9 +3270,9 @@ func (m *RewardsAssetPoolData) Unmarshal(dAtA []byte) error {
 			}
 		case 3:
 			if wireType != 0 {
-				return fmt.Errorf("proto: wrong wireType = %d for field CSwapAppId", wireType)
+				return fmt.Errorf("proto: wrong wireType = %d for field CalmaAppId", wireType)
 			}
-			m.CSwapAppId = 0
+			m.CalmaAppId = 0
 			for shift := uint(0); ; shift += 7 {
 				if shift >= 64 {
 					return ErrIntOverflowRewards
@@ -3282,16 +3282,16 @@ func (m *RewardsAssetPoolData) Unmarshal(dAtA []byte) error {
 				}
 				b := dAtA[iNdEx]
 				iNdEx++
-				m.CSwapAppId |= uint64(b&0x7F) << shift
+				m.CalmaAppId |= uint64(b&0x7F) << shift
 				if b < 0x80 {
 					break
 				}
 			}
 		case 4:
 			if wireType != 0 {
-				return fmt.Errorf("proto: wrong wireType = %d for field CSwapMinLockAmount", wireType)
+				return fmt.Errorf("proto: wrong wireType = %d for field CalmaMinLockAmount", wireType)
 			}
-			m.CSwapMinLockAmount = 0
+			m.CalmaMinLockAmount = 0
 			for shift := uint(0); ; shift += 7 {
 				if shift >= 64 {
 					return ErrIntOverflowRewards
@@ -3301,7 +3301,7 @@ func (m *RewardsAssetPoolData) Unmarshal(dAtA []byte) error {
 				}
 				b := dAtA[iNdEx]
 				iNdEx++
-				m.CSwapMinLockAmount |= uint64(b&0x7F) << shift
+				m.CalmaMinLockAmount |= uint64(b&0x7F) << shift
 				if b < 0x80 {
 					break
 				}

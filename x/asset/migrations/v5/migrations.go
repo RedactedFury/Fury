@@ -23,8 +23,8 @@ func MigrateStore(ctx sdk.Context, storeKey storetypes.StoreKey, cdc codec.Binar
 func MigrateValueApps(store sdk.KVStore, cdc codec.BinaryCodec) error {
 	app1 := assettypes.AppData{
 		Id:               1,
-		Name:             "CSWAP",
-		ShortName:        "cswap",
+		Name:             "CALMA",
+		ShortName:        "calma",
 		MinGovDeposit:    sdk.ZeroInt(),
 		GovTimeInSeconds: 300,
 		GenesisToken:     nil,

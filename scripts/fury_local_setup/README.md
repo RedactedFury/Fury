@@ -1,4 +1,4 @@
-<h1 align="center">Script to set up local fury chain with harbor, cSwap and commodo apps </h1>
+<h1 align="center">Script to set up local fury chain with harbor, Calma and commodo apps </h1>
 
 ```shell
 pip3 install -r scripts/fury_local_setup/requirements.txt

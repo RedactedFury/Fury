@@ -3,7 +3,7 @@ from constants import *
 APPS = [
     # [name, shortName, minGovDeposit, govTimeInSeconds]
     ["harbor", "hbr", 1000000, 5],  # ID - 1
-    ["cswap", "cswap", 0, 0],  # ID - 2
+    ["calma", "calma", 0, 0],  # ID - 2
     ["commodo", "comdo", 0, 0],  # ID - 3
 ]
 

@@ -49,7 +49,7 @@ func InitializeStates(
 	gToken = append(gToken, genesisToken)
 
 	apps := []assettypes.AppData{
-		{Name: "cswap", ShortName: "cswap", MinGovDeposit: sdk.ZeroInt(), GovTimeInSeconds: 0, GenesisToken: []assettypes.MintGenesisToken{}},
+		{Name: "calma", ShortName: "calma", MinGovDeposit: sdk.ZeroInt(), GovTimeInSeconds: 0, GenesisToken: []assettypes.MintGenesisToken{}},
 		{Name: "harbor", ShortName: "hbr", MinGovDeposit: sdk.NewInt(10000000000), GovTimeInSeconds: 259200, GenesisToken: gToken},
 	}
 	for _, app := range apps {

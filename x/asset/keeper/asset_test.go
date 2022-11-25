@@ -28,10 +28,10 @@ func (s *KeeperTestSuite) TestAddApp() {
 		ExpErr error
 	}{
 		{
-			"Add App cswap cswap",
+			"Add App calma calma",
 			assetTypes.AppData{
-				Name:             "cswap",
-				ShortName:        "cswap",
+				Name:             "calma",
+				ShortName:        "calma",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -53,9 +53,9 @@ func (s *KeeperTestSuite) TestAddApp() {
 			nil,
 		},
 		{
-			"Add Duplicate App name cswap werd",
+			"Add Duplicate App name calma werd",
 			assetTypes.AppData{
-				Name:             "cswap",
+				Name:             "calma",
 				ShortName:        "werd",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
@@ -72,10 +72,10 @@ func (s *KeeperTestSuite) TestAddApp() {
 			assetTypes.ErrorDuplicateApp,
 		},
 		{
-			"Add Duplicate short name werd cswap",
+			"Add Duplicate short name werd calma",
 			assetTypes.AppData{
 				Name:             "werd",
-				ShortName:        "cswap",
+				ShortName:        "calma",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -91,10 +91,10 @@ func (s *KeeperTestSuite) TestAddApp() {
 			assetTypes.ErrorDuplicateShortNameForApp,
 		},
 		{
-			"Add Duplicate short name werd cswap with .",
+			"Add Duplicate short name werd calma with .",
 			assetTypes.AppData{
 				Name:             "werd",
-				ShortName:        "cswap.",
+				ShortName:        "calma.",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -110,10 +110,10 @@ func (s *KeeperTestSuite) TestAddApp() {
 			assetTypes.ErrorShortNameDidNotMeetCriterion,
 		},
 		{
-			"Add Duplicate short name werd cswap with space",
+			"Add Duplicate short name werd calma with space",
 			assetTypes.AppData{
 				Name:             "werd",
-				ShortName:        "cswap" + " ",
+				ShortName:        "calma" + " ",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -132,7 +132,7 @@ func (s *KeeperTestSuite) TestAddApp() {
 			"Should be not able to use sub strings",
 			assetTypes.AppData{
 				Name:             "werd",
-				ShortName:        "cswaps",
+				ShortName:        "calmas",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -151,7 +151,7 @@ func (s *KeeperTestSuite) TestAddApp() {
 			"big short name",
 			assetTypes.AppData{
 				Name:             "werd",
-				ShortName:        "cswappp",
+				ShortName:        "calmapp",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -170,7 +170,7 @@ func (s *KeeperTestSuite) TestAddApp() {
 			"big name",
 			assetTypes.AppData{
 				Name:             "werdwerdwerd",
-				ShortName:        "cswapp",
+				ShortName:        "calmap",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{
@@ -189,7 +189,7 @@ func (s *KeeperTestSuite) TestAddApp() {
 			"capital letter in short name",
 			assetTypes.AppData{
 				Name:             "werd",
-				ShortName:        "Cswap",
+				ShortName:        "Calma",
 				MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 				GovTimeInSeconds: 900,
 				GenesisToken: []assetTypes.MintGenesisToken{

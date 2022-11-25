@@ -81,7 +81,7 @@ func (s *KeeperTestSuite) TestMsgLend() {
 	s.AddAssetToPair(assetThreeID, poolTwoID, []uint64{pairElevenID, pairTwelveID, pairSeventeenID})
 
 	appOneID := s.CreateNewApp("commodo", "cmmdo")
-	appTwoID := s.CreateNewApp("cswap", "cswap")
+	appTwoID := s.CreateNewApp("calma", "calma")
 
 	msg3 := types.NewMsgFundModuleAccounts(1, assetOneID, "cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", sdk.NewCoin("uasset1", newInt(10000000000)))
 	msg4 := types.NewMsgFundModuleAccounts(1, assetTwoID, "cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", sdk.NewCoin("uasset2", newInt(10000000000)))
@@ -1778,7 +1778,7 @@ func (s *KeeperTestSuite) TestMsgBorrowAlternate() {
 	s.AddAssetToPair(assetThreeID, poolTwoID, []uint64{pairElevenID, pairTwelveID, pairSeventeenID})
 
 	appOneID := s.CreateNewApp("commodo", "cmmdo")
-	appTwoID := s.CreateNewApp("cswap", "cswap")
+	appTwoID := s.CreateNewApp("calma", "calma")
 	msg := types.NewMsgLend("cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", assetThreeID, sdk.NewCoin("uasset3", newInt(300)), poolOneID, appOneID)
 
 	msg3 := types.NewMsgFundModuleAccounts(1, assetOneID, "cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", sdk.NewCoin("uasset1", newInt(10000000000)))
@@ -2001,7 +2001,7 @@ func (s *KeeperTestSuite) TestMsgBorrowAlternate() {
 //	s.AddAssetToPair(assetThreeID, poolTwoID, []uint64{pairElevenID, pairTwelveID, pairSeventeenID})
 //
 //	appOneID := s.CreateNewApp("commodo", "cmmdo")
-//	// appTwoID := s.CreateNewApp("cswap", "cswap")
+//	// appTwoID := s.CreateNewApp("calma", "calma")
 //	msg := types.NewMsgLend("cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", assetOneID, sdk.NewCoin("uasset1", newInt(300)), poolOneID, appOneID)
 //	msgLend2 := types.NewMsgLend("cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", assetTwoID, sdk.NewCoin("uasset2", newInt(10000000000)), poolOneID, appOneID)
 //
@@ -2154,7 +2154,7 @@ func (s *KeeperTestSuite) TestMsgBorrowAlternate() {
 //	s.AddAssetToPair(assetThreeID, poolTwoID, []uint64{pairElevenID, pairTwelveID, pairSeventeenID})
 //
 //	appOneID := s.CreateNewApp("commodo", "cmmdo")
-//	// appTwoID := s.CreateNewApp("cswap", "cswap")
+//	// appTwoID := s.CreateNewApp("calma", "calma")
 //	msg := types.NewMsgLend("cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", assetOneID, sdk.NewCoin("uasset1", newInt(300)), poolOneID, appOneID)
 //	msgLend2 := types.NewMsgLend("cosmos1yq8lgssgxlx9smjhes6ryjasmqmd3ts2559g0t", assetTwoID, sdk.NewCoin("uasset2", newInt(10000000000)), poolOneID, appOneID)
 //

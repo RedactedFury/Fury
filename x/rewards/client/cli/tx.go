@@ -281,7 +281,7 @@ func NewBuildLiquidityGaugeExtraData(cmd *cobra.Command) (types.MsgCreateGauge_L
 
 func txActivateExternalRewardsLend() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "activate-external-rewards-lend [appMappingID] [cPoolID] [assetIDs] [cSwapAppID] [cSwapMinLockAmount] [totalRewards] [masterPoolID] [duration] [minLockupTimeSeconds]",
+		Use:   "activate-external-rewards-lend [appMappingID] [cPoolID] [assetIDs] [CalmaAppID] [CalmaMinLockAmount] [totalRewards] [masterPoolID] [duration] [minLockupTimeSeconds]",
 		Short: "activate external reward for borrowers",
 		Args:  cobra.ExactArgs(9),
 		RunE: func(cmd *cobra.Command, args []string) error {
@@ -305,12 +305,12 @@ func txActivateExternalRewardsLend() *cobra.Command {
 				return err
 			}
 
-			cSwapAppID, err := strconv.ParseUint(args[3], 10, 64)
+			CalmaAppID, err := strconv.ParseUint(args[3], 10, 64)
 			if err != nil {
 				return err
 			}
 
-			cSwapMinLockAmount, err := strconv.ParseUint(args[4], 10, 64)
+			CalmaMinLockAmount, err := strconv.ParseUint(args[4], 10, 64)
 			if err != nil {
 				return err
 			}
@@ -339,8 +339,8 @@ func txActivateExternalRewardsLend() *cobra.Command {
 				appMappingID,
 				cPoolID,
 				assetIDs,
-				cSwapAppID,
-				cSwapMinLockAmount,
+				CalmaAppID,
+				CalmaMinLockAmount,
 				totalRewards,
 				masterPoolID,
 				durationDays,

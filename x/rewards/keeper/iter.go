@@ -263,7 +263,7 @@ func (k Keeper) DistributeExtRewardLend(ctx sdk.Context) error {
 								continue
 							}
 							user, _ := sdk.AccAddressFromBech32(lend.Owner)
-							liqFound := k.CheckBorrowersLiquidity(ctx, user, v.MasterPoolId, rewardsAssetPoolData.CSwapAppId, sdk.NewIntFromUint64(rewardsAssetPoolData.CSwapMinLockAmount))
+							liqFound := k.CheckBorrowersLiquidity(ctx, user, v.MasterPoolId, rewardsAssetPoolData.CalmaAppId, sdk.NewIntFromUint64(rewardsAssetPoolData.CalmaMinLockAmount))
 							if !liqFound {
 								continue
 							}

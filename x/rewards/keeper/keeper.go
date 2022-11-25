@@ -283,8 +283,8 @@ func (k Keeper) AddLendExternalRewards(ctx sdk.Context, msg types.ActivateExtern
 	RewardsAssetPoolData := types.RewardsAssetPoolData{
 		CPoolId:            msg.CPoolId,
 		AssetId:            msg.AssetId,
-		CSwapAppId:         msg.CSwapAppId,
-		CSwapMinLockAmount: msg.CSwapMinLockAmount,
+		CalmaAppId:         msg.CalmaAppId,
+		CalmaMinLockAmount: msg.CalmaMinLockAmount,
 	}
 
 	epoch := types.EpochTime{

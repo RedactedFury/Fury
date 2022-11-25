@@ -18,7 +18,7 @@ def SetupNewChain():
     response = subprocess.getstatusoutput(f"make install --directory={FURY_DIR_PATH}")
     print(response[1])
     print("binary re-build done ✔️")
-    subprocess.getstatusoutput("sudo mv ~/go/bin/fury /usr/local/bin")
+    subprocess.getstatusoutput("sudo mv ~/bin/bin/fury /usr/local/bin")
     subprocess.getstatusoutput(f"fury init {NODE_MONIKER} --chain-id {CHAIN_ID}")
     subprocess.getstatusoutput(f"fury keys add {GENESIS_ACCOUNT_NAME} --keyring-backend test")
     subprocess.getstatusoutput(f"fury add-genesis-account $(fury keys show cooluser --keyring-backend test -a) {GENESIS_TOKENS}")
@@ -115,7 +115,7 @@ def AddAsset(name, denom, decimals=1, isOnChain=1, assetOraclePriceRequired=1, i
         "asset_oracle_price" :str(assetOraclePriceRequired),
         "is_cdp_mintable" :str(isCdpMintable),
         "title" :"Add assets for applications to be deployed on fury chain",
-        "description" :f"This proposal it to add asset {name} to be then used on harbor, commodo and cswap apps",
+        "description" :f"This proposal it to add asset {name} to be then used on harbor, commodo and calma apps",
         "deposit" :"1000000000ufury"
     }
     fileName = f"newAsset-{name}-{datetime.datetime.now()}.json"

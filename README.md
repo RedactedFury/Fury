@@ -21,7 +21,7 @@ Harbour protocol : [docs.harborprotocol.one](http://docs.harborprotocol.one).
 
 Commodo : [docs.commodo.one](http://docs.commodo.one).
 
-cSwap :  [docs.cswap.one](https://docs.cswap.one).
+Calma :  [docs.calma.one](https://docs.calma.one).
 
 
 If you have technical questions or concerns, ask a developer or community member in the [Fury discord](https://discord.com/invite/7vjPvWKKMT).

@@ -61,8 +61,8 @@ func AddAppAsset(app *app.App, ctx1 sdk.Context) {
 	userAddress := "cosmos1q7q90qsl9g0gl2zz0njxwv2a649yqrtyxtnv3v"
 	genesisSupply := sdk.NewIntFromUint64(9000000)
 	msg1 := assetTypes.AppData{
-		Name:             "cswap",
-		ShortName:        "cswap",
+		Name:             "calma",
+		ShortName:        "calma",
 		MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 		GovTimeInSeconds: 900,
 		GenesisToken: []assetTypes.MintGenesisToken{

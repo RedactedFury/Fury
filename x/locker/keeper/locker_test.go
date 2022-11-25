@@ -14,8 +14,8 @@ import (
 func (s *KeeperTestSuite) AddAppAsset() {
 	assetKeeper, ctx := &s.assetKeeper, &s.ctx
 	msg1 := assetTypes.AppData{
-		Name:             "cswap",
-		ShortName:        "cswap",
+		Name:             "calma",
+		ShortName:        "calma",
 		MinGovDeposit:    sdk.NewIntFromUint64(10000000),
 		GovTimeInSeconds: 900,
 	}
