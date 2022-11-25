@@ -138,7 +138,7 @@ func txCommand() *cobra.Command {
 	)
 
 	fury.ModuleBasics.AddTxCommands(cmd)
-	cmd.PersistentFlags().String(flags.FlagChainID, "", "The network chain ID")
+	cmd.PersistentFlags().String(flags.FlagChainID, "test-1", "The network chain ID")
 
 	return cmd
 }
