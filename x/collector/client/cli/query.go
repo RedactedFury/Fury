@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 
-	"github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/redactedfury/fury/x/collector/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module.

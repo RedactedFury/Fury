@@ -1,9 +1,9 @@
 syntax = "proto3";
 package fury.asset.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/asset/types";
+option go_package = "github.com/redactedfury/fury/x/asset/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
@@ -14,16 +14,21 @@ message AppData {
   string min_gov_deposit = 4 [
     (gogoproto.moretags) = "yaml:\"min_gov_deposit\"",
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
-    (gogoproto.nullable) = false];
+    (gogoproto.nullable) = false
+  ];
   uint64 gov_time_in_seconds = 5 [(gogoproto.moretags) = "yaml:\"gov_time_in_seconds\""];
-  repeated MintGenesisToken genesis_token = 6 [(gogoproto.moretags) = "yaml:\"genesis_token\"",
-    (gogoproto.nullable) = false];
+  repeated MintGenesisToken genesis_token = 6 [
+    (gogoproto.moretags) = "yaml:\"genesis_token\"",
+    (gogoproto.nullable) = false
+  ];
 }
 
 message MintGenesisToken {
   uint64 asset_id = 1 [(gogoproto.moretags) = "yaml:\"asset_id\""];
-  string genesis_supply = 2[(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
-    (gogoproto.nullable) = false];
+  string genesis_supply = 2 [
+    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.nullable) = false
+  ];
   bool is_gov_token = 3 [(gogoproto.moretags) = "yaml:\"is_gov_token\""];
   string recipient = 4 [(gogoproto.moretags) = "yaml:\"recipient\""];
 }
@@ -34,5 +39,6 @@ message AppAndGovTime {
   string min_gov_deposit = 3 [
     (gogoproto.moretags) = "yaml:\"min_gov_deposit\"",
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
-    (gogoproto.nullable) = false];
+    (gogoproto.nullable) = false
+  ];
 }

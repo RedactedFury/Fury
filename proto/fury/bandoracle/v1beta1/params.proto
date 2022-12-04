@@ -1,7 +1,7 @@
 syntax = "proto3";
 package fury.bandoracle.v1beta1;
 
-option go_package = "github.com/Fury-Labs/fury/x/bandoracle/types";
+option go_package = "github.com/redactedfury/fury/x/bandoracle/types";
 
 // Params defines the parameters for the module.
 message Params {}

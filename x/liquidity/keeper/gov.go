@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/x/liquidity/types"
 )
 
 func (k Keeper) HandelUpdateGenericParamsProposal(ctx sdk.Context, p *types.UpdateGenericParamsProposal) error {

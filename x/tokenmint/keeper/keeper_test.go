@@ -4,19 +4,19 @@ import (
 	"testing"
 	"time"
 
-	collectorTypes "github.com/Fury-Labs/fury/x/collector/types"
+	collectorTypes "github.com/redactedfury/fury/x/collector/types"
 
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	assetKeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	auctionKeeper "github.com/Fury-Labs/fury/x/auction/keeper"
-	collectorKeeper "github.com/Fury-Labs/fury/x/collector/keeper"
-	tokenmintKeeper "github.com/Fury-Labs/fury/x/tokenmint/keeper"
-	tokenmintTypes "github.com/Fury-Labs/fury/x/tokenmint/types"
+	chain "github.com/redactedfury/fury/app"
+	assetKeeper "github.com/redactedfury/fury/x/asset/keeper"
+	auctionKeeper "github.com/redactedfury/fury/x/auction/keeper"
+	collectorKeeper "github.com/redactedfury/fury/x/collector/keeper"
+	tokenmintKeeper "github.com/redactedfury/fury/x/tokenmint/keeper"
+	tokenmintTypes "github.com/redactedfury/fury/x/tokenmint/types"
 )
 
 type KeeperTestSuite struct {

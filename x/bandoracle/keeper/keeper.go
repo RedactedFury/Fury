@@ -6,8 +6,8 @@ import (
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
 
-	assetkeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	"github.com/Fury-Labs/fury/x/bandoracle/expected"
+	assetkeeper "github.com/redactedfury/fury/x/asset/keeper"
+	"github.com/redactedfury/fury/x/bandoracle/expected"
 
 	"github.com/tendermint/tendermint/libs/log"
 
@@ -15,7 +15,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/Fury-Labs/fury/x/bandoracle/types"
+	"github.com/redactedfury/fury/x/bandoracle/types"
 )
 
 type (

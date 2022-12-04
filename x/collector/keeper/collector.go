@@ -3,11 +3,11 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	auctiontypes "github.com/Fury-Labs/fury/x/auction/types"
-	"github.com/Fury-Labs/fury/x/collector/types"
-	lockertypes "github.com/Fury-Labs/fury/x/locker/types"
-	rewardstypes "github.com/Fury-Labs/fury/x/rewards/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	auctiontypes "github.com/redactedfury/fury/x/auction/types"
+	"github.com/redactedfury/fury/x/collector/types"
+	lockertypes "github.com/redactedfury/fury/x/locker/types"
+	rewardstypes "github.com/redactedfury/fury/x/rewards/types"
 )
 
 // GetAmountFromCollector returns amount from the collector.

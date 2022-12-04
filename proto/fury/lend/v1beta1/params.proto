@@ -1,12 +1,11 @@
 syntax = "proto3";
 package fury.lend.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/lend/types";
+option go_package = "github.com/redactedfury/fury/x/lend/types";
 
 // Params defines the parameters for the module.
 message Params {
   option (gogoproto.goproto_stringer) = false;
-  
 }

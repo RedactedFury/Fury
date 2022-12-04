@@ -9,14 +9,14 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	assetKeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	liquidationKeeper "github.com/Fury-Labs/fury/x/liquidation/keeper"
-	"github.com/Fury-Labs/fury/x/liquidation/types"
-	marketKeeper "github.com/Fury-Labs/fury/x/market/keeper"
-	rewardsKeeper "github.com/Fury-Labs/fury/x/rewards/keeper"
-	vaultKeeper "github.com/Fury-Labs/fury/x/vault/keeper"
-	vaultTypes "github.com/Fury-Labs/fury/x/vault/types"
+	chain "github.com/redactedfury/fury/app"
+	assetKeeper "github.com/redactedfury/fury/x/asset/keeper"
+	liquidationKeeper "github.com/redactedfury/fury/x/liquidation/keeper"
+	"github.com/redactedfury/fury/x/liquidation/types"
+	marketKeeper "github.com/redactedfury/fury/x/market/keeper"
+	rewardsKeeper "github.com/redactedfury/fury/x/rewards/keeper"
+	vaultKeeper "github.com/redactedfury/fury/x/vault/keeper"
+	vaultTypes "github.com/redactedfury/fury/x/vault/types"
 )
 
 type KeeperTestSuite struct {

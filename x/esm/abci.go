@@ -1,15 +1,15 @@
 package esm
 
 import (
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	"github.com/Fury-Labs/fury/x/esm/expected"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	"github.com/redactedfury/fury/x/esm/expected"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	utils "github.com/Fury-Labs/fury/types"
-	"github.com/Fury-Labs/fury/x/esm/keeper"
-	"github.com/Fury-Labs/fury/x/esm/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/esm/keeper"
+	"github.com/redactedfury/fury/x/esm/types"
 )
 
 func BeginBlocker(ctx sdk.Context, _ abci.RequestBeginBlock, k keeper.Keeper, assetKeeper expected.AssetKeeper) {

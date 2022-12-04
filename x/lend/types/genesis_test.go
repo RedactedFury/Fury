@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/Fury-Labs/fury/x/lend/types"
+	"github.com/redactedfury/fury/x/lend/types"
 	"github.com/stretchr/testify/require"
 )
 

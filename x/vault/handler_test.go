@@ -6,10 +6,10 @@ import (
 
 	_ "github.com/stretchr/testify/suite"
 
-	"github.com/Fury-Labs/fury/app"
-	"github.com/Fury-Labs/fury/x/vault"
-	"github.com/Fury-Labs/fury/x/vault/keeper"
-	"github.com/Fury-Labs/fury/x/vault/types"
+	"github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/vault"
+	"github.com/redactedfury/fury/x/vault/keeper"
+	"github.com/redactedfury/fury/x/vault/types"
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

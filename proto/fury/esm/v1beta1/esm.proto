@@ -1,11 +1,11 @@
 syntax = "proto3";
 package fury.esm.v1beta1;
 
-import "gogoproto/gogo.proto";
-import "google/protobuf/timestamp.proto";
 import "cosmos/base/v1beta1/coin.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/esm/types";
+option go_package = "github.com/redactedfury/fury/x/esm/types";
 
 message ESMTriggerParams {
   uint64 app_id = 1 [
@@ -31,7 +31,7 @@ message ESMTriggerParams {
   ];
 }
 
-message CurrentDepositStats{
+message CurrentDepositStats {
   uint64 app_id = 1 [
     (gogoproto.customname) = "AppId",
     (gogoproto.moretags) = "yaml:\"id\""
@@ -44,7 +44,7 @@ message CurrentDepositStats{
   ];
 }
 
-message ESMStatus{
+message ESMStatus {
   uint64 app_id = 1 [
     (gogoproto.customname) = "AppId",
     (gogoproto.moretags) = "yaml:\"id\""
@@ -52,9 +52,7 @@ message ESMStatus{
 
   string executor = 2 [(gogoproto.moretags) = "yaml:\"executor\""];
 
-  bool status = 3 [
-    (gogoproto.moretags) = "yaml:\"status\""
-  ];
+  bool status = 3 [(gogoproto.moretags) = "yaml:\"status\""];
 
   google.protobuf.Timestamp start_time = 4 [
     (gogoproto.nullable) = false,
@@ -68,33 +66,23 @@ message ESMStatus{
     (gogoproto.moretags) = "yaml:\"end_time\""
   ];
 
-  bool vault_redemption_status = 6 [
-    (gogoproto.moretags) = "yaml:\"vault_redemption_status\""
-  ];
+  bool vault_redemption_status = 6 [(gogoproto.moretags) = "yaml:\"vault_redemption_status\""];
 
-  bool snapshotStatus = 7 [
-    (gogoproto.moretags) = "yaml:\"snapshot_status\""
-  ];
+  bool snapshotStatus = 7 [(gogoproto.moretags) = "yaml:\"snapshot_status\""];
 
-  bool stable_vault_redemption_status = 8 [
-    (gogoproto.moretags) = "yaml:\"stable_vault_redemption_status\""
-  ];
+  bool stable_vault_redemption_status = 8 [(gogoproto.moretags) = "yaml:\"stable_vault_redemption_status\""];
 
-  bool collector_transaction = 9 [
-    (gogoproto.moretags) = "yaml:\"collector_transaction\""
-  ];
+  bool collector_transaction = 9 [(gogoproto.moretags) = "yaml:\"collector_transaction\""];
 
-  bool share_calculation = 10 [
-    (gogoproto.moretags) = "yaml:\"share_calculation\""
-  ];
+  bool share_calculation = 10 [(gogoproto.moretags) = "yaml:\"share_calculation\""];
 }
 
-message KillSwitchParams{
-  uint64 appId = 1 [ (gogoproto.moretags) = "yaml:\"appId\"" ];
-  bool breaker_enable = 2 [ (gogoproto.moretags) = "yaml:\"breaker_enable\"" ];
+message KillSwitchParams {
+  uint64 appId = 1 [(gogoproto.moretags) = "yaml:\"appId\""];
+  bool breaker_enable = 2 [(gogoproto.moretags) = "yaml:\"breaker_enable\""];
 }
 
-message UsersDepositMapping{
+message UsersDepositMapping {
   uint64 app_id = 1 [
     (gogoproto.customname) = "AppId",
     (gogoproto.moretags) = "yaml:\"id\""
@@ -110,17 +98,21 @@ message UsersDepositMapping{
 }
 
 message DataAfterCoolOff {
-  uint64 appId = 1 [ (gogoproto.moretags) = "yaml:\"appId\"" ];
-  string collateral_total_amount = 2 [(gogoproto.moretags) = "yaml:\"collateral_total_amount\"",
-  (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
-  (gogoproto.nullable) = false];
-  string debt_total_amount = 3 [(gogoproto.moretags) = "yaml:\"debt_total_amount\"",
-  (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
-  (gogoproto.nullable) = false];
+  uint64 appId = 1 [(gogoproto.moretags) = "yaml:\"appId\""];
+  string collateral_total_amount = 2 [
+    (gogoproto.moretags) = "yaml:\"collateral_total_amount\"",
+    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.nullable) = false
+  ];
+  string debt_total_amount = 3 [
+    (gogoproto.moretags) = "yaml:\"debt_total_amount\"",
+    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
+    (gogoproto.nullable) = false
+  ];
 }
 
 message AssetToAmount {
-  uint64 appId = 1 [ (gogoproto.moretags) = "yaml:\"appId\"" ];
+  uint64 appId = 1 [(gogoproto.moretags) = "yaml:\"appId\""];
   uint64 asset_id = 2 [
     (gogoproto.customname) = "AssetID",
     (gogoproto.moretags) = "yaml:\"asset_id\""

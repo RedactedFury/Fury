@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
-	"github.com/Fury-Labs/fury/x/tokenmint/keeper"
-	tokenmintTypes "github.com/Fury-Labs/fury/x/tokenmint/types"
+	assetTypes "github.com/redactedfury/fury/x/asset/types"
+	"github.com/redactedfury/fury/x/tokenmint/keeper"
+	tokenmintTypes "github.com/redactedfury/fury/x/tokenmint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

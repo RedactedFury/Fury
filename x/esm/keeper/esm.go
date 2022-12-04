@@ -4,11 +4,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	protobuftypes "github.com/gogo/protobuf/types"
 
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	collectortypes "github.com/Fury-Labs/fury/x/collector/types"
-	"github.com/Fury-Labs/fury/x/esm/types"
-	vaulttypes "github.com/Fury-Labs/fury/x/vault/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	collectortypes "github.com/redactedfury/fury/x/collector/types"
+	"github.com/redactedfury/fury/x/esm/types"
+	vaulttypes "github.com/redactedfury/fury/x/vault/types"
 )
 
 func (k Keeper) SetESMTriggerParams(ctx sdk.Context, esmTriggerParams types.ESMTriggerParams) {

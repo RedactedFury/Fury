@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/Fury-Labs/fury/x/rewards/types"
+	"github.com/redactedfury/fury/x/rewards/types"
 )
 
 var _ types.QueryServer = &Keeper{}

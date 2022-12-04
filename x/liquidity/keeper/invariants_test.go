@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	utils "github.com/Fury-Labs/fury/types"
-	"github.com/Fury-Labs/fury/x/liquidity/keeper"
-	"github.com/Fury-Labs/fury/x/liquidity/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidity/keeper"
+	"github.com/redactedfury/fury/x/liquidity/types"
 	_ "github.com/stretchr/testify/suite"
 )
 

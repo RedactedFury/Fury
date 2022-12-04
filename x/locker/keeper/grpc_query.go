@@ -7,8 +7,8 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	"github.com/Fury-Labs/fury/x/locker/types"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	"github.com/redactedfury/fury/x/locker/types"
 )
 
 var _ types.QueryServer = QueryServer{}

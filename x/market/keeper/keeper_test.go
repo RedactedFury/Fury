@@ -2,7 +2,7 @@ package keeper
 
 import (
 	"fmt"
-	rewardtypes "github.com/Fury-Labs/fury/x/rewards/types"
+	rewardtypes "github.com/redactedfury/fury/x/rewards/types"
 	"math"
 	"testing"
 

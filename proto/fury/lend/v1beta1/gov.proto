@@ -1,11 +1,10 @@
 syntax = "proto3";
 package fury.lend.v1beta1;
 
-import "gogoproto/gogo.proto";
 import "fury/lend/v1beta1/lend.proto";
+import "google/protobuf/timestamp.proto";
 
-
-option go_package = "github.com/Fury-Labs/fury/x/lend/types";
+option go_package = "github.com/redactedfury/fury/x/lend/types";
 
 message LendPairsProposal {
   string title = 1 [(gogoproto.moretags) = "yaml:\"title\""];

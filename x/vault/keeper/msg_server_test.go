@@ -2,8 +2,8 @@ package keeper_test
 
 import (
 	"fmt"
-	utils "github.com/Fury-Labs/fury/types"
-	"github.com/Fury-Labs/fury/x/vault/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/stretchr/testify/suite"
 )

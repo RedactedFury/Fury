@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	govrest "github.com/cosmos/cosmos-sdk/x/gov/client/rest"
 
-	"github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/redactedfury/fury/x/asset/types"
 )
 
 type AddNewAssetsRequest struct {

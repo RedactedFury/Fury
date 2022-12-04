@@ -3,8 +3,8 @@ package asset
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/asset/keeper"
-	"github.com/Fury-Labs/fury/x/asset/types"
+	"github.com/redactedfury/fury/x/asset/keeper"
+	"github.com/redactedfury/fury/x/asset/types"
 )
 
 func InitGenesis(ctx sdk.Context, k keeper.Keeper, state *types.GenesisState) {

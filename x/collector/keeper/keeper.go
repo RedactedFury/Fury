@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/Fury-Labs/fury/x/collector/expected"
-	"github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/redactedfury/fury/x/collector/expected"
+	"github.com/redactedfury/fury/x/collector/types"
 )
 
 type (

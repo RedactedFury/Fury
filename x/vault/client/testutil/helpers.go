@@ -11,11 +11,11 @@ import (
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	markettypes "github.com/Fury-Labs/fury/x/market/types"
-	"github.com/Fury-Labs/fury/x/vault/client/cli"
-	"github.com/Fury-Labs/fury/x/vault/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	markettypes "github.com/redactedfury/fury/x/market/types"
+	"github.com/redactedfury/fury/x/vault/client/cli"
+	"github.com/redactedfury/fury/x/vault/types"
 )
 
 var commonArgs = []string{

@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/rewards/types"
+	"github.com/redactedfury/fury/x/rewards/types"
 )
 
 // NewEpochInfo return new EpochInfo object.

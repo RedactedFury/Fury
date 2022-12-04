@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 HOME_DIR = Path.home() 
-FURY_DIR_PATH  = os.path.abspath(os.curdir)
+FURY_DIR_PATH = os.path.abspath(os.curdir)
 
 NODE_MONIKER = "testdev"
 CHAIN_ID = "test-1"

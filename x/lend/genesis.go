@@ -3,8 +3,8 @@ package lend
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/lend/keeper"
-	"github.com/Fury-Labs/fury/x/lend/types"
+	"github.com/redactedfury/fury/x/lend/keeper"
+	"github.com/redactedfury/fury/x/lend/types"
 )
 
 func InitGenesis(ctx sdk.Context, k keeper.Keeper, state *types.GenesisState) {

@@ -1,11 +1,11 @@
 syntax = "proto3";
 package fury.bandoracle.v1beta1;
 
-import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 import "fury/bandoracle/v1beta1/fetch_price.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/bandoracle/types";
+option go_package = "github.com/redactedfury/fury/x/bandoracle/types";
 
 message MsgFetchPriceData {
   string creator = 1;
@@ -26,10 +26,7 @@ message MsgFetchPriceData {
   uint64 execute_gas = 10;
   string client_id = 11 [(gogoproto.customname) = "ClientID"];
   uint64 twa_batch_size = 12;
-  int64 accepted_height_diff = 13 [
-    (gogoproto.moretags)   = "yaml:\"accepted_height_diff\""
-  ];
+  int64 accepted_height_diff = 13 [(gogoproto.moretags) = "yaml:\"accepted_height_diff\""];
 }
 
-message MsgFetchPriceDataResponse {
-}
+message MsgFetchPriceDataResponse {}

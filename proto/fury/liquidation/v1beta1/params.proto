@@ -1,8 +1,8 @@
 syntax = "proto3";
 package fury.liquidation.v1beta1;
 
-option go_package = "github.com/Fury-Labs/fury/x/liquidation/types";
+option go_package = "github.com/redactedfury/fury/x/liquidation/types";
 
 message Params {
-    uint64 liquidation_batch_size = 1;
-} 
+  uint64 liquidation_batch_size = 1;
+}

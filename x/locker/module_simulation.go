@@ -10,9 +10,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/Fury-Labs/fury/testutil/sample"
-	lockersimulation "github.com/Fury-Labs/fury/x/locker/simulation"
-	"github.com/Fury-Labs/fury/x/locker/types"
+	"github.com/redactedfury/fury/testutil/sample"
+	lockersimulation "github.com/redactedfury/fury/x/locker/simulation"
+	"github.com/redactedfury/fury/x/locker/types"
 )
 
 // avoid unused import issue.

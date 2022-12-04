@@ -17,9 +17,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/Fury-Labs/fury/x/tokenmint/client/cli"
-	"github.com/Fury-Labs/fury/x/tokenmint/keeper"
-	"github.com/Fury-Labs/fury/x/tokenmint/types"
+	"github.com/redactedfury/fury/x/tokenmint/client/cli"
+	"github.com/redactedfury/fury/x/tokenmint/keeper"
+	"github.com/redactedfury/fury/x/tokenmint/types"
 )
 
 var (

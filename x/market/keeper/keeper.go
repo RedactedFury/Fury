@@ -5,8 +5,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	assetkeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	"github.com/Fury-Labs/fury/x/market/expected"
+	assetkeeper "github.com/redactedfury/fury/x/asset/keeper"
+	"github.com/redactedfury/fury/x/market/expected"
 )
 
 type Keeper struct {

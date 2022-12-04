@@ -7,7 +7,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/redactedfury/fury/x/collector/types"
 )
 
 var _ types.QueryServer = QueryServer{}

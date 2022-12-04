@@ -33,26 +33,26 @@ Requires [Go 1.18+](https://golang.org/dl/)
 ### Linux
 
 ```shell
-mkdir -p ${GOPATH}/src/github.com/Fury-Labs/ && \
-cd ${GOPATH}/src/github.com/Fury-Labs/ && \
-git clone https://github.com/Fury-Labs/fury.git && \
-cd ${GOPATH}/src/github.com/Fury-Labs/fury/ && \
+mkdir -p ${GOPATH}/src/github.com/redactedfury/ && \
+cd ${GOPATH}/src/github.com/redactedfury/ && \
+git clone https://github.com/redactedfury/fury.git && \
+cd ${GOPATH}/src/github.com/redactedfury/fury/ && \
 make install
 ```
 
 ## Testnet
 
 To verify latest testnet and main net version check
-[Version](https://github.com/Fury-Labs/networks/blob/main/README.md)
+[Version](https://github.com/redactedfury/networks/blob/main/README.md)
 
 For further information on joining the testnet, head over to the
-[Fury Networks TestNet](https://github.com/Fury-Labs/networks/tree/main/testnet).
+[Fury Networks TestNet](https://github.com/redactedfury/networks/tree/main/testnet).
 
 The explorer for this chain is hosted [Meteor - TestNet Explorer](https://meteor-explorer.fury.one)
 
 ## Main Net
 For further information on joining the mainnet, head over to the
-[Fury Networks MainNet](https://github.com/Fury-Labs/networks/tree/main/mainnet).
+[Fury Networks MainNet](https://github.com/redactedfury/networks/tree/main/mainnet).
 
 
 ## Main Net Explorers
@@ -65,7 +65,7 @@ The explorer for this chain is hosted
 * [ZenChainLabs](https://fury.zenscan.io/)
 
 ## want to contribute to fury, please go through the contribution guides
-* [Contribution guides](https://github.com/Fury-Labs/contribution-docs)
+* [Contribution guides](https://github.com/redactedfury/contribution-docs)
 
 ## License
 
@@ -75,10 +75,10 @@ Licensed under the [fury license](LICENSE).
 
 [![Project Status: Active -- The project has reached a stable, usable
 state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-green.svg?style=flat-square)](https://www.repostatus.org/#active)
-[![version](https://img.shields.io/github/tag/Fury-Labs/fury.svg)](https://github.com/Fury-Labs/fury/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Fury-Labs/fury)](https://goreportcard.com/report/github.com/Fury-Labs/fury)
-[![API Reference](https://godoc.org/github.com/Fury-Labs/fury?status.svg)](https://godoc.org/github.com/Fury-Labs/fury)
-[![GitHub](https://img.shields.io/github/license/Fury-Labs/fury.svg)](https://github.com/Fury-Labs/fury/blob/development/LICENSE)
-[![Lines Of Code](https://img.shields.io/tokei/lines/github/Fury-Labs/fury?style=flat-square)](https://github.com/Fury-Labs/fury)
+[![version](https://img.shields.io/github/tag/redactedfury/fury.svg)](https://github.com/redactedfury/fury/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/redactedfury/fury)](https://goreportcard.com/report/github.com/redactedfury/fury)
+[![API Reference](https://godoc.org/github.com/redactedfury/fury?status.svg)](https://godoc.org/github.com/redactedfury/fury)
+[![GitHub](https://img.shields.io/github/license/redactedfury/fury.svg)](https://github.com/redactedfury/fury/blob/development/LICENSE)
+[![Lines Of Code](https://img.shields.io/tokei/lines/github/redactedfury/fury?style=flat-square)](https://github.com/redactedfury/fury)
 [![Twitter Follow](https://img.shields.io/twitter/follow/FuryOfficial?label=Follow&style=social)](https://twitter.com/FuryOfficial)
 [![Discord Chat](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/7vjPvWKKMT)

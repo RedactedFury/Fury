@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/lend/types"
+	"github.com/redactedfury/fury/x/lend/types"
 )
 
 func (k Keeper) GetReserveFunds(_ sdk.Context, pool types.Pool) sdk.Int {

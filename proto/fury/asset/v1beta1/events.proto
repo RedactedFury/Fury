@@ -1,7 +1,8 @@
 syntax = "proto3";
 package fury.asset.v1beta1;
 
+option go_package = "github.com/redactedfury/fury/x/asset/types";
 
-option go_package = "github.com/Fury-Labs/fury/x/asset/types";
-
-message EventAddPair {uint64 id = 1;}
+message EventAddPair {
+  uint64 id = 1;
+}

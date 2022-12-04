@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/redactedfury/fury/x/collector/types"
 )
 
 type msgServer struct {

@@ -1,10 +1,10 @@
 syntax = "proto3";
 package fury.esm.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/esm/types";
+option go_package = "github.com/redactedfury/fury/x/esm/types";
 
 message Params {
-   repeated string admin  = 1 [ (gogoproto.moretags) = "yaml:\"admin\"" ];
+  repeated string admin = 1 [(gogoproto.moretags) = "yaml:\"admin\""];
 }

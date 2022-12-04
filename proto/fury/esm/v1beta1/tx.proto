@@ -1,11 +1,11 @@
 syntax = "proto3";
 package fury.esm.v1beta1;
 
-import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 import "fury/esm/v1beta1/esm.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/esm/types";
+option go_package = "github.com/redactedfury/fury/x/esm/types";
 
 service Msg {
   rpc DepositESM(MsgDepositESM) returns (MsgDepositESMResponse);
@@ -15,29 +15,28 @@ service Msg {
 }
 
 message MsgDepositESM {
-  uint64                   app_id = 1;
-  string                depositor = 2;
+  uint64 app_id = 1;
+  string depositor = 2;
   cosmos.base.v1beta1.Coin amount = 3 [(gogoproto.nullable) = false];
 }
 
 message MsgExecuteESM {
-  uint64                   app_id = 1;
-  string                depositor = 2;
+  uint64 app_id = 1;
+  string depositor = 2;
 }
 
 message MsgKillRequest {
-  string from    = 1 [(gogoproto.moretags) = "yaml:\"from\"" ];
-  KillSwitchParams killSwitchParams = 2 [(gogoproto.moretags) = "yaml:\"killSwitchParams\"" ];
-
+  string from = 1 [(gogoproto.moretags) = "yaml:\"from\""];
+  KillSwitchParams killSwitchParams = 2 [(gogoproto.moretags) = "yaml:\"killSwitchParams\""];
 }
 
 message MsgCollateralRedemptionRequest {
-  uint64                   app_id = 1;
+  uint64 app_id = 1;
   cosmos.base.v1beta1.Coin amount = 2 [(gogoproto.nullable) = false];
-  string                   from   = 3 [ (gogoproto.moretags) = "yaml:\"from\"" ];
+  string from = 3 [(gogoproto.moretags) = "yaml:\"from\""];
 }
 
 message MsgDepositESMResponse {}
 message MsgExecuteESMResponse {}
 message MsgKillResponse {}
-message MsgCollateralRedemptionResponse{}
+message MsgCollateralRedemptionResponse {}

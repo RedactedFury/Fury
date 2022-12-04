@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/Fury-Labs/fury/x/bandoracle/types"
+	"github.com/redactedfury/fury/x/bandoracle/types"
 	"github.com/stretchr/testify/require"
 )
 

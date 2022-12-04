@@ -1,12 +1,11 @@
 syntax = "proto3";
 package fury.collector.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/collector/types";
+option go_package = "github.com/redactedfury/fury/x/collector/types";
 
 // Params defines the parameters for the module.
 message Params {
   option (gogoproto.goproto_stringer) = false;
-  
 }

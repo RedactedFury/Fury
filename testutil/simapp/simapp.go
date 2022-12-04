@@ -10,7 +10,7 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	tmdb "github.com/tendermint/tm-db"
 
-	fury "github.com/Fury-Labs/fury/app"
+	fury "github.com/redactedfury/fury/app"
 )
 
 // New creates application instance with in-memory database and disabled logging.

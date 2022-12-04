@@ -3,12 +3,12 @@ package keeper
 import (
 	"sort"
 
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	protobuftypes "github.com/gogo/protobuf/types"
 
-	tokenminttypes "github.com/Fury-Labs/fury/x/tokenmint/types"
-	"github.com/Fury-Labs/fury/x/vault/types"
+	tokenminttypes "github.com/redactedfury/fury/x/tokenmint/types"
+	"github.com/redactedfury/fury/x/vault/types"
 )
 
 func (k Keeper) SetLengthOfVault(ctx sdk.Context, length uint64) {

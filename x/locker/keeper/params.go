@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/locker/types"
+	"github.com/redactedfury/fury/x/locker/types"
 )
 
 // GetParams get all parameters as types.Params.

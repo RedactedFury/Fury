@@ -33,7 +33,7 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmdb "github.com/tendermint/tm-db"
 
-	fury "github.com/Fury-Labs/fury/app"
+	fury "github.com/redactedfury/fury/app"
 )
 
 func NewRootCmd() (*cobra.Command, fury.EncodingConfig) {

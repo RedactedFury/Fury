@@ -2,12 +2,12 @@ package keeper_test
 
 import (
 	"encoding/binary"
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	collectorKeeper "github.com/Fury-Labs/fury/x/collector/keeper"
-	rewardsKeeper "github.com/Fury-Labs/fury/x/rewards/keeper"
-	rewardstypes "github.com/Fury-Labs/fury/x/rewards/types"
-	vaultKeeper "github.com/Fury-Labs/fury/x/vault/keeper"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	collectorKeeper "github.com/redactedfury/fury/x/collector/keeper"
+	rewardsKeeper "github.com/redactedfury/fury/x/rewards/keeper"
+	rewardstypes "github.com/redactedfury/fury/x/rewards/types"
+	vaultKeeper "github.com/redactedfury/fury/x/vault/keeper"
 	"testing"
 
 	"github.com/stretchr/testify/suite"
@@ -15,10 +15,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	assetKeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	lockerKeeper "github.com/Fury-Labs/fury/x/locker/keeper"
-	lockerTypes "github.com/Fury-Labs/fury/x/locker/types"
+	chain "github.com/redactedfury/fury/app"
+	assetKeeper "github.com/redactedfury/fury/x/asset/keeper"
+	lockerKeeper "github.com/redactedfury/fury/x/locker/keeper"
+	lockerTypes "github.com/redactedfury/fury/x/locker/types"
 )
 
 type KeeperTestSuite struct {

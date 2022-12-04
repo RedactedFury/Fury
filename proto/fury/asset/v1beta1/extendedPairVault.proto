@@ -1,10 +1,10 @@
 syntax = "proto3";
 package fury.asset.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/asset/types";
+option go_package = "github.com/redactedfury/fury/x/asset/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
@@ -31,19 +31,21 @@ message ExtendedPairVault {
   string draw_down_fee = 7 [
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
     (gogoproto.nullable) = false,
-    (gogoproto.moretags) = "yaml:\"draw_down_fee\""];
+    (gogoproto.moretags) = "yaml:\"draw_down_fee\""
+  ];
 
   bool is_vault_active = 8 [(gogoproto.moretags) = "yaml:\"active_flag\""];
-  string debt_ceiling = 9[
+  string debt_ceiling = 9 [
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
     (gogoproto.nullable) = false,
-    (gogoproto.moretags) = "yaml:\"debt_ceiling\""];
+    (gogoproto.moretags) = "yaml:\"debt_ceiling\""
+  ];
   string debt_floor = 10 [
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
     (gogoproto.nullable) = false,
     (gogoproto.moretags) = "yaml:\"debt_floor\""
   ];
-  bool is_stable_mint_vault = 11[(gogoproto.moretags) = "yaml:\"is_stable_mint_vault\""];
+  bool is_stable_mint_vault = 11 [(gogoproto.moretags) = "yaml:\"is_stable_mint_vault\""];
 
   string min_cr = 12 [
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Dec",
@@ -51,19 +53,14 @@ message ExtendedPairVault {
     (gogoproto.moretags) = "yaml:\"min_cr\""
   ];
 
-    string pair_name            = 13 [ (gogoproto.moretags) = "yaml:\"pair_name\"" ];
-    bool asset_out_oracle_price = 14 [ (gogoproto.moretags) = "yaml:\"asset_out_oracle_price\"" ];
-    uint64 asset_out_price     = 15 [ 
-    (gogoproto.moretags) = "yaml:\"asset_out_price\"" ];
-    uint64 min_usd_value_left = 16 [ 
-    (gogoproto.moretags) = "yaml:\"min_usd_value_left\"" ];
-    int64 block_height = 17 [
-      (gogoproto.moretags)   = "yaml:\"block_height\""
-    ];
-    google.protobuf.Timestamp block_time = 18 [
-      (gogoproto.nullable) = false,
-      (gogoproto.stdtime) = true,
-      (gogoproto.moretags)   = "yaml:\"block_time\""
+  string pair_name = 13 [(gogoproto.moretags) = "yaml:\"pair_name\""];
+  bool asset_out_oracle_price = 14 [(gogoproto.moretags) = "yaml:\"asset_out_oracle_price\""];
+  uint64 asset_out_price = 15 [(gogoproto.moretags) = "yaml:\"asset_out_price\""];
+  uint64 min_usd_value_left = 16 [(gogoproto.moretags) = "yaml:\"min_usd_value_left\""];
+  int64 block_height = 17 [(gogoproto.moretags) = "yaml:\"block_height\""];
+  google.protobuf.Timestamp block_time = 18 [
+    (gogoproto.nullable) = false,
+    (gogoproto.stdtime) = true,
+    (gogoproto.moretags) = "yaml:\"block_time\""
   ];
-
 }

@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
-	tokenmintTypes "github.com/Fury-Labs/fury/x/tokenmint/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assetTypes "github.com/redactedfury/fury/x/asset/types"
+	tokenmintTypes "github.com/redactedfury/fury/x/tokenmint/types"
 
 	"github.com/stretchr/testify/require"
 
@@ -17,8 +17,8 @@ import (
 	"github.com/tendermint/tendermint/crypto/ed25519"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/Fury-Labs/fury/app"
-	"github.com/Fury-Labs/fury/x/tokenmint/keeper"
+	"github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/tokenmint/keeper"
 )
 
 func SetupCustomApp() (*app.App, *sdk.Context) {

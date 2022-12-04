@@ -1,9 +1,9 @@
 syntax = "proto3";
 package fury.market.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/market/types";
+option go_package = "github.com/redactedfury/fury/x/market/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
@@ -25,11 +25,9 @@ message TimeWeightedAverage {
     (gogoproto.moretags) = "yaml:\"current_index\""
   ];
   bool is_price_active = 5 [(gogoproto.moretags) = "yaml:\"is_price_active\""];
-  repeated  uint64 price_value = 6 [
+  repeated uint64 price_value = 6 [
     (gogoproto.customname) = "PriceValue",
     (gogoproto.moretags) = "yaml:\"price_value\""
   ];
-  int64 discarded_height_diff = 7 [
-    (gogoproto.moretags)   = "yaml:\"discarded_height_diff\""
-  ];
+  int64 discarded_height_diff = 7 [(gogoproto.moretags) = "yaml:\"discarded_height_diff\""];
 }

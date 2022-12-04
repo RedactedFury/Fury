@@ -4,14 +4,14 @@ import (
 	"encoding/binary"
 	"testing"
 
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	markettypes "github.com/Fury-Labs/fury/x/market/types"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	markettypes "github.com/redactedfury/fury/x/market/types"
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	"github.com/Fury-Labs/fury/x/lend/keeper"
-	"github.com/Fury-Labs/fury/x/lend/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/lend/keeper"
+	"github.com/redactedfury/fury/x/lend/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

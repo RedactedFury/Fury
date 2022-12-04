@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/tokenmint/types"
+	"github.com/redactedfury/fury/x/tokenmint/types"
 )
 
 func (k Keeper) SetTokenMint(ctx sdk.Context, appTokenMintData types.TokenMint) {

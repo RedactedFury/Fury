@@ -1,93 +1,90 @@
 syntax = "proto3";
 package fury.locker.v1beta1;
 
-import "gogoproto/gogo.proto";
-import "google/api/annotations.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "cosmos/base/v1beta1/coin.proto";
+import "fury/asset/v1beta1/asset.proto";
 import "fury/locker/v1beta1/locker.proto";
 import "fury/locker/v1beta1/params.proto";
-import "fury/asset/v1beta1/asset.proto";
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/locker/types";
+option go_package = "github.com/redactedfury/fury/x/locker/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
 service Query {
-
   rpc QueryLockerInfo(QueryLockerInfoRequest) returns (QueryLockerInfoResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/locker_info/{id}";
-  };
+  }
 
   rpc QueryLockersByAppToAssetID(QueryLockersByAppToAssetIDRequest) returns (QueryLockersByAppToAssetIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/lockers_info_asset_id/{app_id}/{asset_id}";
-  };
+  }
 
   rpc QueryLockerInfoByAppID(QueryLockerInfoByAppIDRequest) returns (QueryLockerInfoByAppIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/lockers_info_app_id/{app_id}";
-  };
-
+  }
 
   rpc QueryTotalDepositByAppAndAssetID(QueryTotalDepositByAppAndAssetIDRequest) returns (QueryTotalDepositByAppAndAssetIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/total_deposit_app_asset_id/{app_id}/{asset_id}";
-  };
+  }
 
   rpc QueryOwnerLockerByAppIDbyOwner(QueryOwnerLockerByAppIDbyOwnerRequest) returns (QueryOwnerLockerByAppIDbyOwnerResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_by_all_app_by_owner/{app_id}/{owner}";
-  };
+  }
 
   rpc QueryOwnerLockerOfAllAppsByOwner(QueryOwnerLockerOfAllAppsByOwnerRequest) returns (QueryOwnerLockerOfAllAppsByOwnerResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_info_by_all_apps_owner/{owner}";
-  };
+  }
 
   rpc QueryOwnerTxDetailsLockerOfAppByOwnerByAsset(QueryOwnerTxDetailsLockerOfAppByOwnerByAssetRequest) returns (QueryOwnerTxDetailsLockerOfAppByOwnerByAssetResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_tx-details_by_app_asset/{app_id}/{owner}/{asset_id}";
-  };
+  }
 
   rpc QueryOwnerLockerByAppToAssetIDbyOwner(QueryOwnerLockerByAppToAssetIDbyOwnerRequest) returns (QueryOwnerLockerByAppToAssetIDbyOwnerResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/owner_locker_info_app_asset_id_owner/{app_id}/{asset_id}/{owner}";
-  };
+  }
 
   rpc QueryLockerByAppByOwner(QueryLockerByAppByOwnerRequest) returns (QueryLockerByAppByOwnerResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/locker_info_app_owner/{app_id}/{owner}";
-  };
+  }
 
   rpc QueryLockerCountByAppID(QueryLockerCountByAppIDRequest) returns (QueryLockerCountByAppIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/total_locker_app_id/{app_id}";
-  };
+  }
 
   rpc QueryLockerCountByAppToAssetID(QueryLockerCountByAppToAssetIDRequest) returns (QueryLockerCountByAppToAssetIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/total_locker_app_asset_id/{app_id}/{asset_id}";
-  };
+  }
 
   rpc QueryWhiteListedAssetIDsByAppID(QueryWhiteListedAssetIDsByAppIDRequest) returns (QueryWhiteListedAssetIDsByAppIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/whitelisted_asset_ids_by_app_id/{app_id}";
-  };
+  }
 
   rpc QueryWhiteListedAssetByAllApps(QueryWhiteListedAssetByAllAppsRequest) returns (QueryWhiteListedAssetByAllAppsResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/whitelisted_asset_app_id";
-  };
+  }
 
   rpc QueryParams(QueryParamsRequest) returns (QueryParamsResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/params";
-  };
+  }
 
   rpc QueryLockerLookupTableByApp(QueryLockerLookupTableByAppRequest) returns (QueryLockerLookupTableByAppResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/locker-lookup-by-app/{app_id}";
-  };
+  }
 
   rpc QueryLockerLookupTableByAppAndAssetID(QueryLockerLookupTableByAppAndAssetIDRequest) returns (QueryLockerLookupTableByAppAndAssetIDResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/locker-lookup-by-app-and-assetId/{app_id}/{asset_id}";
-  };
+  }
 
   rpc QueryLockerTotalRewardsByAssetAppWise(QueryLockerTotalRewardsByAssetAppWiseRequest) returns (QueryLockerTotalRewardsByAssetAppWiseResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/loker-rewards-by-app-and-assetId/{app_id}/{asset_id}";
-  };
+  }
 
   rpc QueryLockerTotalDepositedByApp(QueryLockerTotalDepositedByAppRequest) returns (QueryLockerTotalDepositedByAppResponse) {
     option (google.api.http).get = "/fury/locker/v1beta1/locker-deposited-by-app/{app_id}";
-  };
-
+  }
 }
 
 message QueryLockerInfoRequest {
@@ -95,7 +92,7 @@ message QueryLockerInfoRequest {
 }
 
 message QueryLockerInfoResponse {
-  Locker locker_info = 1[
+  Locker locker_info = 1 [
     (gogoproto.moretags) = "yaml:\"locker_info\"",
     (gogoproto.nullable) = false
   ];
@@ -104,26 +101,22 @@ message QueryLockerInfoResponse {
 message QueryLockersByAppToAssetIDRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
   uint64 asset_id = 2 [(gogoproto.moretags) = "yaml:\"asset_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 3
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 3 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockersByAppToAssetIDResponse {
   repeated uint64 locker_ids = 1 [(gogoproto.moretags) = "yaml:\"locker_ids\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerInfoByAppIDRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerInfoByAppIDResponse {
   repeated uint64 locker_ids = 1 [(gogoproto.moretags) = "yaml:\"locker_ids\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryTotalDepositByAppAndAssetIDRequest {
@@ -138,40 +131,34 @@ message QueryTotalDepositByAppAndAssetIDResponse {
 message QueryOwnerLockerByAppIDbyOwnerRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
   string owner = 2 [(gogoproto.moretags) = "yaml:\"owner\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 3
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 3 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryOwnerLockerByAppIDbyOwnerResponse {
   repeated uint64 locker_ids = 1 [(gogoproto.moretags) = "yaml:\"locker_ids\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryOwnerLockerOfAllAppsByOwnerRequest {
   string owner = 1 [(gogoproto.moretags) = "yaml:\"owner\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryOwnerLockerOfAllAppsByOwnerResponse {
   repeated uint64 locker_ids = 1 [(gogoproto.moretags) = "yaml:\"locker_ids\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryOwnerTxDetailsLockerOfAppByOwnerByAssetRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
   string owner = 2 [(gogoproto.moretags) = "yaml:\"owner\""];
   uint64 asset_id = 3 [(gogoproto.moretags) = "yaml:\"asset_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 4
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 4 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryOwnerTxDetailsLockerOfAppByOwnerByAssetResponse {
   repeated UserTxData user_tx_data = 1 [(gogoproto.moretags) = "yaml:\"user_tx_data\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryOwnerLockerByAppToAssetIDbyOwnerRequest {
@@ -181,28 +168,25 @@ message QueryOwnerLockerByAppToAssetIDbyOwnerRequest {
 }
 
 message QueryOwnerLockerByAppToAssetIDbyOwnerResponse {
-  Locker locker_info = 1[
+  Locker locker_info = 1 [
     (gogoproto.moretags) = "yaml:\"locker_info\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerByAppByOwnerRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
   string owner = 2 [(gogoproto.moretags) = "yaml:\"owner\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 3
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 3 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerByAppByOwnerResponse {
-  repeated Locker locker_info = 1[
+  repeated Locker locker_info = 1 [
     (gogoproto.moretags) = "yaml:\"locker_info\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerCountByAppIDRequest {
@@ -220,40 +204,33 @@ message QueryLockerCountByAppToAssetIDRequest {
 
 message QueryLockerCountByAppToAssetIDResponse {
   uint64 total_count = 1;
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryWhiteListedAssetIDsByAppIDRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryWhiteListedAssetIDsByAppIDResponse {
-  repeated uint64  asset_ids = 1;
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  repeated uint64 asset_ids = 1;
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryWhiteListedAssetByAllAppsRequest {
-  cosmos.base.query.v1beta1.PageRequest pagination = 1
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 1 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryWhiteListedAssetByAllAppsResponse {
-
   repeated AppToAllAsset product_to_all_asset = 1 [
     (gogoproto.moretags) = "yaml:\"product_to_all_asset\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message AppToAllAsset {
-
-  uint64  app_id = 1;
+  uint64 app_id = 1;
   repeated fury.asset.v1beta1.Asset assets = 2 [
     (gogoproto.moretags) = "yaml:\"assets\"",
     (gogoproto.nullable) = false
@@ -271,14 +248,15 @@ message QueryParamsResponse {
 
 message QueryLockerLookupTableByAppRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerLookupTableByAppResponse {
-  repeated LockerLookupTableData token_to_locker_mapping = 1 [(gogoproto.moretags) = "yaml:\"token_to_locker_mapping\"", (gogoproto.nullable) = false];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  repeated LockerLookupTableData token_to_locker_mapping = 1 [
+    (gogoproto.moretags) = "yaml:\"token_to_locker_mapping\"",
+    (gogoproto.nullable) = false
+  ];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerLookupTableByAppAndAssetIDRequest {
@@ -292,15 +270,15 @@ message QueryLockerLookupTableByAppAndAssetIDResponse {
 
 message QueryLockerTotalDepositedByAppRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerTotalDepositedByAppResponse {
-  repeated LockedDepositedAmountDataMap locked_deposited_amount_data_map = 1 [(gogoproto.moretags) = "yaml:\"locked_deposited_amount_data_map\"",
-    (gogoproto.nullable) = false];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  repeated LockedDepositedAmountDataMap locked_deposited_amount_data_map = 1 [
+    (gogoproto.moretags) = "yaml:\"locked_deposited_amount_data_map\"",
+    (gogoproto.nullable) = false
+  ];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryLockerTotalRewardsByAssetAppWiseRequest {
@@ -309,6 +287,8 @@ message QueryLockerTotalRewardsByAssetAppWiseRequest {
 }
 
 message QueryLockerTotalRewardsByAssetAppWiseResponse {
-  LockerTotalRewardsByAssetAppWise total_rewards = 1 [(gogoproto.moretags) = "yaml:\"total_rewards\"",
-    (gogoproto.nullable) = false];
+  LockerTotalRewardsByAssetAppWise total_rewards = 1 [
+    (gogoproto.moretags) = "yaml:\"total_rewards\"",
+    (gogoproto.nullable) = false
+  ];
 }

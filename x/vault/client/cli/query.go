@@ -9,7 +9,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/Fury-Labs/fury/x/vault/types"
+	"github.com/redactedfury/fury/x/vault/types"
 )
 
 func GetQueryCmd() *cobra.Command {

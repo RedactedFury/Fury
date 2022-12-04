@@ -2,21 +2,21 @@ package keeper_test
 
 import (
 	"encoding/binary"
-	rewardsKeeper "github.com/Fury-Labs/fury/x/rewards/keeper"
+	rewardsKeeper "github.com/redactedfury/fury/x/rewards/keeper"
 	"testing"
 
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
+	"github.com/redactedfury/fury/app/wasm/bindings"
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	"github.com/Fury-Labs/fury/x/vault/keeper"
-	"github.com/Fury-Labs/fury/x/vault/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/vault/keeper"
+	"github.com/redactedfury/fury/x/vault/types"
 
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	markettypes "github.com/Fury-Labs/fury/x/market/types"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	markettypes "github.com/redactedfury/fury/x/market/types"
 )
 
 type KeeperTestSuite struct {

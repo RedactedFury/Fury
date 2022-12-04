@@ -8,7 +8,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/Fury-Labs/fury/types"
+	utils "github.com/redactedfury/fury/types"
 )
 
 // Copied from orderbook_test.go

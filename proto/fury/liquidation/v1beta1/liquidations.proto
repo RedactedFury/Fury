@@ -1,13 +1,13 @@
 syntax = "proto3";
 package fury.liquidation.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/liquidation/types";
+option go_package = "github.com/redactedfury/fury/x/liquidation/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
 message LiquidationOffsetHolder {
-    uint64 app_id = 1;
-    uint64 current_offset = 2;
-} 
+  uint64 app_id = 1;
+  uint64 current_offset = 2;
+}

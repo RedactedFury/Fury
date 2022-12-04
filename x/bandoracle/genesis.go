@@ -3,8 +3,8 @@ package bandoracle
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/bandoracle/keeper"
-	"github.com/Fury-Labs/fury/x/bandoracle/types"
+	"github.com/redactedfury/fury/x/bandoracle/keeper"
+	"github.com/redactedfury/fury/x/bandoracle/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

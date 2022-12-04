@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/Fury-Labs/fury/x/tokenmint/types"
+	"github.com/redactedfury/fury/x/tokenmint/types"
 	"github.com/stretchr/testify/require"
 )
 

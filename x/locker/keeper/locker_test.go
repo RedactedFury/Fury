@@ -2,12 +2,12 @@ package keeper_test
 
 import (
 	"fmt"
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	utils "github.com/Fury-Labs/fury/types"
-	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
-	collectortypes "github.com/Fury-Labs/fury/x/collector/types"
-	"github.com/Fury-Labs/fury/x/locker/keeper"
-	lockerTypes "github.com/Fury-Labs/fury/x/locker/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	utils "github.com/redactedfury/fury/types"
+	assetTypes "github.com/redactedfury/fury/x/asset/types"
+	collectortypes "github.com/redactedfury/fury/x/collector/types"
+	"github.com/redactedfury/fury/x/locker/keeper"
+	lockerTypes "github.com/redactedfury/fury/x/locker/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

@@ -736,7 +736,7 @@ func RegisterQueryHandlerClient(ctx context.Context, mux *runtime.ServeMux, clie
 }
 
 var (
-	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"Fury-Labs", "fury", "collector", "params"}, "", runtime.AssumeColonVerbOpt(false)))
+	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"redactedfury", "fury", "collector", "params"}, "", runtime.AssumeColonVerbOpt(false)))
 
 	pattern_Query_QueryCollectorLookupByApp_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"fury", "collector", "v1beta1", "collector-lookup-by-app", "app_id"}, "", runtime.AssumeColonVerbOpt(false)))
 

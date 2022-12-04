@@ -4,17 +4,17 @@ import (
 	"github.com/CosmWasm/wasmd/x/wasm"
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
 
-	assetkeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	auctionKeeper "github.com/Fury-Labs/fury/x/auction/keeper"
-	collectorKeeper "github.com/Fury-Labs/fury/x/collector/keeper"
-	esmKeeper "github.com/Fury-Labs/fury/x/esm/keeper"
-	lendKeeper "github.com/Fury-Labs/fury/x/lend/keeper"
-	liquidationKeeper "github.com/Fury-Labs/fury/x/liquidation/keeper"
-	liquidityKeeper "github.com/Fury-Labs/fury/x/liquidity/keeper"
-	lockerkeeper "github.com/Fury-Labs/fury/x/locker/keeper"
-	rewardsKeeper "github.com/Fury-Labs/fury/x/rewards/keeper"
-	tokenMintkeeper "github.com/Fury-Labs/fury/x/tokenmint/keeper"
-	vaultKeeper "github.com/Fury-Labs/fury/x/vault/keeper"
+	assetkeeper "github.com/redactedfury/fury/x/asset/keeper"
+	auctionKeeper "github.com/redactedfury/fury/x/auction/keeper"
+	collectorKeeper "github.com/redactedfury/fury/x/collector/keeper"
+	esmKeeper "github.com/redactedfury/fury/x/esm/keeper"
+	lendKeeper "github.com/redactedfury/fury/x/lend/keeper"
+	liquidationKeeper "github.com/redactedfury/fury/x/liquidation/keeper"
+	liquidityKeeper "github.com/redactedfury/fury/x/liquidity/keeper"
+	lockerkeeper "github.com/redactedfury/fury/x/locker/keeper"
+	rewardsKeeper "github.com/redactedfury/fury/x/rewards/keeper"
+	tokenMintkeeper "github.com/redactedfury/fury/x/tokenmint/keeper"
+	vaultKeeper "github.com/redactedfury/fury/x/vault/keeper"
 )
 
 func RegisterCustomPlugins(

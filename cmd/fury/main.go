@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	servercmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	fury "github.com/Fury-Labs/fury/app"
+	fury "github.com/redactedfury/fury/app"
 )
 
 func main() {

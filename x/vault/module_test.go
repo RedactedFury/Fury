@@ -9,12 +9,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assettypes "github.com/Fury-Labs/fury/x/asset/types"
-	markettypes "github.com/Fury-Labs/fury/x/market/types"
-	"github.com/Fury-Labs/fury/x/vault/keeper"
-	"github.com/Fury-Labs/fury/x/vault/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assettypes "github.com/redactedfury/fury/x/asset/types"
+	markettypes "github.com/redactedfury/fury/x/market/types"
+	"github.com/redactedfury/fury/x/vault/keeper"
+	"github.com/redactedfury/fury/x/vault/types"
 )
 
 type ModuleTestSuite struct {

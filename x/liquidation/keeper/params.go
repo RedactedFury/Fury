@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/Fury-Labs/fury/x/liquidation/types"
+	"github.com/redactedfury/fury/x/liquidation/types"
 )
 
 // LiquidationBatchSize

@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/Fury-Labs/fury/x/esm/keeper"
-	"github.com/Fury-Labs/fury/x/esm/types"
+	"github.com/redactedfury/fury/x/esm/keeper"
+	"github.com/redactedfury/fury/x/esm/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

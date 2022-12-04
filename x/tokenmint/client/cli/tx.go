@@ -10,7 +10,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/Fury-Labs/fury/x/tokenmint/types"
+	"github.com/redactedfury/fury/x/tokenmint/types"
 )
 
 // GetTxCmd returns the transaction commands for this module.

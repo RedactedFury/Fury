@@ -3,16 +3,16 @@ package wasm
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	assetKeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	collectorkeeper "github.com/Fury-Labs/fury/x/collector/keeper"
-	esmKeeper "github.com/Fury-Labs/fury/x/esm/keeper"
-	lendKeeper "github.com/Fury-Labs/fury/x/lend/keeper"
-	liquidationKeeper "github.com/Fury-Labs/fury/x/liquidation/keeper"
-	liquidityKeeper "github.com/Fury-Labs/fury/x/liquidity/keeper"
-	lockerkeeper "github.com/Fury-Labs/fury/x/locker/keeper"
-	rewardsKeeper "github.com/Fury-Labs/fury/x/rewards/keeper"
-	tokenMintKeeper "github.com/Fury-Labs/fury/x/tokenmint/keeper"
-	vaultKeeper "github.com/Fury-Labs/fury/x/vault/keeper"
+	assetKeeper "github.com/redactedfury/fury/x/asset/keeper"
+	collectorkeeper "github.com/redactedfury/fury/x/collector/keeper"
+	esmKeeper "github.com/redactedfury/fury/x/esm/keeper"
+	lendKeeper "github.com/redactedfury/fury/x/lend/keeper"
+	liquidationKeeper "github.com/redactedfury/fury/x/liquidation/keeper"
+	liquidityKeeper "github.com/redactedfury/fury/x/liquidity/keeper"
+	lockerkeeper "github.com/redactedfury/fury/x/locker/keeper"
+	rewardsKeeper "github.com/redactedfury/fury/x/rewards/keeper"
+	tokenMintKeeper "github.com/redactedfury/fury/x/tokenmint/keeper"
+	vaultKeeper "github.com/redactedfury/fury/x/vault/keeper"
 )
 
 type QueryPlugin struct {

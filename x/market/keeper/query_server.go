@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/Fury-Labs/fury/x/market/types"
+	"github.com/redactedfury/fury/x/market/types"
 )
 
 var _ types.QueryServer = (*queryServer)(nil)

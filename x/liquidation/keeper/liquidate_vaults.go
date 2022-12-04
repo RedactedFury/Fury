@@ -6,10 +6,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	protobuftypes "github.com/gogo/protobuf/types"
 
-	utils "github.com/Fury-Labs/fury/types"
-	"github.com/Fury-Labs/fury/x/liquidation/types"
-	rewardstypes "github.com/Fury-Labs/fury/x/rewards/types"
-	vaulttypes "github.com/Fury-Labs/fury/x/vault/types"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidation/types"
+	rewardstypes "github.com/redactedfury/fury/x/rewards/types"
+	vaulttypes "github.com/redactedfury/fury/x/vault/types"
 )
 
 func (k Keeper) LiquidateVaults(ctx sdk.Context) error {

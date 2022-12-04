@@ -2,5 +2,4 @@ syntax = "proto3";
 
 package fury.locker.v1beta1;
 
-option go_package = "github.com/Fury-Labs/fury/x/locker/types";
-
+option go_package = "github.com/redactedfury/fury/x/locker/types";

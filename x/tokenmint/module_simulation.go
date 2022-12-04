@@ -3,9 +3,9 @@ package tokenmint
 // import (
 // 	"math/rand"
 
-// 	"github.com/Fury-Labs/fury/testutil/sample"
-// 	tokenmintsimulation "github.com/Fury-Labs/fury/x/tokenmint/simulation"
-// 	"github.com/Fury-Labs/fury/x/tokenmint/types"
+// 	"github.com/redactedfury/fury/testutil/sample"
+// 	tokenmintsimulation "github.com/redactedfury/fury/x/tokenmint/simulation"
+// 	"github.com/redactedfury/fury/x/tokenmint/types"
 // 	"github.com/cosmos/cosmos-sdk/baseapp"
 // 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
 // 	sdk "github.com/cosmos/cosmos-sdk/types"

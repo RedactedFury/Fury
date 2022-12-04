@@ -2,21 +2,20 @@ syntax = "proto3";
 package fury.asset.v1beta1;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
-import "gogoproto/gogo.proto";
-import "google/api/annotations.proto";
-import "fury/asset/v1beta1/asset.proto";
-import "fury/asset/v1beta1/params.proto";
 import "fury/asset/v1beta1/app.proto";
-import "fury/asset/v1beta1/pair.proto";
+import "fury/asset/v1beta1/asset.proto";
 import "fury/asset/v1beta1/extendedPairVault.proto";
+import "fury/asset/v1beta1/pair.proto";
+import "fury/asset/v1beta1/params.proto";
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/asset/types";
+option go_package = "github.com/redactedfury/fury/x/asset/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
 message QueryAssetsRequest {
-  cosmos.base.query.v1beta1.PageRequest pagination = 1
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 1 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAssetsResponse {
@@ -24,8 +23,7 @@ message QueryAssetsResponse {
     (gogoproto.nullable) = false,
     (gogoproto.moretags) = "yaml:\"assets\""
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAssetRequest {
@@ -33,21 +31,22 @@ message QueryAssetRequest {
 }
 
 message QueryAssetResponse {
-  Asset asset = 1
-  [(gogoproto.nullable) = false, (gogoproto.moretags) = "yaml:\"asset\""];
+  Asset asset = 1 [
+    (gogoproto.nullable) = false,
+    (gogoproto.moretags) = "yaml:\"asset\""
+  ];
 }
 
-
 message QueryPairsRequest {
-  cosmos.base.query.v1beta1.PageRequest pagination = 1
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 1 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryPairsResponse {
-  repeated PairInfo pairsInfo = 1
-  [(gogoproto.nullable) = false, (gogoproto.moretags) = "yaml:\"pairs_info\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  repeated PairInfo pairsInfo = 1 [
+    (gogoproto.nullable) = false,
+    (gogoproto.moretags) = "yaml:\"pairs_info\""
+  ];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryPairRequest {
@@ -55,8 +54,10 @@ message QueryPairRequest {
 }
 
 message QueryPairResponse {
-  PairInfo pairInfo = 1
-  [(gogoproto.nullable) = false, (gogoproto.moretags) = "yaml:\"pair_info\""];
+  PairInfo pairInfo = 1 [
+    (gogoproto.nullable) = false,
+    (gogoproto.moretags) = "yaml:\"pair_info\""
+  ];
 }
 
 message QueryAppRequest {
@@ -79,8 +80,7 @@ message QueryGovTokenByAppResponse {
 }
 
 message QueryAppsRequest {
-  cosmos.base.query.v1beta1.PageRequest pagination = 1
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 1 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAppsResponse {
@@ -88,8 +88,7 @@ message QueryAppsResponse {
     (gogoproto.moretags) = "yaml:\"apps\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryExtendedPairVaultRequest {
@@ -104,8 +103,7 @@ message QueryExtendedPairVaultResponse {
 }
 
 message QueryAllExtendedPairVaultsRequest {
-  cosmos.base.query.v1beta1.PageRequest pagination = 1
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 1 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairVaultsResponse {
@@ -113,14 +111,12 @@ message QueryAllExtendedPairVaultsResponse {
     (gogoproto.moretags) = "yaml:\"pair_vault\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairVaultsByAppRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairVaultsByAppResponse {
@@ -128,26 +124,22 @@ message QueryAllExtendedPairVaultsByAppResponse {
     (gogoproto.moretags) = "yaml:\"extended_pair\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairStableVaultsIDByAppRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairStableVaultsIDByAppResponse {
   repeated uint64 extended_pairs_id = 1 [(gogoproto.moretags) = "yaml:\"extended_pairs_id\""];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairStableVaultsByAppRequest {
   uint64 app_id = 1 [(gogoproto.moretags) = "yaml:\"app_id\""];
-  cosmos.base.query.v1beta1.PageRequest pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageRequest pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 message QueryAllExtendedPairStableVaultsByAppResponse {
@@ -155,8 +147,7 @@ message QueryAllExtendedPairStableVaultsByAppResponse {
     (gogoproto.moretags) = "yaml:\"extended_pair\"",
     (gogoproto.nullable) = false
   ];
-  cosmos.base.query.v1beta1.PageResponse pagination = 2
-  [(gogoproto.moretags) = "yaml:\"pagination\""];
+  cosmos.base.query.v1beta1.PageResponse pagination = 2 [(gogoproto.moretags) = "yaml:\"pagination\""];
 }
 
 service Query {
@@ -196,5 +187,4 @@ service Query {
   rpc QueryAllExtendedPairStableVaultsByApp(QueryAllExtendedPairStableVaultsByAppRequest) returns (QueryAllExtendedPairStableVaultsByAppResponse) {
     option (google.api.http).get = "/fury/asset/v1beta1/extended_pair_stable_vault_data/{app_id}";
   }
-
 }

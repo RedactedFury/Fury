@@ -1,9 +1,9 @@
 syntax = "proto3";
 package fury.asset.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/asset/types";
+option go_package = "github.com/redactedfury/fury/x/asset/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 
@@ -14,7 +14,8 @@ message Asset {
   string decimals = 4 [
     (gogoproto.moretags) = "yaml:\"decimals\"",
     (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
-    (gogoproto.nullable) = false];
+    (gogoproto.nullable) = false
+  ];
   bool is_on_chain = 5 [(gogoproto.moretags) = "yaml:\"is_on_chain\""];
   bool is_oracle_price_required = 6 [(gogoproto.moretags) = "yaml:\"is_oracle_price_required\""];
   bool is_cdp_mintable = 7 [(gogoproto.moretags) = "yaml:\"is_cdp_mintable\""];

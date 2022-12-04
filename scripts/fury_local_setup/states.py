@@ -419,7 +419,7 @@ WASM_CONTRACTS = [
     {
         "name": "Vesting Contract",
         "contractAddressKey": "vesting_contract",
-        "contractLink": "https://github.com/Fury-Labs/test-wasm-artifacts/raw/main/token_vesting.wasm",
+        "contractLink": "https://github.com/redactedfury/test-wasm-artifacts/raw/main/token_vesting.wasm",
         "contractPath": f"./token_vesting.wasm",
         "initator": {},
         "formatKeys": []
@@ -427,7 +427,7 @@ WASM_CONTRACTS = [
     {
         "name": "Locking Contract",
         "contractAddressKey": "locking_contract",
-        "contractLink": "https://github.com/Fury-Labs/test-wasm-artifacts/raw/main/locking_contract.wasm",
+        "contractLink": "https://github.com/redactedfury/test-wasm-artifacts/raw/main/locking_contract.wasm",
         "contractPath": f"./locking_contract.wasm",
         "initator": {
             "t1": {"period": 500, "weight": "0.25"},
@@ -452,7 +452,7 @@ WASM_CONTRACTS = [
     {
         "name": "Governance Contract",
         "contractAddressKey": "governance_contract",
-        "contractLink": "https://github.com/Fury-Labs/test-wasm-artifacts/raw/main/governance.wasm",
+        "contractLink": "https://github.com/redactedfury/test-wasm-artifacts/raw/main/governance.wasm",
         "contractPath": f"./governance.wasm",
         "initator": {
             "threshold": {"threshold_quorum": {"threshold": "0.50", "quorum": "0.33"}},

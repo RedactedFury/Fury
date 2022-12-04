@@ -3,8 +3,8 @@ package client
 import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 
-	"github.com/Fury-Labs/fury/x/asset/client/cli"
-	"github.com/Fury-Labs/fury/x/asset/client/rest"
+	"github.com/redactedfury/fury/x/asset/client/cli"
+	"github.com/redactedfury/fury/x/asset/client/rest"
 )
 
 var AddAssetsHandler = []govclient.ProposalHandler{

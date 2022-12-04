@@ -11,9 +11,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/Fury-Labs/fury/testutil/sample"
-	collectorsimulation "github.com/Fury-Labs/fury/x/collector/simulation"
-	"github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/redactedfury/fury/testutil/sample"
+	collectorsimulation "github.com/redactedfury/fury/x/collector/simulation"
+	"github.com/redactedfury/fury/x/collector/types"
 )
 
 // avoid unused import issue.

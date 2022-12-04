@@ -3,11 +3,11 @@ package rewards_test
 import (
 	"testing"
 
-	"github.com/Fury-Labs/fury/app"
+	"github.com/redactedfury/fury/app"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/Fury-Labs/fury/x/rewards"
-	"github.com/Fury-Labs/fury/x/rewards/types"
+	"github.com/redactedfury/fury/x/rewards"
+	"github.com/redactedfury/fury/x/rewards/types"
 	"github.com/stretchr/testify/require"
 )
 

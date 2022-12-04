@@ -7,11 +7,11 @@ import (
 
 	_ "github.com/stretchr/testify/suite"
 
-	"github.com/Fury-Labs/fury/app"
-	utils "github.com/Fury-Labs/fury/types"
-	"github.com/Fury-Labs/fury/x/liquidity"
-	"github.com/Fury-Labs/fury/x/liquidity/keeper"
-	"github.com/Fury-Labs/fury/x/liquidity/types"
+	"github.com/redactedfury/fury/app"
+	utils "github.com/redactedfury/fury/types"
+	"github.com/redactedfury/fury/x/liquidity"
+	"github.com/redactedfury/fury/x/liquidity/keeper"
+	"github.com/redactedfury/fury/x/liquidity/types"
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

@@ -2,18 +2,18 @@ syntax = "proto3";
 
 package fury.vault.v1beta1;
 
-import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/vault/types";
+option go_package = "github.com/redactedfury/fury/x/vault/types";
 
 message EventCreateVault {
-  string sender          = 1;
+  string sender = 1;
   string collateral_type = 2;
 }
 
 message EventDepositCollateral {
-  string owner           = 1;
+  string owner = 1;
   string collateral_type = 2;
 
   cosmos.base.v1beta1.Coin collateral = 3 [
@@ -23,7 +23,7 @@ message EventDepositCollateral {
 }
 
 message EventWithdrawCollateral {
-  string owner           = 1;
+  string owner = 1;
   string collateral_type = 2;
 
   cosmos.base.v1beta1.Coin collateral = 3 [
@@ -33,7 +33,7 @@ message EventWithdrawCollateral {
 }
 
 message EventDrawDebt {
-  string owner           = 1;
+  string owner = 1;
   string collateral_type = 2;
 
   cosmos.base.v1beta1.Coin debt = 3 [
@@ -43,7 +43,7 @@ message EventDrawDebt {
 }
 
 message EventRepayDebt {
-  string owner           = 1;
+  string owner = 1;
   string collateral_type = 2;
 
   cosmos.base.v1beta1.Coin debt = 3 [
@@ -53,6 +53,6 @@ message EventRepayDebt {
 }
 
 message EventCloseVault {
-  string owner           = 1;
+  string owner = 1;
   string collateral_type = 2;
 }

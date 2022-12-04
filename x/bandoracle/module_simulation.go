@@ -10,9 +10,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/Fury-Labs/fury/testutil/sample"
-	bandoraclesimulation "github.com/Fury-Labs/fury/x/bandoracle/simulation"
-	"github.com/Fury-Labs/fury/x/bandoracle/types"
+	"github.com/redactedfury/fury/testutil/sample"
+	bandoraclesimulation "github.com/redactedfury/fury/x/bandoracle/simulation"
+	"github.com/redactedfury/fury/x/bandoracle/types"
 )
 
 // avoid unused import issue.

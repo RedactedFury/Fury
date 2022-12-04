@@ -12,7 +12,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 
-	"github.com/Fury-Labs/fury/x/liquidation/types"
+	"github.com/redactedfury/fury/x/liquidation/types"
 )
 
 func GetTxCmd() *cobra.Command {

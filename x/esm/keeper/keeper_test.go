@@ -8,9 +8,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	"github.com/Fury-Labs/fury/x/esm/keeper"
-	"github.com/Fury-Labs/fury/x/esm/types"
+	chain "github.com/redactedfury/fury/app"
+	"github.com/redactedfury/fury/x/esm/keeper"
+	"github.com/redactedfury/fury/x/esm/types"
 )
 
 type KeeperTestSuite struct {

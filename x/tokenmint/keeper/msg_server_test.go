@@ -5,9 +5,9 @@ package keeper_test
 // 	"testing"
 
 // 	sdk "github.com/cosmos/cosmos-sdk/types"
-//     "github.com/Fury-Labs/fury/x/tokenmint/types"
-//     "github.com/Fury-Labs/fury/x/tokenmint/keeper"
-//     keepertest "github.com/Fury-Labs/fury/testutil/keeper"
+//     "github.com/redactedfury/fury/x/tokenmint/types"
+//     "github.com/redactedfury/fury/x/tokenmint/keeper"
+//     keepertest "github.com/redactedfury/fury/testutil/keeper"
 // )
 
 // func setupMsgServer(t testing.TB) (types.MsgServer, context.Context) {

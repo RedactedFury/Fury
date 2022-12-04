@@ -7,9 +7,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/Fury-Labs/fury/x/liquidity/amm"
-	"github.com/Fury-Labs/fury/x/liquidity/types"
-	rewardstypes "github.com/Fury-Labs/fury/x/rewards/types"
+	"github.com/redactedfury/fury/x/liquidity/amm"
+	"github.com/redactedfury/fury/x/liquidity/types"
+	rewardstypes "github.com/redactedfury/fury/x/rewards/types"
 )
 
 // getNextPoolIdWithUpdate increments pool id by one and set it.

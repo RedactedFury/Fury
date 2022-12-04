@@ -1,11 +1,11 @@
 package market
 
 import (
-	assetkeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	bandkeeper "github.com/Fury-Labs/fury/x/bandoracle/keeper"
-	bandoraclemoduletypes "github.com/Fury-Labs/fury/x/bandoracle/types"
-	"github.com/Fury-Labs/fury/x/market/keeper"
-	"github.com/Fury-Labs/fury/x/market/types"
+	assetkeeper "github.com/redactedfury/fury/x/asset/keeper"
+	bandkeeper "github.com/redactedfury/fury/x/bandoracle/keeper"
+	bandoraclemoduletypes "github.com/redactedfury/fury/x/bandoracle/types"
+	"github.com/redactedfury/fury/x/market/keeper"
+	"github.com/redactedfury/fury/x/market/types"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"

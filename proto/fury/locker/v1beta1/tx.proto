@@ -1,9 +1,9 @@
 syntax = "proto3";
 package fury.locker.v1beta1;
 
-import "gogoproto/gogo.proto";
+import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/Fury-Labs/fury/x/locker/types";
+option go_package = "github.com/redactedfury/fury/x/locker/types";
 option (gogoproto.equal_all) = false;
 option (gogoproto.goproto_getters_all) = false;
 

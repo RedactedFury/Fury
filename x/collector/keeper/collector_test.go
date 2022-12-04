@@ -1,10 +1,10 @@
 package keeper_test
 
 import (
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
-	auctionTypes "github.com/Fury-Labs/fury/x/auction/types"
-	collectorTypes "github.com/Fury-Labs/fury/x/collector/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assetTypes "github.com/redactedfury/fury/x/asset/types"
+	auctionTypes "github.com/redactedfury/fury/x/auction/types"
+	collectorTypes "github.com/redactedfury/fury/x/collector/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

@@ -5,18 +5,18 @@ import (
 	"strconv"
 	"time"
 
-	liquidationtypes "github.com/Fury-Labs/fury/x/liquidation/types"
+	liquidationtypes "github.com/redactedfury/fury/x/liquidation/types"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	vaulttypes "github.com/Fury-Labs/fury/x/vault/types"
+	vaulttypes "github.com/redactedfury/fury/x/vault/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/Fury-Labs/fury/types"
-	auctiontypes "github.com/Fury-Labs/fury/x/auction/types"
-	collectortypes "github.com/Fury-Labs/fury/x/collector/types"
-	esmtypes "github.com/Fury-Labs/fury/x/esm/types"
+	utils "github.com/redactedfury/fury/types"
+	auctiontypes "github.com/redactedfury/fury/x/auction/types"
+	collectortypes "github.com/redactedfury/fury/x/collector/types"
+	esmtypes "github.com/redactedfury/fury/x/esm/types"
 )
 
 func (k Keeper) DutchActivator(ctx sdk.Context, lockedVault liquidationtypes.LockedVault) error {

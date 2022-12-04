@@ -9,15 +9,15 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/Fury-Labs/fury/app"
-	assetKeeper "github.com/Fury-Labs/fury/x/asset/keeper"
-	auctionTypes "github.com/Fury-Labs/fury/x/auction/types"
-	"github.com/Fury-Labs/fury/x/liquidation/keeper"
-	liquidationKeeper "github.com/Fury-Labs/fury/x/liquidation/keeper"
-	"github.com/Fury-Labs/fury/x/liquidation/types"
-	marketKeeper "github.com/Fury-Labs/fury/x/market/keeper"
-	vaultKeeper "github.com/Fury-Labs/fury/x/vault/keeper"
-	vaultTypes "github.com/Fury-Labs/fury/x/vault/types"
+	chain "github.com/redactedfury/fury/app"
+	assetKeeper "github.com/redactedfury/fury/x/asset/keeper"
+	auctionTypes "github.com/redactedfury/fury/x/auction/types"
+	"github.com/redactedfury/fury/x/liquidation/keeper"
+	liquidationKeeper "github.com/redactedfury/fury/x/liquidation/keeper"
+	"github.com/redactedfury/fury/x/liquidation/types"
+	marketKeeper "github.com/redactedfury/fury/x/market/keeper"
+	vaultKeeper "github.com/redactedfury/fury/x/vault/keeper"
+	vaultTypes "github.com/redactedfury/fury/x/vault/types"
 )
 
 type KeeperTestSuite struct {

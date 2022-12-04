@@ -1,12 +1,12 @@
 package keeper_test
 
 import (
-	"github.com/Fury-Labs/fury/app/wasm/bindings"
-	assetTypes "github.com/Fury-Labs/fury/x/asset/types"
-	liquidationTypes "github.com/Fury-Labs/fury/x/liquidation/types"
-	markettypes "github.com/Fury-Labs/fury/x/market/types"
-	vaultKeeper1 "github.com/Fury-Labs/fury/x/vault/keeper"
-	vaultTypes "github.com/Fury-Labs/fury/x/vault/types"
+	"github.com/redactedfury/fury/app/wasm/bindings"
+	assetTypes "github.com/redactedfury/fury/x/asset/types"
+	liquidationTypes "github.com/redactedfury/fury/x/liquidation/types"
+	markettypes "github.com/redactedfury/fury/x/market/types"
+	vaultKeeper1 "github.com/redactedfury/fury/x/vault/keeper"
+	vaultTypes "github.com/redactedfury/fury/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
